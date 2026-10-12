@@ -33,7 +33,7 @@ npm ci --cache /workspace/.npm-cache --no-audit --no-fund
 npm run dev -- --port 3000 --strictPort
 ```
 
-Predvolená verzia načíta dodaných deväť osôb aj bez dátového servera. Starší prázdny zápis v prehliadači sa pri prvom načítaní doplní; existujúce osoby a úpravy zostanú zachované. Po neskoršom úmyselnom odstránení osôb sa rodina automaticky neobnovuje. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
+Predvolená verzia načíta dodaných trinásť osôb aj bez dátového servera. Starší prázdny zápis v prehliadači sa pri prvom načítaní doplní; existujúce osoby a úpravy zostanú zachované. Nové výskumné vydanie pridáva výslovne uvedené nové osoby a väzby aj do existujúceho rodokmeňa, pričom neprepisuje úpravy ani neobnovuje vymazané osoby zo starších vydaní. Po neskoršom úmyselnom odstránení osôb sa rodina automaticky neobnovuje. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
 
 ```sh
 GENEALOGY_DATA_FILE=/workspace/genealogia-private/rodokmen.json npm run dev -- --port 3000 --strictPort
@@ -73,3 +73,5 @@ Jednotkové testy kontrolujú rodinné väzby, cykly v pôvode, adopcie, dátumy
 Rodinné podanie sa zaznamenáva ako **NEOVERENÉ**. Doložený údaj alebo záver vyžaduje zdroj; neisté priezviská, rodiská a roky patria do poznámok. Adoptívne väzby sa neprepisujú na biologické. Rovnomenné osoby majú rozdielne ID. Informačná stránka archívu nevytvára dôkaz o konkrétnej osobe.
 
 Súkromný výskumný záznam, história opráv, denník a získané podklady sú v `/workspace/genealogia-private`, mimo checkoutu. Na ďalšie pátranie treba konkrétne miesto, obdobie a podľa prameňa vierovyznanie. Prístup k živým matrikám a archívnym snímkam sa riadi podmienkami ich správcov.
+
+Aktuálne výsledky hľadania otcových rodičov a hranice prehľadaných zdrojov: [výskumná správa](docs/vyskum-otcovi-rodicia.md).

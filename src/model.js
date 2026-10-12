@@ -270,6 +270,37 @@ export function relatives(family, id) {
     }
   return { parents, children, partners: both("partner"), siblings };
 }
+
+// Apply explicit additions from a newer research release while preserving edits
+// and deliberate deletions of people from earlier releases.
+export function applySeedUpdates(family, rawSeed) {
+  const seed = parseFamily(JSON.stringify(rawSeed));
+  if (!family.seedRevision || family.seedRevision >= seed.seedRevision || family.title !== seed.title) return family;
+  if (!family.people.length) return { ...family, seedRevision: seed.seedRevision };
+  let next = { ...family, people: [...family.people], relationships: [...family.relationships], questions: [...family.questions], sources: [...family.sources] };
+  for (const update of (rawSeed.seedUpdates || []).filter(u => u.revision > family.seedRevision && u.revision <= seed.seedRevision).sort((a,b) => a.revision - b.revision)) {
+    for (const id of update.people || []) {
+      const person = seed.people.find(p => p.id === id);
+      if (person && !next.people.some(p => p.id === id)) next.people.push(person);
+    }
+    for (const id of update.relationships || []) {
+      const relation = seed.relationships.find(r => r.id === id);
+      if (!relation || ![relation.from, relation.to].every(key => next.people.some(p => p.id === key))) continue;
+      if (next.relationships.some(r => r.id === relation.id || (r.type === relation.type && ((r.from === relation.from && r.to === relation.to) || (r.type !== 'parent' && r.from === relation.to && r.to === relation.from))))) continue;
+      next = addRelationship(next, relation);
+    }
+    for (const id of update.questions || []) if (!next.questions.some(q => q.id === id)) {
+      const question = seed.questions.find(q => q.id === id);
+      if (question) next.questions.push(question);
+    }
+    for (const id of update.sources || []) if (!next.sources.some(s => s.id === id)) {
+      const source = seed.sources.find(s => s.id === id);
+      if (source) next.sources.push(source);
+    }
+    for (const item of update.appendNotes || []) next.people = next.people.map(p => p.id === item.personId && !p.note.includes(item.text) ? { ...p, note: [p.note,item.text].filter(Boolean).join('\n') } : p);
+  }
+  return { ...next, seedRevision: seed.seedRevision };
+}
 export function generations(family) {
   const memo = new Map();
   function depth(id) {
@@ -288,6 +319,7 @@ export function treeLayout(family, focusId) {
     return { nodes: [], edges: [], width: 840, height: 440 };
   const focus = family.people.find((p) => p.id === focusId) || family.people[0];
   const depths = new Map([[focus.id, 0]]);
+  const ancestors = new Set();
   let current = [focus.id];
   for (let depth = 1; depth <= 3; depth++) {
     const next = [];
@@ -295,6 +327,7 @@ export function treeLayout(family, focusId) {
       for (const { person } of relatives(family, id).parents)
         if (!depths.has(person.id)) {
           depths.set(person.id, -depth);
+          ancestors.add(person.id);
           next.push(person.id);
         }
     current = next;
@@ -304,6 +337,11 @@ export function treeLayout(family, focusId) {
     if (!depths.has(person.id)) depths.set(person.id, 0);
   for (const { person } of children)
     if (!depths.has(person.id)) depths.set(person.id, 1);
+  // Show siblings of the ancestors too, without assuming their parents.
+  for (const id of ancestors) {
+    for (const { person } of relatives(family, id).siblings)
+      if (!depths.has(person.id)) depths.set(person.id, depths.get(id));
+  }
   const levels = [...new Set(depths.values())].sort((a, b) => a - b);
   const width = Math.max(
     840,
@@ -313,13 +351,38 @@ export function treeLayout(family, focusId) {
   );
   const height = Math.max(390, levels.length * 165 + 70);
   const nodes = levels.flatMap((l, row) => {
-    const ids = [...depths].filter(([, d]) => d === l).map(([id]) => id);
-    return ids.map((id, i) => ({
-      person: family.people.find((p) => p.id === id),
+    const rawIds = [...depths].filter(([, d]) => d === l).map(([id]) => id);
+    const ids = [];
+    const seen = new Set();
+    for (const first of rawIds) {
+      const queue = [first];
+      while (queue.length) {
+        const id = queue.shift();
+        if (seen.has(id)) continue;
+        seen.add(id); ids.push(id);
+        queue.push(...relatives(family, id).siblings.map(r => r.person.id).filter(key => rawIds.includes(key) && !seen.has(key)));
+      }
+    }
+    return ids.map((id, i) => {
+      const person = family.people.find((p) => p.id === id);
+      let role = "RODINA";
+      if (id === focus.id) role = "VÝCHODISKO";
+      else if (ancestors.has(id)) {
+        role = l === -1
+          ? person.gender === "female" ? "MATKA" : person.gender === "male" ? "OTEC" : "RODIČ"
+          : "STARÝ RODIČ";
+      } else if (l === -1) {
+        role = person.gender === "female" ? "TETA" : person.gender === "male" ? "STRÝKO" : "RODINA";
+      } else if (l === 0 && siblings.some(r => r.person.id === id)) role = "SÚRODENEC";
+      else if (l > 0) role = "DIEŤA";
+      return {
+      person,
       x: width / 2 + (i - (ids.length - 1) / 2) * 202 - 87,
       y: row * 165 + 36,
       level: l,
-    }));
+      role,
+    };
+    });
   });
   return {
     nodes,

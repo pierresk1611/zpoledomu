@@ -46,6 +46,7 @@ import {
   relatives,
   generations,
   treeLayout,
+  applySeedUpdates,
 } from "./model.js";
 
 const blankPerson = {
@@ -65,7 +66,7 @@ const kindLabel = (kind) =>
     ? "Adoptívna väzba"
     : kind === "biological"
       ? "Biologická väzba"
-      : "Druh väzby neuvedený";
+      : "Rodinná väzba";
 
 function Status({ value }) {
   return (
@@ -410,6 +411,9 @@ function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd }) {
                   y2 = b.y,
                   mid = (y1 + y2) / 2;
                 path = `M ${x1} ${y1} V ${mid} H ${x2} V ${y2}`;
+              } else if (r.type === "sibling") {
+                const y = Math.min(a.y, b.y) - 16;
+                path = `M ${a.x + 87} ${a.y} V ${y} H ${b.x + 87} V ${b.y}`;
               } else {
                 const left = a.x < b.x ? a : b,
                   right = a.x < b.x ? b : a;
@@ -424,7 +428,7 @@ function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd }) {
               );
             })}
           </svg>
-          {layout.nodes.map(({ person, x, y, level }) => (
+          {layout.nodes.map(({ person, x, y, role }) => (
             <button
               key={person.id}
               className={`person-node ${selectedId === person.id ? "selected" : ""} ${person.id === focusId ? "focused" : ""}`}
@@ -435,15 +439,7 @@ function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd }) {
               <span className="node-top">
                 <Avatar person={person} />
                 <span className="node-generation">
-                  {person.id === focusId
-                    ? "VÝCHODISKO"
-                    : level < 0
-                      ? level === -1
-                        ? "RODIČ"
-                        : "PREDOK"
-                      : level > 0
-                        ? "DIEŤA"
-                        : "RODINA"}
+                  {role}
                 </span>
               </span>
               <strong>{fullName(person)}</strong>
@@ -651,6 +647,7 @@ export default function App() {
         if (saved) {
           try {
             data = parseFamily(saved);
+            data = applySeedUpdates(data, initialFamily);
             if (
               !data.people.length &&
               !data.relationships.length &&

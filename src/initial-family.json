@@ -37,7 +37,7 @@
       "birthDate": "1950-09-12",
       "deathDate": "2013-11-26",
       "birthPlace": "",
-      "note": "Rodisko je neisté: používateľ uviedol možno Plzeň. Nájdený náhrobok rodisko neuvádza; jeho údaje nepoužívame na potvrdenie rodného miesta.",
+      "note": "Rodisko je neisté: používateľ uviedol možno Plzeň. Nájdený náhrobok rodisko neuvádza; jeho údaje nepoužívame na potvrdenie rodného miesta.\nPodľa opraveného údaja používateľa mal Rudolf tri sestry: Ruženu (Praha), Marcelu Solárovú (Bratislava) a Helenu Salinkovú (predtým Malacky). Pôvodný počet štyri bol opravený používateľom (S016).",
       "source": "S008 + S010 + S012 — Cintorín Zvolenská Slatina, hrob 240 (pôvodné číslo 434), záznam z_slatina_z.610; fotografia https://mobec.sk/photos/zvolenska_slatina/408.jpg, prístup 12. 10. 2026. Snímku skontrolovala AI; používateľ potvrdil, že ide o jeho otca.",
       "status": "PODLOŽENÝ ZÁVER"
     },
@@ -115,8 +115,60 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme.",
+      "note": "Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme. Používateľ potvrdil pochovanie v Sobranciach (S015); životné dátumy a konkrétny hrob zatiaľ nepoznáme.",
       "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P010",
+      "firstName": "Mária",
+      "lastName": "Maľová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Sestra Viery. Podľa používateľa žije vo Zvolenskej Slatine. Dátum narodenia, rodné priezvisko a jej rodičia zatiaľ nie sú doložení.",
+      "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P011",
+      "firstName": "Ružena",
+      "lastName": "",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žije v Prahe. Priezvisko, dátumy a jej rodičia zatiaľ nie sú doložení.",
+      "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P012",
+      "firstName": "Marcela",
+      "lastName": "Solárová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Sestra Rudolfa (1950–2013). Oznámený pobyt: Bratislava. Dátumy, životný stav a jej rodičia zatiaľ nie sú doložení.",
+      "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P013",
+      "firstName": "Helena",
+      "lastName": "Salinková",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žila v Malackách; tento údaj nepotvrdzuje úmrtie. Dátumy, súčasný pobyt a jej rodičia zatiaľ nie sú doložení.",
+      "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     }
   ],
@@ -237,6 +289,42 @@
       "kind": "unknown",
       "status": "NEOVERENÉ",
       "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L014",
+      "type": "sibling",
+      "from": "P002",
+      "to": "P010",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S013 — Používateľ uviedol, že Viera má sestru Máriu."
+    },
+    {
+      "id": "L015",
+      "type": "sibling",
+      "from": "P003",
+      "to": "P011",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu."
+    },
+    {
+      "id": "L016",
+      "type": "sibling",
+      "from": "P003",
+      "to": "P012",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu."
+    },
+    {
+      "id": "L017",
+      "type": "sibling",
+      "from": "P003",
+      "to": "P013",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu."
     }
   ],
   "questions": [
@@ -257,6 +345,18 @@
       "title": "Adoptívne väzby sestier",
       "detail": "Mária: opravený rok 1983. Obe sestry adoptovali Viera a Rudolf, odhadom v rokoch 1986/1987. Biologickí rodičia zatiaľ nie sú uvedení.",
       "status": "Doplnené používateľom"
+    },
+    {
+      "id": "Q004",
+      "title": "Súrodenci rodičov",
+      "detail": "Viera má sestru Máriu Maľovú (Zvolenská Slatina). Používateľ opravil počet: Rudolf mal tri sestry, Ruženu (Praha), Marcelu Solárovú (Bratislava) a Helenu Salinkovú (predtým Malacky). Pridané sú oznámené súrodenecké väzby; ich rodičov ani dátumy z týchto údajov neodvodzujeme.",
+      "status": "Doplnené rodinné údaje"
+    },
+    {
+      "id": "Q005",
+      "title": "Narodenia a úmrtia otcových rodičov",
+      "detail": "Hľadáme dátumy narodenia a úmrtia Rudolfa Ďuriša staršieho a Alžbety (možno Čakanová/Čekanová). Rodina potvrdila Rudolfovo pochovanie v Sobranciach. Cintoriny.sk: 8 menovcov Rudolf Ďuriš a 15 Alžbiet Ďurišových, detaily 15 záznamov skontrolované; žiadna totožnosť zatiaľ potvrdená. Sobrance neboli nájdené vo vyhľadávaní cintoriny.sk ani v zozname pohrebísk Košického kraja na pohrebiska.sk. Web mesta vyžaduje CAPTCHA. Dátumy starých rodičov zostávajú otvorené.",
+      "status": "Prehľadané dostupné indexy · bez potvrdenej zhody"
     }
   ],
   "sources": [
@@ -308,7 +408,56 @@
       "url": "https://mobec.sk/photos/zvolenska_slatina/408.jpg",
       "note": "Hrob 240, pôvodné číslo 434. Index uvádza narodenie 12. 9. 1950 a úmrtie 26. 11. 2013; fotografia zodpovedá údajom a používateľ výslovne potvrdil totožnosť otca.",
       "checked": "2026-10-12"
+    },
+    {
+      "id": "S017",
+      "title": "Cintoriny.sk · hľadanie otcových rodičov",
+      "url": "https://www.cintoriny.sk/src/index.php",
+      "note": "Verejné hľadanie: Rudolf Ďuriš 8, Alžbeta Ďurišová 15; prečítané detaily všetkých 15 Alžbiet. Rodné priezvisko Čakanová 0, Čekanová 1 (Sabinov). Žiadny záznam zatiaľ neidentifikovaný ako príbuzný. Hľadanie cintorína Sobrance bez výsledku je limitom tohto portálu.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S018",
+      "title": "Pohrebiska.sk · zoznam Košického kraja",
+      "url": "https://www.pohrebiska.sk/vyhladanie_sk_kraj_ma.jsp?kraj=KE",
+      "note": "Prečítaný zoznam evidovaných pohrebísk; Sobrance v zozname nie sú. Nejde o dôkaz, že Rudolf v Sobranciach nie je pochovaný. Osobné záznamy pre Sobrance tu neboli dostupné.",
+      "checked": "2026-10-12"
     }
   ],
-  "seedRevision": 1
+  "seedRevision": 2,
+  "seedUpdates": [
+    {
+      "revision": 2,
+      "people": [
+        "P010",
+        "P011",
+        "P012",
+        "P013"
+      ],
+      "relationships": [
+        "L014",
+        "L015",
+        "L016",
+        "L017"
+      ],
+      "questions": [
+        "Q004",
+        "Q005"
+      ],
+      "appendNotes": [
+        {
+          "personId": "P003",
+          "text": "Podľa opraveného údaja používateľa mal Rudolf tri sestry: Ruženu (Praha), Marcelu Solárovú (Bratislava) a Helenu Salinkovú (predtým Malacky). Pôvodný počet štyri bol opravený používateľom (S016)."
+        },
+        {
+          "personId": "P009",
+          "text": "Používateľ potvrdil pochovanie v Sobranciach (S015); životné dátumy a konkrétny hrob zatiaľ nepoznáme."
+        }
+      ],
+      "sources": [
+        "S017",
+        "S018"
+      ]
+    }
+  ]
 }
