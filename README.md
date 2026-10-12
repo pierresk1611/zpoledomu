@@ -1,4 +1,21 @@
-# Z poľa domov
+# Ďurišovci
+
+`zpoledomu` je názov repozitára, **Ďurišovci** je názov rodokmeňa.
+
+## Otvorenie bez inštalácie
+
+V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Verejná verzia neobsahuje osobné rodinné údaje, tie možno pridať alebo importovať v prehliadači.
+
+![Ukážka rozhrania s fiktívnymi osobami](docs/preview.png)
+
+## Produkčná webová adresa cez GitHub Pages
+
+1. Otvorte [Settings → Pages](https://github.com/pierresk1611/zpoledomu/settings/pages).
+2. V **Build and deployment** nastavte **Source: Deploy from a branch**.
+3. Vyberte vetvu **main** a priečinok **/(root)**, potom **Save**.
+4. Po úspešnom nasadení sa aplikácia zobrazí na `https://pierresk1611.github.io/zpoledomu/`. Adresa nie je aktívna len tým, že je kód v repozitári; musí byť zapnuté Pages a dokončené nasadenie.
+
+Po zmenách zdrojov obnovte samostatný súbor príkazom `npm run release` a commitnite aktualizovaný `index.html`. Vývojový vstup je `dev.html`; hotový `index.html` je určený na otvorenie bez servera a na GitHub Pages.
 
 Slovenská aplikácia na rodokmeň a genealogický výskum. Zobrazuje predkov a príbuzných vybranej osoby, eviduje rodičovské, partnerské a súrodenecké väzby, rozlišuje adopciu, uchováva zdroje a neistoty. Podporuje pridávanie a úpravy osôb, hľadanie, export a kontrolovaný import JSON záloh.
 
@@ -26,7 +43,7 @@ Produkčný build neobsahuje súkromný vstupný súbor ani dátový server. V s
 
 ## Samostatný HTML rodokmeň
 
-Statický náhľad samotného vývojového `index.html` nevie spracovať JSX ani načítať balíky. Pre takýto náhľad alebo otvorenie na vlastnom počítači vytvorte jeden HTML súbor so všetkým JavaScriptom, štýlmi a voliteľnými rodinnými údajmi:
+Statický náhľad samotného vývojového `dev.html` nevie spracovať JSX ani načítať balíky. Pre takýto náhľad alebo otvorenie na vlastnom počítači vytvorte jeden HTML súbor so všetkým JavaScriptom, štýlmi a voliteľnými rodinnými údajmi:
 
 ```sh
 npm run standalone -- --data /workspace/genealogia-private/rodokmen.json --out /workspace/genealogia-private/rodokmen.html

@@ -781,7 +781,7 @@ export default function App() {
             <Sprout size={26} strokeWidth={1.5} />
           </span>
           <span>
-            Z poľa domov<small>VAŠA RODINNÁ HISTÓRIA</small>
+            Ďurišovci<small>VAŠA RODINNÁ HISTÓRIA</small>
           </span>
         </a>
         <div className="workspace-label">OSOBNÝ PRIESTOR</div>
@@ -1267,7 +1267,7 @@ export default function App() {
           </section>
           <footer className="page-footer">
             <span>
-              Z poľa domov<span className="footer-dot">·</span>Vaša rodina. Váš
+              Ďurišovci<span className="footer-dot">·</span>Vaša rodina. Váš
               príbeh.
             </span>
             <span>

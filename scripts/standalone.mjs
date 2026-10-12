@@ -47,7 +47,7 @@ const js = chunks[0].code.replace(/<\/script/gi, "<\\/script");
 const seed = JSON.stringify(family).replace(/</g, "\\u003c");
 const html = `<!doctype html>
 <html lang="sk">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#264b3d"><title>Z poľa domov — rodokmeň</title><style>${css.replace(/<\/style/gi, "<\\/style")}</style></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#264b3d"><title>Ďurišovci — rodokmeň</title><style>${css.replace(/<\/style/gi, "<\\/style")}</style></head>
 <body><div id="root"><noscript>Na zobrazenie rodokmeňa povoľte JavaScript.</noscript></div><script id="family-seed" type="application/json">${seed}</script><script>${js}</script></body>
 </html>`;
 await mkdir(dirname(output), { recursive: true });

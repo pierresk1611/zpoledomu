@@ -15,7 +15,7 @@ export const STATUS_LABELS = {
 };
 export const emptyFamily = () => ({
   version: 1,
-  title: "Môj rodokmeň",
+  title: "Ďurišovci",
   people: [],
   relationships: [],
   questions: [],
@@ -183,8 +183,10 @@ export function parseFamily(text) {
     version: 1,
     title:
       typeof data.title === "string"
-        ? data.title.slice(0, 200)
-        : "Môj rodokmeň",
+        ? data.title === "Rodina Ďurišových"
+          ? "Ďurišovci"
+          : data.title.slice(0, 200)
+        : "Ďurišovci",
     people,
     relationships: [],
     questions: [],
