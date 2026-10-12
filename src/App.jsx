@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import initialFamily from "./initial-family.json";
 import {
   Sprout,
   Network,
@@ -650,6 +651,13 @@ export default function App() {
         if (saved) {
           try {
             data = parseFamily(saved);
+            if (
+              !data.people.length &&
+              !data.relationships.length &&
+              !data.seedRevision
+            ) {
+              data = parseFamily(JSON.stringify(initialFamily));
+            }
           } catch {
             setStorageError(
               "Uložené údaje sa nedajú načítať. Pôvodný zápis zostáva zachovaný; môžete importovať platnú zálohu.",
@@ -662,14 +670,22 @@ export default function App() {
             const embedded = document.getElementById("family-seed");
             if (embedded) {
               data = parseFamily(embedded.textContent);
-            } else {
+            } else if (import.meta.env.DEV) {
               const r = await fetch("/api/family");
               if (!r.ok) throw new Error();
               data = parseFamily(await r.text());
+              if (
+                !data.people.length &&
+                !data.relationships.length &&
+                !data.seedRevision
+              ) {
+                data = parseFamily(JSON.stringify(initialFamily));
+              }
+            } else {
+              data = parseFamily(JSON.stringify(initialFamily));
             }
           } catch {
-            data = emptyFamily();
-            setNotice("Začnite prvou osobou alebo importujte rodinnú zálohu.");
+            data = parseFamily(JSON.stringify(initialFamily));
           }
         }
         if (!cancelled) {
@@ -1202,7 +1218,7 @@ export default function App() {
               </div>
               {family.sources?.length > 0 && (
                 <div className="research-sources">
-                  <h3>Prečítané informačné zdroje</h3>
+                  <h3>Použité zdroje</h3>
                   {family.sources.map((source) => (
                     <article key={source.id}>
                       <span className="question-id">{source.id}</span>
@@ -1217,8 +1233,8 @@ export default function App() {
                         </a>
                         <p>{source.note}</p>
                         <small>
-                          Kontrola: {displayDate(source.checked)} · Informačný
-                          zdroj, nie nález o osobe
+                          Kontrola: {displayDate(source.checked)} · Rozsah
+                          dôkazu je uvedený pri zdroji
                         </small>
                       </div>
                     </article>
@@ -1407,7 +1423,13 @@ export default function App() {
               <button
                 className="button primary"
                 onClick={() => {
-                  setFamily(modal.data);
+                  setFamily({
+                    ...modal.data,
+                    seedRevision: Math.max(
+                      modal.data.seedRevision || 0,
+                      initialFamily.seedRevision,
+                    ),
+                  });
                   setSelectedId(modal.data.people[0]?.id || "");
                   setFocusId(modal.data.people[0]?.id || "");
                   setLoaded(true);

@@ -191,6 +191,10 @@ export function parseFamily(text) {
     relationships: [],
     questions: [],
     sources: [],
+    seedRevision:
+      Number.isSafeInteger(data.seedRevision) && data.seedRevision > 0
+        ? data.seedRevision
+        : 0,
   };
   const relationIds = new Set();
   for (const r of data.relationships) {

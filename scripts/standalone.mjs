@@ -3,7 +3,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import { emptyFamily, parseFamily } from "../src/model.js";
+import { parseFamily } from "../src/model.js";
 
 const { values } = parseArgs({
   options: { data: { type: "string" }, out: { type: "string" } },
@@ -20,7 +20,9 @@ if (values.data && (output === root || output.startsWith(root + "/")))
   );
 const family = values.data
   ? parseFamily(await readFile(resolve(values.data), "utf8"))
-  : emptyFamily();
+  : parseFamily(
+      await readFile(resolve(root, "src/initial-family.json"), "utf8"),
+    );
 const result = await build({
   configFile: false,
   root,

@@ -4,11 +4,15 @@
 
 ## Otvorenie bez inštalácie
 
-V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Verejná verzia neobsahuje osobné rodinné údaje, tie možno pridať alebo importovať v prehliadači.
+V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Na požiadanie používateľa predvolená verzia obsahuje deväť členov rodiny Ďurišovcov a oznámené vzťahy. Narodenia sú vo verejnom nasadení zobrazené iba v rozsahu roku; presné dátumy a súkromný výskumný archív zostávajú mimo repozitára. Údaje a väzby sú označené ako NEOVERENÉ.
 
 ![Ukážka rozhrania s fiktívnymi osobami](docs/preview.png)
 
-## Produkčná webová adresa cez GitHub Pages
+## Produkcia na Verceli
+
+`vercel.json` nastavuje framework Vite, build `npm run build` a výstup `dist`. Pri pripojenom GitHub repozitári sa push do produkčnej vetvy použije na nový deployment. Počiatočná rodina je vložená do klientského balíka a nevyžaduje `/api/family`; neprítomnosť vývojového servera preto nevytvorí prázdny rodokmeň. Kód na GitHube, vytvorený build a živý deployment treba overovať oddelene.
+
+## Alternatíva: GitHub Pages
 
 1. Otvorte [Settings → Pages](https://github.com/pierresk1611/zpoledomu/settings/pages).
 2. V **Build and deployment** nastavte **Source: Deploy from a branch**.
@@ -29,17 +33,17 @@ npm ci --cache /workspace/.npm-cache --no-audit --no-fund
 npm run dev -- --port 3000 --strictPort
 ```
 
-Bez počiatočných údajov sa otvorí prázdny rodokmeň. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
+Predvolená verzia načíta dodaných deväť osôb aj bez dátového servera. Starší prázdny zápis v prehliadači sa pri prvom načítaní doplní; existujúce osoby a úpravy zostanú zachované. Po neskoršom úmyselnom odstránení osôb sa rodina automaticky neobnovuje. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
 
 ```sh
 GENEALOGY_DATA_FILE=/workspace/genealogia-private/rodokmen.json npm run dev -- --port 3000 --strictPort
 ```
 
-Rodinné údaje sú uložené mimo Git repozitára. Premenná obsahuje len lokálnu cestu; osobné údaje ani dokumenty nevkladajte do zdrojových súborov. Vývojový server poskytuje tento voliteľný súbor cez `/api/family` iba v režime `dev`. Aplikácia nemá prihlasovanie; prístup k vývojovému serveru preto patrí iba oprávneným používateľom. Verejné nasadenie s rodinnými údajmi vyžaduje samostatné riešenie prístupu.
+Rodinné údaje sú uložené mimo Git repozitára. Premenná obsahuje len lokálnu cestu; súkromné doklady a presné dátumy nevkladajte do zdrojových súborov. Verejné počiatočné profily v `src/initial-family.json` sú publikované na výslovné požiadanie používateľa. Vývojový server poskytuje tento voliteľný súbor cez `/api/family` iba v režime `dev`. Aplikácia nemá prihlasovanie; prístup k vývojovému serveru preto patrí iba oprávneným používateľom. Verejné nasadenie s rodinnými údajmi vyžaduje samostatné riešenie prístupu.
 
 Zmeny sa ukladajú do `localStorage` daného prehliadača a pôvodu. Nejde o synchronizáciu s pôvodným súborom ani medzi zariadeniami. Exportujte zálohy, najmä pred zmenou prehliadača, importom alebo vymazaním údajov. Poškodené uložené údaje sa neprepisujú automaticky; obnovenie je možné importom platnej zálohy.
 
-Produkčný build neobsahuje súkromný vstupný súbor ani dátový server. V statickej verzii importujte JSON zálohu v prehliadači.
+Produkčný build obsahuje predvolené profily zo `src/initial-family.json`, ale neobsahuje súkromný vstupný súbor ani dátový server. V prehliadači je možné importovať vlastnú JSON zálohu.
 
 ## Samostatný HTML rodokmeň
 
@@ -50,7 +54,7 @@ npm run standalone -- --data /workspace/genealogia-private/rodokmen.json --out /
 python3 tests/standalone_smoke.py /workspace/genealogia-private/rodokmen.html
 ```
 
-Súbor nepotrebuje Vite, API ani internet na zobrazenie rodokmeňa. Výstup s rodinnými údajmi musí zostať mimo Git repozitára. Možno ho stiahnuť a otvoriť v bežnom prehliadači; cloudový testovací Chromium blokuje priame `file:` adresy, preto sa kontroluje cez dočasný server poskytujúci iba tento dokument. Test zahŕňa aj izolovaný rámec bez prístupu k úložisku.
+Súbor nepotrebuje Vite, API ani internet na zobrazenie rodokmeňa. Výstup s podrobným súkromným vstupom musí zostať mimo Git repozitára; verejný index používa iba predvolené profily určené používateľom na publikovanie. Možno ho stiahnuť a otvoriť v bežnom prehliadači; cloudový testovací Chromium blokuje priame `file:` adresy, preto sa kontroluje cez dočasný server poskytujúci iba tento dokument. Test zahŕňa aj izolovaný rámec bez prístupu k úložisku.
 
 V izolovanom náhľade môže byť ukladanie prehliadača zakázané. Aplikácia to označí a umožní úpravy v pamäti; pred zatvorením použite export. Po aktualizácii výskumného vstupu HTML znovu vygenerujte. Existujúce úpravy prehliadača sa tým nesynchronizujú ani automaticky nenahrádzajú.
 

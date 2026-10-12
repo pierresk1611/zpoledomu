@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "title": "Ďurišovci",
+  "people": [
+    {
+      "id": "P001",
+      "firstName": "Peter",
+      "lastName": "Ďuriš",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1987",
+      "deathDate": "",
+      "birthPlace": "Zvolen",
+      "note": "",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P002",
+      "firstName": "Viera",
+      "lastName": "Ďurišová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1951",
+      "deathDate": "",
+      "birthPlace": "Zvolenská Slatina",
+      "note": "",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P003",
+      "firstName": "Rudolf",
+      "lastName": "Ďuriš",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1950-09-12",
+      "deathDate": "2013-11-26",
+      "birthPlace": "",
+      "note": "Rodisko je neisté: používateľ uviedol možno Plzeň. Nájdený náhrobok rodisko neuvádza; jeho údaje nepoužívame na potvrdenie rodného miesta.",
+      "source": "S008 + S010 + S012 — Cintorín Zvolenská Slatina, hrob 240 (pôvodné číslo 434), záznam z_slatina_z.610; fotografia https://mobec.sk/photos/zvolenska_slatina/408.jpg, prístup 12. 10. 2026. Snímku skontrolovala AI; používateľ potvrdil, že ide o jeho otca.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P004",
+      "firstName": "Blanka",
+      "lastName": "",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1982",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P005",
+      "firstName": "Mária",
+      "lastName": "",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1983",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P006",
+      "firstName": "Mária",
+      "lastName": "Kulichová",
+      "birthName": "Gašparíková",
+      "gender": "female",
+      "birthDate": "1921-10-27",
+      "deathDate": "1983-12-08",
+      "birthPlace": "",
+      "note": "Na náhrobku je uvedené rodné priezvisko Gašparíková. Pôvodné rodinné podanie uvádzalo Gašperíková; variant zachovaný v histórii. Podľa rodinného podania pochádzala z Čierneho Balogu; rodisko zatiaľ nie je doložené matrikou.",
+      "source": "S008 + S009 + S011 — Cintorín Zvolenská Slatina, hrob 1549 (pôvodné číslo 676), záznam z_slatina_z.371; fotografia https://mobec.sk/photos/zvolenska_slatina/258.jpg, prístup 12. 10. 2026. Náhrobok vizuálne skontrolovala AI; totožnosť podporilo potvrdenie rodiny.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P007",
+      "firstName": "Jozef",
+      "lastName": "Kulich",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1919-10-18",
+      "deathDate": "1970-12-16",
+      "birthPlace": "",
+      "note": "Dátumy sú čitateľné na spoločnom náhrobku s Máriou Kulichovou. Spoločný hrob sám osebe nedokazuje sobáš; rodičovská väzba k Viere zatiaľ pochádza z rodinného podania.",
+      "source": "S008 + S009 + S011 — Cintorín Zvolenská Slatina, hrob 1549 (pôvodné číslo 676), záznam z_slatina_z.372; fotografia https://mobec.sk/photos/zvolenska_slatina/258.jpg, prístup 12. 10. 2026. Náhrobok vizuálne skontrolovala AI; totožnosť podporilo potvrdenie rodiny.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P008",
+      "firstName": "Alžbeta",
+      "lastName": "Ďurišová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Rodné priezvisko je neisté: Čakanová/Čekanová. Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P009",
+      "firstName": "Rudolf",
+      "lastName": "Ďuriš",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "L001",
+      "type": "parent",
+      "from": "P002",
+      "to": "P001",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L002",
+      "type": "parent",
+      "from": "P003",
+      "to": "P001",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L003",
+      "type": "sibling",
+      "from": "P004",
+      "to": "P001",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L004",
+      "type": "sibling",
+      "from": "P005",
+      "to": "P001",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L005",
+      "type": "parent",
+      "from": "P006",
+      "to": "P002",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L006",
+      "type": "parent",
+      "from": "P007",
+      "to": "P002",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L007",
+      "type": "parent",
+      "from": "P008",
+      "to": "P003",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L008",
+      "type": "parent",
+      "from": "P009",
+      "to": "P003",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L009",
+      "type": "parent",
+      "from": "P002",
+      "to": "P004",
+      "kind": "adoptive",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L010",
+      "type": "parent",
+      "from": "P003",
+      "to": "P004",
+      "kind": "adoptive",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L011",
+      "type": "parent",
+      "from": "P002",
+      "to": "P005",
+      "kind": "adoptive",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L012",
+      "type": "parent",
+      "from": "P003",
+      "to": "P005",
+      "kind": "adoptive",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    },
+    {
+      "id": "L013",
+      "type": "sibling",
+      "from": "P004",
+      "to": "P005",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "Vzťah uvedený používateľom (S001–S003); zatiaľ bez listinného dokladu."
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "title": "Materská vetva · Čierny Balog",
+      "detail": "Máriu (1921–1983), rod. Gašparíkovú, a Jozefa (1919–1970) sme identifikovali na základe indexu, náhrobku a potvrdenia rodiny. Nasleduje zistenie ich rodičov z rodného alebo sobášneho zápisu; Čierny Balog je zatiaľ doložený iba rodinným podaním.",
+      "status": "Prvé nálezy podložené"
+    },
+    {
+      "id": "Q002",
+      "title": "Otcovská vetva · Sobrance a Česko",
+      "detail": "Rudolf (1950–2013) bol identifikovaný podľa presného dátumu narodenia, náhrobku a potvrdenia syna. Rodisko Plzeň aj rodné priezvisko Alžbety Čakanová/Čekanová ostávajú neisté. Predkov Rudolfa zatiaľ dokladá rodinné podanie.",
+      "status": "Totožnosť otca potvrdená"
+    },
+    {
+      "id": "Q003",
+      "title": "Adoptívne väzby sestier",
+      "detail": "Mária: opravený rok 1983. Obe sestry adoptovali Viera a Rudolf, odhadom v rokoch 1986/1987. Biologickí rodičia zatiaľ nie sú uvedení.",
+      "status": "Doplnené používateľom"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S004",
+      "title": "Matrika Zvolenská Slatina",
+      "url": "https://www.zvolenskaslatina.sk/urad/matrika/",
+      "note": "Obec uvádza vydávanie výpisov členom rodiny. Podklad pre získanie dokladu Viery; nevideli sme jej zápis.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S005",
+      "title": "Banská Bystrica · zbierky matrík",
+      "url": "https://www.minv.sk/?zoznam-zbierok",
+      "note": "Overený zoznam uvádza Zbierku cirkevných matrík (1377) a zbierky prvopisov i druhopisov v pracovisku Zvolen. Rozsah konkrétnej knihy a signatúra zatiaľ nezistené.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S006",
+      "title": "Archív Michalovce · územná pôsobnosť",
+      "url": "https://www.minv.sk/?sake-pmi-uzemna-posobnost",
+      "note": "Oficiálna stránka výslovne uvádza okresy Michalovce a Sobrance. Pôsobnosť nenahrádza zistenie konkrétneho fondu.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S007",
+      "title": "Archív Michalovce · zachované dokumenty",
+      "url": "https://www.minv.sk/?sake-pmi-ake-dokumenty-u-nas-najdete",
+      "note": "Prehľad uvádza štátne matriky 1895–1906/1914 vo fondoch notárskych úradov a povojnové fondy národných výborov. Konkrétna kniha alebo spis rodiny ešte neboli čítané.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S008",
+      "title": "Cintorín Zvolenská Slatina · verejný index",
+      "url": "https://mobec.sk/zvolenskaslatina#cintorin",
+      "note": "Prehľadaný index zosnulých: prefix Kulich 58 záznamov, Ďuriš 5, Gašperík 0. Relevantné záznamy .371, .372 a .610 skontrolované aj na fotografiách náhrobkov. Rodné priezviská treba hľadať oddelene od súčasného priezviska.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S009",
+      "title": "Náhrobok Márie a Jozefa Kulichových",
+      "url": "https://mobec.sk/photos/zvolenska_slatina/258.jpg",
+      "note": "Hrob 1549, pôvodné číslo 676. AI prečítala mená, rodné priezvisko Gašparíková a životné dátumy; rodina potvrdila zhodu úmrtí. Nie je to rodný ani sobášny matričný zápis.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S010",
+      "title": "Náhrobok Rudolfa Ďuriša",
+      "url": "https://mobec.sk/photos/zvolenska_slatina/408.jpg",
+      "note": "Hrob 240, pôvodné číslo 434. Index uvádza narodenie 12. 9. 1950 a úmrtie 26. 11. 2013; fotografia zodpovedá údajom a používateľ výslovne potvrdil totožnosť otca.",
+      "checked": "2026-10-12"
+    }
+  ],
+  "seedRevision": 1
+}
