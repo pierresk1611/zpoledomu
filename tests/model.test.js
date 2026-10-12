@@ -193,3 +193,19 @@ test("shows a parent's sister without assigning grandparents as her parents", ()
   assert.equal(relatives(family, "d").parents.length, 0);
   assert.equal(layout.edges.some(r => r.from === "a" && r.to === "d"), false);
 });
+
+test("record corrections fill unchanged profiles without overwriting user dates", () => {
+  const before = parseFamily(JSON.stringify({ ...fixture(), title: "Test family", seedRevision: 2 }));
+  const seed = { ...before, seedRevision: 3, people: before.people.map(p =>
+    p.id === "a" ? { ...p, birthDate: "1922-08-10", deathDate: "1986-05-30", source: "Headstone", status: "PODLOŽENÝ ZÁVER" } : p),
+    seedUpdates: [{ revision: 3, updatePeople: [{ personId: "a",
+      ifUnchanged: { birthDate: "", deathDate: "", source: "", status: "NEOVERENÉ" },
+      fields: ["birthDate", "deathDate", "source", "status"] }] }] };
+  const updated = applySeedUpdates(before, seed);
+  assert.equal(updated.people[0].birthDate, "1922-08-10");
+  assert.equal(updated.people[0].status, "PODLOŽENÝ ZÁVER");
+  const edited = { ...before, people: before.people.map(p => p.id === "a" ? { ...p, birthDate: "1923" } : p) };
+  assert.equal(applySeedUpdates(edited, seed).people[0].birthDate, "1923");
+  assert.equal(applySeedUpdates(edited, seed).people[0].deathDate, "");
+  assert.equal(applySeedUpdates(removePerson(before, "a"), seed).people.some(p => p.id === "a"), false);
+});

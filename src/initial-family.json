@@ -97,14 +97,14 @@
       "id": "P008",
       "firstName": "Alžbeta",
       "lastName": "Ďurišová",
-      "birthName": "",
+      "birthName": "Čakanová",
       "gender": "female",
-      "birthDate": "",
-      "deathDate": "",
+      "birthDate": "1925-01-26",
+      "deathDate": "2019-06-12",
       "birthPlace": "",
-      "note": "Rodné priezvisko je neisté: Čakanová/Čekanová. Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme.",
-      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
-      "status": "NEOVERENÉ"
+      "note": "Rodné priezvisko je neisté: Čakanová/Čekanová. Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme.\nS019–S020: spoločný hrob C/148 v Sobranciach. Náhrobok uvádza Alžbeta rod. Čakanová, *26. 1. 1925, †12. 6. 2019, a označuje ju ako manželku Rudolfa Ďuriša. Pôvodný neistý variant Čekanová zostáva v histórii. Náhrobok skontrolovala AI; rodisko a matričný zápis zatiaľ nepoznáme.",
+      "source": "S019 + S020 — Virtuálny cintorín, Sobrance, hrob C/148; https://www.virtualnycintorin.sk/hrob/420333; fotografia https://www.virtualnycintorin.sk/obrazok/hm/FXMzMwNTIzMU8xNzQzNDUx; prístup 12. 10. 2026. Dátumy a nápis manželka prečítané z náhrobku AI; totožnosť je podložený záver z rodinných údajov a hrobu.",
+      "status": "PODLOŽENÝ ZÁVER"
     },
     {
       "id": "P009",
@@ -112,12 +112,12 @@
       "lastName": "Ďuriš",
       "birthName": "",
       "gender": "male",
-      "birthDate": "",
-      "deathDate": "",
+      "birthDate": "1922-08-10",
+      "deathDate": "1986-05-30",
       "birthPlace": "",
-      "note": "Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme. Používateľ potvrdil pochovanie v Sobranciach (S015); životné dátumy a konkrétny hrob zatiaľ nepoznáme.",
-      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
-      "status": "NEOVERENÉ"
+      "note": "Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme. Používateľ potvrdil pochovanie v Sobranciach (S015); životné dátumy a konkrétny hrob zatiaľ nepoznáme.\nS019–S020: hrob C/148 v Sobranciach. Fotografia náhrobku uvádza Rudolf Ďuriš, *10. 8. 1922, †30. 5. 1986, a jeho manželku Alžbetu, rod. Čakanovú. Zhodné meno, miesto pochovania, manželka a rodné priezvisko podporujú identifikáciu rodiny. Náhrobok skontrolovala AI; rodný ani sobášny matričný zápis zatiaľ nebol prečítaný.",
+      "source": "S019 + S020 — Virtuálny cintorín, Sobrance, hrob C/148; https://www.virtualnycintorin.sk/hrob/420333; fotografia https://www.virtualnycintorin.sk/obrazok/hm/FXMzMwNTIzMU8xNzQzNDUx; prístup 12. 10. 2026. Dátumy a nápis manželka prečítané z náhrobku AI; totožnosť je podložený záver z rodinných údajov a hrobu.",
+      "status": "PODLOŽENÝ ZÁVER"
     },
     {
       "id": "P010",
@@ -325,6 +325,15 @@
       "kind": "unknown",
       "status": "NEOVERENÉ",
       "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu."
+    },
+    {
+      "id": "L018",
+      "type": "partner",
+      "from": "P009",
+      "to": "P008",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S020 — Náhrobok v Sobranciach, C/148: Rudolf Ďuriš „a manželka Alžbeta rod. Čakanová“. Sobášny matričný zápis zatiaľ nebol prečítaný."
     }
   ],
   "questions": [
@@ -354,9 +363,15 @@
     },
     {
       "id": "Q005",
-      "title": "Narodenia a úmrtia otcových rodičov",
-      "detail": "Hľadáme dátumy narodenia a úmrtia Rudolfa Ďuriša staršieho a Alžbety (možno Čakanová/Čekanová). Rodina potvrdila Rudolfovo pochovanie v Sobranciach. Cintoriny.sk: 8 menovcov Rudolf Ďuriš a 15 Alžbiet Ďurišových, detaily 15 záznamov skontrolované; žiadna totožnosť zatiaľ potvrdená. Sobrance neboli nájdené vo vyhľadávaní cintoriny.sk ani v zozname pohrebísk Košického kraja na pohrebiska.sk. Web mesta vyžaduje CAPTCHA. Dátumy starých rodičov zostávajú otvorené.",
+      "title": "Predchádzajúce hľadanie v iných indexoch",
+      "detail": "Pred nálezom hrobu C/148: Hľadáme dátumy narodenia a úmrtia Rudolfa Ďuriša staršieho a Alžbety (možno Čakanová/Čekanová). Rodina potvrdila Rudolfovo pochovanie v Sobranciach. Cintoriny.sk: 8 menovcov Rudolf Ďuriš a 15 Alžbiet Ďurišových, detaily 15 záznamov skontrolované; žiadna totožnosť zatiaľ potvrdená. Sobrance neboli nájdené vo vyhľadávaní cintoriny.sk ani v zozname pohrebísk Košického kraja na pohrebiska.sk. Web mesta vyžaduje CAPTCHA. Dátumy starých rodičov zostávajú otvorené.",
       "status": "Prehľadané dostupné indexy · bez potvrdenej zhody"
+    },
+    {
+      "id": "Q006",
+      "title": "Rudolf a Alžbeta · hrob C/148",
+      "detail": "Na základe výpisu používateľa bol otvorený pôvodný detail aj fotografia: Rudolf 10. 8. 1922 – 30. 5. 1986; Alžbeta, rod. Čakanová, 26. 1. 1925 – 12. 6. 2019. Nápis uvádza manželku. Nasleduje rodný alebo sobášny matričný zápis pre rodiská a rodičov; tieto údaje hrob neposkytuje.",
+      "status": "Dátumy a manželstvo podložené náhrobkom"
     }
   ],
   "sources": [
@@ -422,9 +437,23 @@
       "url": "https://www.pohrebiska.sk/vyhladanie_sk_kraj_ma.jsp?kraj=KE",
       "note": "Prečítaný zoznam evidovaných pohrebísk; Sobrance v zozname nie sú. Nejde o dôkaz, že Rudolf v Sobranciach nie je pochovaný. Osobné záznamy pre Sobrance tu neboli dostupné.",
       "checked": "2026-10-12"
+    },
+    {
+      "id": "S019",
+      "title": "Rudolf a Alžbeta Ďurišovci · hrob C/148",
+      "url": "https://www.virtualnycintorin.sk/hrob/420333",
+      "note": "Detail hrobu skutočne prečítaný: Rudolf †30. 5. 1986, Alžbeta †12. 6. 2019. Používateľ dodal stopu a potvrdil Rudolfovo pochovanie v Sobranciach; fotografia uvádza narodenia a rodné priezvisko.",
+      "checked": "2026-10-12"
+    },
+    {
+      "id": "S020",
+      "title": "Náhrobok Rudolfa a Alžbety · dátumy a Čakanová",
+      "url": "https://www.virtualnycintorin.sk/obrazok/hm/FXMzMwNTIzMU8xNzQzNDUx",
+      "note": "AI prečítala Rudolf *10. 8. 1922 †30. 5. 1986; „a manželka Alžbeta rod. Čakanová“ *26. 1. 1925 †12. 6. 2019. Ide o náhrobok, nie rodný ani sobášny matričný zápis.",
+      "checked": "2026-10-12"
     }
   ],
-  "seedRevision": 2,
+  "seedRevision": 3,
   "seedUpdates": [
     {
       "revision": 2,
@@ -457,6 +486,66 @@
       "sources": [
         "S017",
         "S018"
+      ]
+    },
+    {
+      "revision": 3,
+      "people": [],
+      "relationships": [
+        "L018"
+      ],
+      "sources": [
+        "S019",
+        "S020"
+      ],
+      "questions": [
+        "Q006"
+      ],
+      "updatePeople": [
+        {
+          "personId": "P009",
+          "ifUnchanged": {
+            "birthDate": "",
+            "deathDate": "",
+            "birthName": "",
+            "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+            "status": "NEOVERENÉ"
+          },
+          "fields": [
+            "birthDate",
+            "deathDate",
+            "birthName",
+            "source",
+            "status"
+          ]
+        },
+        {
+          "personId": "P008",
+          "ifUnchanged": {
+            "birthDate": "",
+            "deathDate": "",
+            "birthName": "",
+            "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+            "status": "NEOVERENÉ"
+          },
+          "fields": [
+            "birthDate",
+            "deathDate",
+            "birthName",
+            "source",
+            "status"
+          ]
+        }
+      ],
+      "appendNotes": [
+        {
+          "personId": "P009",
+          "text": "S019–S020: hrob C/148 v Sobranciach. Fotografia náhrobku uvádza Rudolf Ďuriš, *10. 8. 1922, †30. 5. 1986, a jeho manželku Alžbetu, rod. Čakanovú. Zhodné meno, miesto pochovania, manželka a rodné priezvisko podporujú identifikáciu rodiny. Náhrobok skontrolovala AI; rodný ani sobášny matričný zápis zatiaľ nebol prečítaný."
+        },
+        {
+          "personId": "P008",
+          "text": "S019–S020: spoločný hrob C/148 v Sobranciach. Náhrobok uvádza Alžbeta rod. Čakanová, *26. 1. 1925, †12. 6. 2019, a označuje ju ako manželku Rudolfa Ďuriša. Pôvodný neistý variant Čekanová zostáva v histórii. Náhrobok skontrolovala AI; rodisko a matričný zápis zatiaľ nepoznáme."
+        }
       ]
     }
   ]

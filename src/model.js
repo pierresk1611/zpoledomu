@@ -297,6 +297,14 @@ export function applySeedUpdates(family, rawSeed) {
       const source = seed.sources.find(s => s.id === id);
       if (source) next.sources.push(source);
     }
+    for (const item of update.updatePeople || []) {
+      const person = seed.people.find(p => p.id === item.personId);
+      if (!person) continue;
+      next.people = next.people.map(p => p.id === item.personId &&
+        Object.entries(item.ifUnchanged || {}).every(([key, value]) => p[key] === value)
+        ? { ...p, ...Object.fromEntries((item.fields || []).map(key => [key, person[key]])) }
+        : p);
+    }
     for (const item of update.appendNotes || []) next.people = next.people.map(p => p.id === item.personId && !p.note.includes(item.text) ? { ...p, note: [p.note,item.text].filter(Boolean).join('\n') } : p);
   }
   return { ...next, seedRevision: seed.seedRevision };

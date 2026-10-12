@@ -4,7 +4,7 @@
 
 ## Otvorenie bez inštalácie
 
-V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Na požiadanie používateľa predvolená verzia obsahuje deväť členov rodiny Ďurišovcov a oznámené vzťahy. Narodenia sú vo verejnom nasadení zobrazené iba v rozsahu roku; presné dátumy a súkromný výskumný archív zostávajú mimo repozitára. Údaje a väzby sú označené ako NEOVERENÉ.
+V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Na požiadanie používateľa predvolená verzia obsahuje trinásť členov rodiny Ďurišovcov a oznámené vzťahy. Narodenia žijúcich alebo nepotvrdených osôb sú vo verejnom nasadení iba v rozsahu roku. Päť identifikovaných zosnulých má dátumy podložené cintorínskymi záznamami a náhrobkami; súkromné presné narodenia živých a výskumný archív zostávajú mimo repozitára. Rodinné podanie je označené ako NEOVERENÉ, podložené závery majú citované zdroje.
 
 ![Ukážka rozhrania s fiktívnymi osobami](docs/preview.png)
 

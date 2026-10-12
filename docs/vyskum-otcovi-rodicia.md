@@ -1,6 +1,17 @@
 # Ďurišovci — výskum otcových rodičov
 
-Stav k 12. 10. 2026. Hľadané osoby sú Rudolf Ďuriš starší a Alžbeta Ďurišová, možno rod. Čakanová alebo Čekanová. Ich syn Rudolf sa narodil 12. 9. 1950; jeho životné dátumy sa nesmú preniesť na starého otca. Používateľ potvrdil pochovanie starého otca v Sobranciach. Miesto pochovania Alžbety nepoznáme.
+Stav k 12. 10. 2026.
+
+Po konkrétnej stope od používateľa bol prečítaný [detail hrobu C/148 v Sobranciach](https://www.virtualnycintorin.sk/hrob/420333) aj jeho [fotografia](https://www.virtualnycintorin.sk/obrazok/hm/FXMzMwNTIzMU8xNzQzNDUx).
+
+| Osoba | Narodenie na náhrobku | Úmrtie na náhrobku a v indexe |
+| --- | --- | --- |
+| Rudolf Ďuriš starší | 10. 8. 1922 | 30. 5. 1986 |
+| Alžbeta Ďurišová, rod. Čakanová | 26. 1. 1925 | 12. 6. 2019 |
+
+Nápis uvádza „a manželka Alžbeta rod. Čakanová“. Fotografia podporuje presné dátumy aj rodné priezvisko; AI ju vizuálne prečítala. Totožnosť v rodine hodnotíme ako podložený záver na základe rodinných údajov, rovnakého miesta pochovania, mien a rodného priezviska. Rodný a sobášny matričný zápis zatiaľ nebol prečítaný.
+
+Predchádzajúce pátranie a obmedzenia zdrojov: Hľadané osoby sú Rudolf Ďuriš starší a Alžbeta Ďurišová, možno rod. Čakanová alebo Čekanová. Ich syn Rudolf sa narodil 12. 9. 1950; jeho životné dátumy sa nesmú preniesť na starého otca. Používateľ potvrdil pochovanie starého otca v Sobranciach. Nový detail a fotografia potvrdili pochovanie oboch v rovnakom hrobe C/148.
 
 | Zdroj a skutočne vykonané hľadanie | Výsledok a obmedzenie |
 | --- | --- |
@@ -12,8 +23,8 @@ Stav k 12. 10. 2026. Hľadané osoby sú Rudolf Ďuriš starší a Alžbeta Ďur
 | [Mesto Sobrance](https://www.sobrance.sk/) | Presmerovanie na CAPTCHA; obsah mesta a evidencia hrobov neboli prečítané. |
 | [Porta fontium](https://www.portafontium.eu/) | HTTP 503; žiadny český matričný zápis nebol získaný. |
 
-Dátumy narodenia a úmrtia otcových rodičov zatiaľ nie sú doložené. Menovci nie sú noví príbuzní. Údaje 1. januára v indexe môžu označovať iba známy rok; bez pôvodného zápisu alebo náhrobku ich nepovažujeme za presný dátum.
+Dátumy uvedené hore boli zistené až z nového zdroja S019–S020. Menovci z predchádzajúceho hľadania nie sú noví príbuzní. Údaje 1. januára v indexe môžu označovať iba známy rok; bez pôvodného zápisu alebo náhrobku ich nepovažujeme za presný dátum.
 
-Ďalší konkrétny podklad je evidencia Rudolfovho hrobu v Sobranciach. Treba v nej zistiť dátumy a prípadné ďalšie osoby v tom istom hrobe; ani spoločný hrob sám osebe nedokazuje manželstvo. Na potvrdenie totožnosti Alžbety treba rodné priezvisko, rodinnú väzbu alebo zhodujúci sa doklad, nie iba rovnaké meno.
+Ďalší konkrétny podklad je sobášny zápis Rudolfa a Alžbety alebo rodný zápis ich syna Rudolfa (12. 9. 1950). Môže pomôcť určiť rodiská a rodičov. Miesto sobáša nepoznáme; pobyty Praha, Plzeň a Sobrance nemusia byť rodiskami ani miestom sobáša. FamilySearch zostáva blokovaný ochranou stránky a Porta fontium vrátilo 503. Žiadny konkrétny matričný zápis ešte nebol získaný.
 
 Rodinná oprava: otec mal **tri** sestry — Ruženu, Marcelu Solárovú a Helenu Salinkovú. Pôvodný počet štyri bol používateľom opravený. Do webu sú pridané ich oznámené súrodenecké väzby; rodičia a dátumy sa z nich neodvodzujú.
