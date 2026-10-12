@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+*.local
+*.private.json
+*.private.html
+test-results/
