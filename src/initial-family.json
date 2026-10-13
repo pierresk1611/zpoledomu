@@ -167,7 +167,7 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žila v Malackách; tento údaj nepotvrdzuje úmrtie. Dátumy, súčasný pobyt zatiaľ nie sú doložené matrikou. Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci.",
+      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žila v Malackách; tento údaj nepotvrdzuje úmrtie. Dátumy, súčasný pobyt zatiaľ nie sú doložené matrikou. Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci.\nS033 + S035: Používateľ potvrdil, že manžel Jozef bol lekár, a dcéru Sylviu Offei Kwatya. Rodina ju volala Helena/Hela. Na fotografii spoločného malackého hrobu je Ing. Elena Salinkova (19.5.1949–22.4.1999); podobu Elena v dokladoch používateľ nepozná. Tieto dátumy zatiaľ nie sú prevzaté do profilu Heleny, kým sa potvrdí jej totožnosť.",
       "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     },
@@ -222,6 +222,188 @@
       "note": "V sčítaní 1930 syn Márie Kulichovej v domácnosti 3, dome 197. Súrodenecký vzťah k Jozefovi je podložený spoločnou matkou v zázname; otec a úmrtie zatiaľ nezistené.",
       "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný.",
       "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P018",
+      "firstName": "Pavel",
+      "lastName": "Maľa",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Manžel Márie Maľovej. Používateľ následne doplnil priezvisko Maľa. Dátumy a životný stav nepoznáme.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P019",
+      "firstName": "Pavel",
+      "lastName": "",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Manžel Ruženy. Priezvisko, dátumy a životný stav nepoznáme; odlišná osoba od Pavla Maľu P018. Pražský pobyt bol oznámený iba pri Ružene.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P020",
+      "firstName": "Jozef",
+      "lastName": "Solár",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Manžel Marcely Solárovej podľa používateľa. Dátumy a životný stav nepoznáme; menovcov z cintorínskych indexov zatiaľ nemožno priradiť.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P021",
+      "firstName": "Jozef",
+      "lastName": "Salinka",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1949-01-03",
+      "deathDate": "2022-12-19",
+      "birthPlace": "",
+      "note": "Manžel Heleny Salinkovej a otec Sylvie Offei Kwatya podľa používateľa. Rodina potvrdila, že bol lekár. Totožnosť s MUDr. Jozefom Salinkom v starom cintoríne Malacky je podložený záver; dátumy sú z verejnej karty. Na staršej fotografii hrobu je iba Ing. Elena Salinkova. Rodné miesto a matričný zápis nepoznáme.",
+      "source": "S031 + S033 + S035 — Manžel Heleny podľa rodiny; používateľ potvrdil povolanie lekára. Verejná karta starého cintorína Malacky, hrob1198000618, uvádza MUDr. Jozef Salinka, 3.1.1949–19.12.2022. Zhoda mena, povolania a oznámených Malaciek podporuje identifikáciu; matričný zápis nebol prečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P022",
+      "firstName": "Marianna",
+      "lastName": "Okolenská",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dcéra Márie Maľovej a Pavla Maľu. Používateľ uviedol dnešné priezvisko Okolenská; meno manžela, rodné priezvisko, dátumy a životný stav nezistené.\nS034: Používateľ uviedol manžela Juraja Okolenského a spoločný pobyt vo Veľkej Čalomiji. Jej deti sú Patrik a Vanesa; otcovstvo Juraja zatiaľ nebolo výslovne uvedené.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P023",
+      "firstName": "Denisa",
+      "lastName": "Baranová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dcéra Márie Maľovej a Pavla Maľu. Používateľ uviedol dnešné priezvisko Baranová; meno manžela, rodné priezvisko, dátumy a životný stav nezistené.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P024",
+      "firstName": "Pavel",
+      "lastName": "",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Syn Márie Maľovej a Pavla Maľu; odlišný od svojho otca P018. Priezvisko, dátumy, partner a životný stav nezistené.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P025",
+      "firstName": "Juraj",
+      "lastName": "Okolenský",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Manžel Marianny Okolenskej. Podľa používateľa spolu žijú vo Veľkej Čalomiji; nejde o doložené rodisko. Otcovstvo k jej deťom zatiaľ nebolo výslovne potvrdené.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P026",
+      "firstName": "Patrik",
+      "lastName": "",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dieťa Marianny Okolenskej podľa používateľa. Priezvisko, otec, dátumy a životný stav zatiaľ nezistené.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P027",
+      "firstName": "Vanesa",
+      "lastName": "",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dieťa Marianny Okolenskej podľa používateľa. Priezvisko, otec, dátumy a životný stav zatiaľ nezistené.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P028",
+      "firstName": "Ľuboš",
+      "lastName": "Baran",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Manžel Denisy Baranovej a otec Ľuboša P029 a Roberta P030 podľa používateľa. Odlišná osoba od rovnomenného syna.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P029",
+      "firstName": "Ľuboš",
+      "lastName": "",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Odlišná osoba od otca P028. Priezvisko, dátumy a životný stav zatiaľ nezistené.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P030",
+      "firstName": "Robert",
+      "lastName": "",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Priezvisko, dátumy a životný stav zatiaľ nezistené.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P031",
+      "firstName": "Sylvia",
+      "lastName": "Offei Kwatya",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dcéra Heleny Salinkovej a Jozefa Salinku podľa používateľa. Vydala sa v UK; používateľ uviedol dnešné priezvisko Offei Kwatya. Krstné meno manžela, dátumy, rodné priezvisko a súčasný pobyt zatiaľ nezistené. Nie je doložené, že bola jediným dieťaťom.",
+      "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná.",
+      "status": "NEOVERENÉ"
     }
   ],
   "relationships": [
@@ -385,7 +567,8 @@
       "to": "P008",
       "kind": "unknown",
       "status": "PODLOŽENÝ ZÁVER",
-      "source": "S020 — Náhrobok v Sobranciach, C/148: Rudolf Ďuriš „a manželka Alžbeta rod. Čakanová“. Sobášny matričný zápis zatiaľ nebol prečítaný."
+      "source": "S020 — Náhrobok v Sobranciach, C/148: Rudolf Ďuriš „a manželka Alžbeta rod. Čakanová“. Sobášny matričný zápis zatiaľ nebol prečítaný.",
+      "union": "married"
     },
     {
       "id": "L019",
@@ -494,6 +677,202 @@
       "kind": "unknown",
       "status": "PODLOŽENÝ ZÁVER",
       "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L031",
+      "type": "partner",
+      "from": "P003",
+      "to": "P002",
+      "kind": "unknown",
+      "source": "S030 — Používateľ 13. 10. 2026 výslovne uviedol Vieru ako manželku Rudolfa. Rodinné podanie, bez sobášneho dokladu.",
+      "status": "NEOVERENÉ",
+      "union": "married"
+    },
+    {
+      "id": "L032",
+      "type": "partner",
+      "from": "P010",
+      "to": "P018",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ",
+      "union": "married"
+    },
+    {
+      "id": "L033",
+      "type": "partner",
+      "from": "P011",
+      "to": "P019",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ",
+      "union": "married"
+    },
+    {
+      "id": "L034",
+      "type": "partner",
+      "from": "P012",
+      "to": "P020",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ",
+      "union": "married"
+    },
+    {
+      "id": "L035",
+      "type": "partner",
+      "from": "P013",
+      "to": "P021",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ",
+      "union": "married"
+    },
+    {
+      "id": "L036",
+      "type": "parent",
+      "from": "P010",
+      "to": "P022",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L037",
+      "type": "parent",
+      "from": "P018",
+      "to": "P022",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L038",
+      "type": "parent",
+      "from": "P010",
+      "to": "P023",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L039",
+      "type": "parent",
+      "from": "P018",
+      "to": "P023",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L040",
+      "type": "parent",
+      "from": "P010",
+      "to": "P024",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L041",
+      "type": "parent",
+      "from": "P018",
+      "to": "P024",
+      "kind": "unknown",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L042",
+      "type": "partner",
+      "from": "P022",
+      "to": "P025",
+      "kind": "unknown",
+      "union": "married",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L043",
+      "type": "partner",
+      "from": "P023",
+      "to": "P028",
+      "kind": "unknown",
+      "union": "married",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L044",
+      "type": "parent",
+      "from": "P022",
+      "to": "P026",
+      "kind": "unknown",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L045",
+      "type": "parent",
+      "from": "P022",
+      "to": "P027",
+      "kind": "unknown",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L046",
+      "type": "parent",
+      "from": "P023",
+      "to": "P029",
+      "kind": "unknown",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L047",
+      "type": "parent",
+      "from": "P028",
+      "to": "P029",
+      "kind": "unknown",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L048",
+      "type": "parent",
+      "from": "P023",
+      "to": "P030",
+      "kind": "unknown",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L049",
+      "type": "parent",
+      "from": "P028",
+      "to": "P030",
+      "kind": "unknown",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "L050",
+      "type": "parent",
+      "from": "P013",
+      "to": "P031",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná."
+    },
+    {
+      "id": "L051",
+      "type": "parent",
+      "from": "P021",
+      "to": "P031",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná."
     }
   ],
   "questions": [
@@ -556,6 +935,30 @@
       "title": "Ďalší zápis · Jozef 1919 a Mária 1900",
       "detail": "Vyhľadať rodný zápis Jozefa z 18. 10. 1919 v Zvolenskej Slatine a sobáš Márie z 2. 11. 1920 podľa sčítacieho hárku. Jozef sa narodil pred zapísaným sobášom; manžela nemožno automaticky označiť za jeho otca. Zistiť rodné priezvisko Márie, manžela, rodičov a vysvetlenie poznámky o Kanade.",
       "status": "Konkrétne dátumy pre pokračovanie v matrike"
+    },
+    {
+      "id": "Q011",
+      "title": "Manželia a deti tetiek",
+      "detail": "Viera a Rudolf sú manželia podľa používateľa (S030). Mária Maľová + Pavel Maľa: deti Marianna Okolenská, Denisa Baranová a Pavel. Ružena + Pavel (priezvisko nezistené); Marcela + Jozef Solár; Helena + Jozef Salinka. Pridané oznámené osoby, partnerské a rodičovské väzby (S031). Mená detí ďalších troch párov zatiaľ nepoznáme.",
+      "status": "Doplnené rodinné podanie · ďalšie deti hľadáme"
+    },
+    {
+      "id": "Q012",
+      "title": "Hľadanie detí Ruženy, Marcely a Heleny",
+      "detail": "S032–S035: Používateľ potvrdil lekára Jozefa Salinku a ich dcéru Sylviu Offei Kwatya. Zhoda mena, povolania a Malaciek podporuje priradenie MUDr. Jozefa (3.1.1949–19.12.2022). Na staršej fotografii je Ing. Elena (19.5.1949–22.4.1999); rodina pozná Helenu/Helu a dokladové meno Elena nepotvrdila. Helenine dátumy zostávajú nevyplnené. Verejná kronika neuvádza deti; Sylvia je rodinné podanie. Ďalšie deti tohto páru, Ruženy a Marcely zatiaľ nezistené.",
+      "status": "Sylvia doplnená · Jozef podložený záver · Elena/Helena otvorené"
+    },
+    {
+      "id": "Q013",
+      "title": "Rodiny Marianny a Denisy",
+      "detail": "Marianna + Juraj Okolenský žijú podľa používateľa vo Veľkej Čalomiji. Patrik a Vanesa sú oznámené Mariannine deti; otec zatiaľ nepotvrdený. Denisa + Ľuboš Baran majú synov Ľuboša a Roberta. Rovnomenní otcovia a synovia sú samostatné osoby; priezviská detí a dátumy zatiaľ neboli oznámené.",
+      "status": "Doplnené rodinné podanie S034"
+    },
+    {
+      "id": "Q014",
+      "title": "Helena / Elena a Sylvia",
+      "detail": "Rodina uviedla dcéru Sylviu Offei Kwatya, vydatú v UK, a potvrdila, že otec bol lekár. Meno a dátumy Ing. Eleny Salinkovej z malackého náhrobku treba porovnať s dokladom Heleny. Meno manžela Sylvie a ďalší súrodenci nezistení.",
+      "status": "Doplnená dcéra · meno matky v dokladoch otvorené"
     }
   ],
   "sources": [
@@ -684,9 +1087,23 @@
       "url": "https://slovakiana.sk/scitacie-harky/cair-ko28dhx",
       "note": "Originál hárku 1141/132, druhá strana: domácnosť 3, dom 197 Zvolenská Slatina. Mária Kulichová (1900), prednostka; Jozef, syn, 18. 10. 1919; Anna, dcéra, 1921; Ján, syn, 1924; Martin, syn, 1926. Rodisko pri všetkých Zvolenská Slatina. Zhoda Jozefovho mena a celého dátumu narodenia podporuje identifikáciu s P007. Poznámka „muž v Kanade“ neuvádza otca menom. Nie je to matričný zápis.",
       "checked": "2026-10-13"
+    },
+    {
+      "id": "S032",
+      "title": "Hľadanie rodín tetiek · verejné indexy",
+      "url": "https://www.cintoriny.sk/src/index.php",
+      "note": "Cintoriny.sk: Helena Salinková 0, Marcela Solárová 0; Jozef Solár 12 výsledkov vrátane prefixových zhôd; Salinka 4 záznamy. Bez potvrdených mien ďalších detí. Virtuálny cintorín: Salinka Komárno 3 v jednom hrobe, Salinková 0. Bing vracal nesúvisiace výsledky a nepoužíva sa ako dôkaz neprítomnosti rodiny.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S033",
+      "title": "Malacky · MUDr. Jozef a Ing. Elena Salinkovci",
+      "url": "https://www.cintoriny.sk/src/index.php?cintorinId=1198&hrobId=1198000618",
+      "note": "Karta hrobu1198000618: MUDr. Jozef Salinka 3.1.1949–19.12.2022 a Ing. Elena Salinkova 19.5.1949–22.4.1999. Rodina následne potvrdila, že Helenin manžel bol lekár, čo s menom a Malackami podporuje identifikáciu Jozefa. Fotografia uvádza len Elenu; Helena/Elena ostáva nevyjasnené a jej dátumy neboli prebraté do profilu. Verejná kronika neuvádza deti; Sylvia je osobitné rodinné podanie S035.",
+      "checked": "2026-10-13"
     }
   ],
-  "seedRevision": 4,
+  "seedRevision": 5,
   "seedUpdates": [
     {
       "revision": 2,
@@ -885,6 +1302,74 @@
           "fields": [
             "birthPlace"
           ]
+        }
+      ]
+    },
+    {
+      "revision": 5,
+      "people": [
+        "P018",
+        "P019",
+        "P020",
+        "P021",
+        "P022",
+        "P023",
+        "P024",
+        "P025",
+        "P026",
+        "P027",
+        "P028",
+        "P029",
+        "P030",
+        "P031"
+      ],
+      "relationships": [
+        "L031",
+        "L032",
+        "L033",
+        "L034",
+        "L035",
+        "L036",
+        "L037",
+        "L038",
+        "L039",
+        "L040",
+        "L041",
+        "L042",
+        "L043",
+        "L044",
+        "L045",
+        "L046",
+        "L047",
+        "L048",
+        "L049",
+        "L050",
+        "L051"
+      ],
+      "questions": [
+        "Q011",
+        "Q012",
+        "Q013",
+        "Q014"
+      ],
+      "sources": [
+        "S032",
+        "S033"
+      ],
+      "appendNotes": [
+        {
+          "personId": "P022",
+          "text": "S034: Používateľ uviedol manžela Juraja Okolenského a spoločný pobyt vo Veľkej Čalomiji. Jej deti sú Patrik a Vanesa; otcovstvo Juraja zatiaľ nebolo výslovne uvedené."
+        },
+        {
+          "personId": "P013",
+          "text": "S033 + S035: Používateľ potvrdil, že manžel Jozef bol lekár, a dcéru Sylviu Offei Kwatya. Rodina ju volala Helena/Hela. Na fotografii spoločného malackého hrobu je Ing. Elena Salinkova (19.5.1949–22.4.1999); podobu Elena v dokladoch používateľ nepozná. Tieto dátumy zatiaľ nie sú prevzaté do profilu Heleny, kým sa potvrdí jej totožnosť."
+        }
+      ],
+      "updateUnions": [
+        {
+          "relationshipId": "L018",
+          "ifSource": "S020 — Náhrobok v Sobranciach, C/148: Rudolf Ďuriš „a manželka Alžbeta rod. Čakanová“. Sobášny matričný zápis zatiaľ nebol prečítaný."
         }
       ]
     }

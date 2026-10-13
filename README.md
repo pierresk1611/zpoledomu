@@ -2,11 +2,13 @@
 
 `zpoledomu` je názov repozitára, **Ďurišovci** je názov rodokmeňa.
 
-[Výsledky výskumu z 13. 10. 2026](docs/vyskum-vazby-2026-10-13.md): sčítanie 1930 uvádza matku a troch súrodencov Jozefa Kulicha (18. 10. 1919). Aktuálna rodina má 17 osôb a 30 vzťahov, vrátane potvrdených väzieb tetám. [Živý rodokmeň](https://durisovci.vercel.app/).
+[Výsledky výskumu z 13. 10. 2026](docs/vyskum-vazby-2026-10-13.md): sčítanie 1930 uvádza matku a troch súrodencov Jozefa Kulicha (18. 10. 1919). Aktuálna rodina má 31 osôb a 51 vzťahov, vrátane potvrdených väzieb tetám. [Živý rodokmeň](https://durisovci.vercel.app/).
+
+[Manželia a deti](docs/manzelia-a-deti.md): doplnené rodiny tetiek, Marianny a Denisy aj Sylvia Offei Kwatya; manželia sú vedľa seba a strom zobrazuje aj deti príbuzných. Ďalšie deti tetiek zostávajú otvoreným výskumom.
 
 ## Otvorenie bez inštalácie
 
-V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Na požiadanie používateľa predvolená verzia obsahuje sedemnásť členov rodiny Ďurišovcov a oznámené či výskumom podložené vzťahy. Narodenia žijúcich alebo osôb bez doloženého úmrtia sú vo verejnom nasadení iba v rozsahu roku. Päť identifikovaných zosnulých má dátumy podložené cintorínskymi záznamami a náhrobkami; súkromné presné narodenia živých a výskumný archív zostávajú mimo repozitára. Rodinné podanie je označené ako NEOVERENÉ, podložené závery majú citované zdroje.
+V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Na požiadanie používateľa predvolená verzia obsahuje 31 členov rodiny Ďurišovcov a oznámené či výskumom podložené vzťahy. Narodenia žijúcich alebo osôb bez doloženého úmrtia sú vo verejnom nasadení iba v rozsahu roku. Šesť identifikovaných zosnulých má dátumy podložené cintorínskymi záznamami a náhrobkami; súkromné presné narodenia živých a výskumný archív zostávajú mimo repozitára. Rodinné podanie je označené ako NEOVERENÉ, podložené závery majú citované zdroje.
 
 ![Ukážka rozhrania s fiktívnymi osobami](docs/preview.png)
 
@@ -35,7 +37,7 @@ npm ci --cache /workspace/.npm-cache --no-audit --no-fund
 npm run dev -- --port 3000 --strictPort
 ```
 
-Predvolená verzia načíta dodaných sedemnásť osôb aj bez dátového servera. Starší prázdny zápis v prehliadači sa pri prvom načítaní doplní; existujúce osoby a úpravy zostanú zachované. Nové výskumné vydanie pridáva výslovne uvedené nové osoby a väzby aj do existujúceho rodokmeňa, pričom neprepisuje úpravy ani neobnovuje vymazané osoby zo starších vydaní. Po neskoršom úmyselnom odstránení osôb sa rodina automaticky neobnovuje. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
+Predvolená verzia načíta dodaných 31 osôb aj bez dátového servera. Starší prázdny zápis v prehliadači sa pri prvom načítaní doplní; existujúce osoby a úpravy zostanú zachované. Nové výskumné vydanie pridáva výslovne uvedené nové osoby a väzby aj do existujúceho rodokmeňa, pričom neprepisuje úpravy ani neobnovuje vymazané osoby zo starších vydaní. Po neskoršom úmyselnom odstránení osôb sa rodina automaticky neobnovuje. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
 
 ```sh
 GENEALOGY_DATA_FILE=/workspace/genealogia-private/rodokmen.json npm run dev -- --port 3000 --strictPort

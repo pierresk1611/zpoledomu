@@ -115,11 +115,14 @@ export function addRelationship(family, relation) {
     throw new Error("Neplatný druh rodinnej väzby.");
   if (isSupported(status) && !relation.source?.trim())
     throw new Error("K doloženému vzťahu pridajte citáciu alebo opis zdroja.");
+  const union = relation.union || "unknown";
+  if (!["unknown", "married"].includes(union) || (type !== "partner" && union !== "unknown"))
+    throw new Error("Neplatný druh partnerského vzťahu.");
   return {
     ...family,
     relationships: [
       ...family.relationships,
-      { ...relation, kind, status, source: relation.source || "" },
+      { ...relation, kind, union, status, source: relation.source || "" },
     ],
   };
 }
@@ -215,6 +218,7 @@ export function parseFamily(text) {
       from: r.from,
       to: r.to,
       kind: r.kind,
+      union: r.union,
       source: r.source || "",
       status: r.status || "NEOVERENÉ",
     });
@@ -297,6 +301,12 @@ export function applySeedUpdates(family, rawSeed) {
       const source = seed.sources.find(s => s.id === id);
       if (source) next.sources.push(source);
     }
+    for (const item of update.updateUnions || []) {
+      const recorded = seed.relationships.find(r => r.id === item.relationshipId && r.type === "partner");
+      if (recorded) next.relationships = next.relationships.map(r =>
+        r.id === recorded.id && r.type === "partner" && r.union === "unknown" && r.source === item.ifSource
+          ? { ...r, union: recorded.union } : r);
+    }
     for (const item of update.updatePeople || []) {
       const person = seed.people.find(p => p.id === item.personId);
       if (!person) continue;
@@ -350,6 +360,39 @@ export function treeLayout(family, focusId) {
     for (const { person } of relatives(family, id).siblings)
       if (!depths.has(person.id)) depths.set(person.id, depths.get(id));
   }
+  const auntsUncles = new Set([...ancestors].filter(id => depths.get(id) === -1)
+    .flatMap(id => relatives(family, id).siblings.map(r => r.person.id)));
+  const cousins = new Set();
+  const niecesNephews = new Set();
+  const partnerIds = new Set(partners.map(r => r.person.id));
+  const spouseIds = new Set(partners.filter(r => r.relation.union === "married").map(r => r.person.id));
+  // Include relatives' children and one further generation, then partners.
+  // Keep the expansion bounded instead of recursively loading the whole tree.
+  let familyFrontier = [...depths];
+  for (let generation = 0; generation < 2; generation++) {
+    const next = [];
+    for (const [id, level] of familyFrontier) {
+      if (level >= 2) continue;
+      for (const { person } of relatives(family, id).children) {
+        if (!depths.has(person.id)) {
+          depths.set(person.id, level + 1);
+          next.push([person.id, level + 1]);
+        }
+        if (auntsUncles.has(id)) cousins.add(person.id);
+        if (siblings.some(r => r.person.id === id)) niecesNephews.add(person.id);
+      }
+    }
+    familyFrontier = next;
+  }
+  for (const [id, level] of [...depths]) {
+    for (const { person, relation } of relatives(family, id).partners) {
+      if (!depths.has(person.id)) {
+        depths.set(person.id, level);
+        partnerIds.add(person.id);
+        if (relation.union === "married") spouseIds.add(person.id);
+      }
+    }
+  }
   const levels = [...new Set(depths.values())].sort((a, b) => a - b);
   const width = Math.max(
     840,
@@ -368,7 +411,18 @@ export function treeLayout(family, focusId) {
         const id = queue.shift();
         if (seen.has(id)) continue;
         seen.add(id); ids.push(id);
+        // Place a couple together before walking either person's siblings.
+        for (const { person } of relatives(family, id).partners) {
+          if (rawIds.includes(person.id) && !seen.has(person.id)) {
+            seen.add(person.id);
+            ids.push(person.id);
+            queue.push(...relatives(family, person.id).siblings.map(r => r.person.id));
+          }
+        }
         queue.push(...relatives(family, id).siblings.map(r => r.person.id).filter(key => rawIds.includes(key) && !seen.has(key)));
+        // Only traverse relatives already assigned to this generation.
+        for (let j = queue.length - 1; j >= 0; j--)
+          if (!rawIds.includes(queue[j])) queue.splice(j, 1);
       }
     }
     return ids.map((id, i) => {
@@ -378,11 +432,17 @@ export function treeLayout(family, focusId) {
       else if (ancestors.has(id)) {
         role = l === -1
           ? person.gender === "female" ? "MATKA" : person.gender === "male" ? "OTEC" : "RODIČ"
-          : "STARÝ RODIČ";
-      } else if (l === -1) {
+          : l === -3 ? "PRASTARÝ RODIČ" : "STARÝ RODIČ";
+      } else if (partnerIds.has(id)) {
+        role = spouseIds.has(id)
+          ? person.gender === "female" ? "MANŽELKA" : "MANŽEL"
+          : person.gender === "female" ? "PARTNERKA" : "PARTNER";
+      } else if (auntsUncles.has(id)) {
         role = person.gender === "female" ? "TETA" : person.gender === "male" ? "STRÝKO" : "RODINA";
       } else if (l === 0 && siblings.some(r => r.person.id === id)) role = "SÚRODENEC";
-      else if (l > 0) role = "DIEŤA";
+      else if (cousins.has(id)) role = person.gender === "female" ? "SESTERNICA" : person.gender === "male" ? "BRATRANEC" : "RODINA";
+      else if (niecesNephews.has(id)) role = person.gender === "female" ? "NETER" : person.gender === "male" ? "SYNOVEC" : "RODINA";
+      else if (children.some(r => r.person.id === id)) role = "DIEŤA";
       return {
       person,
       x: width / 2 + (i - (ids.length - 1) / 2) * 202 - 87,

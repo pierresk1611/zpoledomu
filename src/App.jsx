@@ -256,10 +256,11 @@ function RelationshipForm({ family, person, onSave, onClose }) {
     }
     const relation = {
       id: newId(),
-      type: ["parent", "child"].includes(values.role) ? "parent" : values.role,
+      type: ["parent", "child"].includes(values.role) ? "parent" : values.role === "spouse" ? "partner" : values.role,
       from: values.role === "parent" ? values.other : person.id,
       to: values.role === "parent" ? person.id : values.other,
       kind: values.kind,
+      union: values.role === "spouse" ? "married" : "unknown",
       status: values.status,
       source: values.source.trim(),
     };
@@ -303,6 +304,7 @@ function RelationshipForm({ family, person, onSave, onClose }) {
               <option value="parent">Rodič</option>
               <option value="child">Dieťa</option>
               <option value="partner">Partner / partnerka</option>
+              <option value="spouse">Manžel / manželka</option>
               <option value="sibling">Súrodenec</option>
             </select>
           </label>
@@ -417,7 +419,12 @@ function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd }) {
               } else {
                 const left = a.x < b.x ? a : b,
                   right = a.x < b.x ? b : a;
-                path = `M ${left.x + 174} ${left.y + 54} H ${right.x}`;
+                if (left.y === right.y && right.x - left.x === 202) {
+                  path = `M ${left.x + 174} ${left.y + 54} H ${right.x}`;
+                } else {
+                  const y = Math.min(left.y, right.y) - 28;
+                  path = `M ${left.x + 87} ${left.y} V ${y} H ${right.x + 87} V ${right.y}`;
+                }
               }
               return (
                 <path
@@ -539,7 +546,7 @@ function Details({
         </h3>
         {[
           ["parents", "Rodičia"],
-          ["partners", "Partneri"],
+          ["partners", "Manželia a partneri"],
           ["children", "Deti"],
           ["siblings", "Súrodenci"],
         ].map(
@@ -559,6 +566,8 @@ function Details({
                         <small>
                           {inferred
                             ? "Spoločný rodič podľa väzieb"
+                            : key === "partners" && relation.union === "married"
+                            ? "Manželstvo"
                             : kindLabel(relation.kind)}
                         </small>
                       </span>
@@ -971,7 +980,7 @@ export default function App() {
                       <span className="subtle-tag">RODOKMEŇ</span>
                     </h2>
                     <p>
-                      Tri generácie predkov, príbuzní a deti vybranej osoby.
+                      Predkovia, manželia a partneri, súrodenci a ich deti.
                     </p>
                   </div>
                   <button

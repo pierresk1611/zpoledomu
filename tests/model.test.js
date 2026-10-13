@@ -209,3 +209,50 @@ test("record corrections fill unchanged profiles without overwriting user dates"
   assert.equal(applySeedUpdates(edited, seed).people[0].deathDate, "");
   assert.equal(applySeedUpdates(removePerson(before, "a"), seed).people.some(p => p.id === "a"), false);
 });
+
+test("keeps parents and an aunt's partner together and shows their children", () => {
+  let family = { ...fixture(), people: ["mother", "aunt", "father", "focus", "spouse", "cousin", "unrelated"].map(person) };
+  family.people.find(p => p.id === "mother").gender = "female";
+  family.people.find(p => p.id === "father").gender = "male";
+  family.people.find(p => p.id === "aunt").gender = "female";
+  family.people.find(p => p.id === "cousin").gender = "female";
+  for (const r of [link("mother", "focus"), link("father", "focus"),
+    link("mother", "aunt", "sibling"), link("mother", "father", "partner"),
+    link("aunt", "spouse", "partner"), link("aunt", "cousin"), link("spouse", "cousin")])
+    family = addRelationship(family, r);
+  const before = JSON.stringify(family);
+  const layout = treeLayout(family, "focus");
+  const node = id => layout.nodes.find(n => n.person.id === id);
+  assert.equal(node("mother").y, node("father").y);
+  assert.equal(Math.abs(node("mother").x - node("father").x), 202);
+  assert.equal(node("aunt").y, node("spouse").y);
+  assert.equal(Math.abs(node("aunt").x - node("spouse").x), 202);
+  assert.equal(node("cousin").level, 0);
+  assert.equal(node("cousin").role, "SESTERNICA");
+  assert.equal(node("mother").role, "MATKA");
+  assert.equal(node("father").role, "OTEC");
+  assert.equal(node("spouse").role, "PARTNER");
+  assert.equal(node("unrelated"), undefined);
+  assert.equal(new Set(layout.nodes.map(n => n.person.id)).size, layout.nodes.length);
+  assert.equal(layout.edges.filter(r => r.to === "cousin" && r.type === "parent").length, 2);
+  assert.equal(JSON.stringify(family), before);
+  const auntFocus = treeLayout(family, "aunt");
+  assert.equal(auntFocus.nodes.find(n => n.person.id === "cousin").role, "DIEŤA");
+});
+
+test("preserves marriage through export/import without treating every partner as married", () => {
+  const married = addRelationship(fixture(), { ...link("a", "b", "partner"), union: "married" });
+  const restored = parseFamily(JSON.stringify(married));
+  assert.equal(restored.relationships[0].union, "married");
+  assert.equal(treeLayout(restored, "a").nodes.find(n => n.person.id === "b").role, "MANŽEL");
+  const partners = parseFamily(JSON.stringify(addRelationship(fixture(), link("a", "b", "partner"))));
+  assert.equal(partners.relationships[0].union, "unknown");
+  assert.equal(treeLayout(partners, "a").nodes.find(n => n.person.id === "b").role, "PARTNER");
+  assert.throws(() => addRelationship(fixture(), { ...link("a", "b"), union: "married" }), /partnerského/);
+  const saved = { ...partners, title: "Test family", seedRevision: 4 };
+  const seed = { ...restored, title: "Test family", seedRevision: 5,
+    seedUpdates: [{ revision: 5, updateUnions: [{ relationshipId: "partner-a-b", ifSource: "" }] }] };
+  assert.equal(applySeedUpdates(saved, seed).relationships[0].union, "married");
+  const edited = { ...saved, relationships: saved.relationships.map(r => ({ ...r, source: "User correction" })) };
+  assert.equal(applySeedUpdates(edited, seed).relationships[0].union, "unknown");
+});
