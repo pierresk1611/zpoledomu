@@ -360,7 +360,7 @@ function RelationshipForm({ family, person, onSave, onClose }) {
   );
 }
 
-function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd }) {
+function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd, onLaneSplit }) {
   const layout = useMemo(() => treeLayout(family, focusId), [family, focusId]);
   const viewport = useRef(null);
   const [fit, setFit] = useState(1);
@@ -378,6 +378,20 @@ function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd }) {
     element.scrollLeft = Math.max(0, (node.x + layout.cardWidth / 2) * scale - element.clientWidth / 2);
     element.scrollTop = Math.max(0, (node.y + layout.cardHeight / 2) * scale - element.clientHeight * .65);
   }, [focusId, layout.width, layout.height, scale]);
+  useEffect(() => {
+    const element = viewport.current;
+    if (!element) return;
+    const syncLanes = () => {
+      const margin = Math.max(0, (element.clientWidth - layout.width * scale) / 2);
+      const divider = margin + layout.boundary * scale - element.scrollLeft;
+      onLaneSplit(Math.max(0, Math.min(100, divider / element.clientWidth * 100)));
+    };
+    const observer = new ResizeObserver(syncLanes);
+    observer.observe(element);
+    element.addEventListener("scroll", syncLanes);
+    syncLanes();
+    return () => { observer.disconnect(); element.removeEventListener("scroll", syncLanes); };
+  }, [layout.width, layout.boundary, scale, onLaneSplit]);
   if (!family.people.length) return (
     <div className="empty-tree"><div className="empty-emblem"><Sprout size={44} strokeWidth={1.3} /></div>
       <span className="eyebrow">PRVÝ KROK K VAŠIM KOREŇOM</span><h2>Váš príbeh sa začína vami.</h2>
@@ -620,6 +634,7 @@ export default function App() {
     [zoom, setZoom] = useState(1),
     [detailsOpen, setDetailsOpen] = useState(false),
     [treeExpanded, setTreeExpanded] = useState(false),
+    [laneSplit, setLaneSplit] = useState(50),
     [query, setQuery] = useState(""),
     [notice, setNotice] = useState(""),
     [storageError, setStorageError] = useState(""),
@@ -1018,7 +1033,7 @@ export default function App() {
                 </div>
                 {relatives(family, focusId).parents.some(r => r.person.gender === "male") &&
                   relatives(family, focusId).parents.some(r => r.person.gender === "female") && (
-                  <div className="tree-lanes"><span>Otcova línia</span><span>Maminkina línia</span></div>
+                  <div className="tree-lanes" style={{ gridTemplateColumns: `${laneSplit}% minmax(0, 1fr)` }}><span>Otcova línia</span><span>Maminkina línia</span></div>
                 )}
                 <Tree
                   family={family}
@@ -1026,6 +1041,7 @@ export default function App() {
                   selectedId={selectedId}
                   onSelect={selectPerson}
                   zoom={zoom}
+                  onLaneSplit={setLaneSplit}
                   onAdd={newPerson}
                 />
                 <div className="tree-footer">

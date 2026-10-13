@@ -44,27 +44,27 @@
     {
       "id": "P004",
       "firstName": "Blanka",
-      "lastName": "",
+      "lastName": "Ďurišová",
       "birthName": "",
       "gender": "female",
       "birthDate": "1982",
       "deathDate": "",
       "birthPlace": "",
       "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.",
-      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
       "id": "P005",
       "firstName": "Mária",
-      "lastName": "",
+      "lastName": "Ďurišová",
       "birthName": "",
       "gender": "female",
       "birthDate": "1983",
       "deathDate": "",
       "birthPlace": "",
       "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.",
-      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
@@ -284,8 +284,8 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Dcéra Márie Maľovej a Pavla Maľu. Používateľ uviedol dnešné priezvisko Okolenská; meno manžela, rodné priezvisko, dátumy a životný stav nezistené.\nS034: Používateľ uviedol manžela Juraja Okolenského a spoločný pobyt vo Veľkej Čalomiji. Jej deti sú Patrik a Vanesa; otcovstvo Juraja zatiaľ nebolo výslovne uvedené.",
-      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "note": "Dcéra Márie Maľovej a Pavla Maľu. Manžel Juraj Okolenský; podľa používateľa žijú vo Veľkej Čalomiji (S034). Deti Patrik Okolenský a Vanesa Okolenská, priezviská potvrdené S037. Jurajovo otcovstvo nebolo výslovne potvrdené. Rodné priezvisko, dátumy a životný stav nezistené.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.\nS034 — Manžel a deti uvedení používateľom 13. 10. 2026; rodinné podanie.",
       "status": "NEOVERENÉ"
     },
     {
@@ -297,8 +297,8 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Dcéra Márie Maľovej a Pavla Maľu. Používateľ uviedol dnešné priezvisko Baranová; meno manžela, rodné priezvisko, dátumy a životný stav nezistené.",
-      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "note": "Dcéra Márie Maľovej a Pavla Maľu. Manžel Ľuboš Baran (S034); spoločné deti Ľuboš Baran a Robert Baran, priezviská potvrdené S037. Rodné priezvisko, dátumy a životný stav nezistené.",
+      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.\nS034 — Manžel a deti uvedení používateľom 13. 10. 2026; rodinné podanie.",
       "status": "NEOVERENÉ"
     },
     {
@@ -310,8 +310,8 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Syn Márie Maľovej a Pavla Maľu; odlišný od svojho otca P018. Priezvisko, dátumy, partner a životný stav nezistené.",
-      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "note": "Syn Ruženy a jej manžela Pavla P019, bratranec Petra z otcovej strany. Zaradenie k Márii Maľovej a Pavlovi Maľovi používateľ opravil 13. 10. 2026 (S036). Priezvisko, dátumy, partner a životný stav nezistené; odlišná osoba od oboch Pavlov P018 a P019.",
+      "source": "S036 — Používateľ 13. 10. 2026 opravil zaradenie Pavla P024: syn Ruženy P011 a jej manžela Pavla P019, otcova vetva. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
@@ -330,27 +330,27 @@
     {
       "id": "P026",
       "firstName": "Patrik",
-      "lastName": "",
+      "lastName": "Okolenský",
       "birthName": "",
       "gender": "male",
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Dieťa Marianny Okolenskej podľa používateľa. Priezvisko, otec, dátumy a životný stav zatiaľ nezistené.",
-      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "note": "Dieťa Marianny Okolenskej podľa používateľa. Otec, dátumy a životný stav zatiaľ nezistené.\nS037: Priezvisko Okolenský výslovne potvrdil používateľ.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
       "id": "P027",
       "firstName": "Vanesa",
-      "lastName": "",
+      "lastName": "Okolenská",
       "birthName": "",
       "gender": "female",
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Dieťa Marianny Okolenskej podľa používateľa. Priezvisko, otec, dátumy a životný stav zatiaľ nezistené.",
-      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "note": "Dieťa Marianny Okolenskej podľa používateľa. Otec, dátumy a životný stav zatiaľ nezistené.\nS037: Priezvisko Okolenská výslovne potvrdil používateľ.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
@@ -369,27 +369,27 @@
     {
       "id": "P029",
       "firstName": "Ľuboš",
-      "lastName": "",
+      "lastName": "Baran",
       "birthName": "",
       "gender": "male",
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Odlišná osoba od otca P028. Priezvisko, dátumy a životný stav zatiaľ nezistené.",
-      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Odlišná osoba od otca P028. Dátumy a životný stav zatiaľ nezistené.\nS037: Priezvisko Baran výslovne potvrdil používateľ.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
       "id": "P030",
       "firstName": "Robert",
-      "lastName": "",
+      "lastName": "Baran",
       "birthName": "",
       "gender": "male",
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Priezvisko, dátumy a životný stav zatiaľ nezistené.",
-      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+      "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Dátumy a životný stav zatiaľ nezistené.\nS037: Priezvisko Baran výslovne potvrdil používateľ.",
+      "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
@@ -767,19 +767,19 @@
     {
       "id": "L040",
       "type": "parent",
-      "from": "P010",
+      "from": "P011",
       "to": "P024",
       "kind": "unknown",
-      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "source": "S036 — Používateľ 13. 10. 2026 opravil zaradenie Pavla P024: syn Ruženy P011 a jej manžela Pavla P019, otcova vetva. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
       "id": "L041",
       "type": "parent",
-      "from": "P018",
+      "from": "P019",
       "to": "P024",
       "kind": "unknown",
-      "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "source": "S036 — Používateľ 13. 10. 2026 opravil zaradenie Pavla P024: syn Ruženy P011 a jej manžela Pavla P019, otcova vetva. Rodinné podanie; bez nezávislého matričného dokladu.",
       "status": "NEOVERENÉ"
     },
     {
@@ -939,19 +939,19 @@
     {
       "id": "Q011",
       "title": "Manželia a deti tetiek",
-      "detail": "Viera a Rudolf sú manželia podľa používateľa (S030). Mária Maľová + Pavel Maľa: deti Marianna Okolenská, Denisa Baranová a Pavel. Ružena + Pavel (priezvisko nezistené); Marcela + Jozef Solár; Helena + Jozef Salinka. Pridané oznámené osoby, partnerské a rodičovské väzby (S031). Mená detí ďalších troch párov zatiaľ nepoznáme.",
+      "detail": "Viera a Rudolf sú manželia podľa používateľa (S030). Mária Maľová + Pavel Maľa: dcéry Marianna Okolenská a Denisa Baranová. Ružena + Pavel (priezvisko nezistené): syn Pavel P024 podľa opravy S036. Marcela + Jozef Solár; Helena + Jozef Salinka: dcéra Sylvia Offei Kwatya. Ďalšie deti zatiaľ nezistené.",
       "status": "Doplnené rodinné podanie · ďalšie deti hľadáme"
     },
     {
       "id": "Q012",
       "title": "Hľadanie detí Ruženy, Marcely a Heleny",
-      "detail": "S032–S035: Používateľ potvrdil lekára Jozefa Salinku a ich dcéru Sylviu Offei Kwatya. Zhoda mena, povolania a Malaciek podporuje priradenie MUDr. Jozefa (3.1.1949–19.12.2022). Na staršej fotografii je Ing. Elena (19.5.1949–22.4.1999); rodina pozná Helenu/Helu a dokladové meno Elena nepotvrdila. Helenine dátumy zostávajú nevyplnené. Verejná kronika neuvádza deti; Sylvia je rodinné podanie. Ďalšie deti tohto páru, Ruženy a Marcely zatiaľ nezistené.",
+      "detail": "S032–S035: Používateľ potvrdil lekára Jozefa Salinku a ich dcéru Sylviu Offei Kwatya. Zhoda mena, povolania a Malaciek podporuje priradenie MUDr. Jozefa (3.1.1949–19.12.2022). Na staršej fotografii je Ing. Elena (19.5.1949–22.4.1999); rodina pozná Helenu/Helu a dokladové meno Elena nepotvrdila. Helenine dátumy zostávajú nevyplnené. Verejná kronika neuvádza deti; Sylvia je rodinné podanie. Syn Ruženy a Pavla je Pavel P024 (oprava používateľa S036). Ďalšie deti tohto páru, Ruženy a Marcely zatiaľ nezistené.",
       "status": "Sylvia doplnená · Jozef podložený záver · Elena/Helena otvorené"
     },
     {
       "id": "Q013",
       "title": "Rodiny Marianny a Denisy",
-      "detail": "Marianna + Juraj Okolenský žijú podľa používateľa vo Veľkej Čalomiji. Patrik a Vanesa sú oznámené Mariannine deti; otec zatiaľ nepotvrdený. Denisa + Ľuboš Baran majú synov Ľuboša a Roberta. Rovnomenní otcovia a synovia sú samostatné osoby; priezviská detí a dátumy zatiaľ neboli oznámené.",
+      "detail": "Marianna + Juraj Okolenský žijú podľa používateľa vo Veľkej Čalomiji. Patrik a Vanesa sú oznámené Mariannine deti; otec zatiaľ nepotvrdený. Denisa + Ľuboš Baran majú synov Ľuboša a Roberta. Rovnomenní otcovia a synovia sú samostatné osoby; priezviská detí následne výslovne potvrdil používateľ (S037), dátumy zatiaľ neboli oznámené.",
       "status": "Doplnené rodinné podanie S034"
     },
     {
@@ -959,6 +959,12 @@
       "title": "Helena / Elena a Sylvia",
       "detail": "Rodina uviedla dcéru Sylviu Offei Kwatya, vydatú v UK, a potvrdila, že otec bol lekár. Meno a dátumy Ing. Eleny Salinkovej z malackého náhrobku treba porovnať s dokladom Heleny. Meno manžela Sylvie a ďalší súrodenci nezistení.",
       "status": "Doplnená dcéra · meno matky v dokladoch otvorené"
+    },
+    {
+      "id": "Q015",
+      "title": "Nové pátranie · rodné priezviská tetiek",
+      "detail": "13. 10. 2026: sedem konkrétnych anonymných dotazov verejného indexu Cintoriny.sk. Malacky + Salink: Jozef 1949–2022 a Elena 1949–1999. Rodné priezvisko Ďuriš + Elena: 2 záznamy, Helena: 12 vrátane Ďurišinová, Ružena: 0, Marcela: 0; žiadny záznam neprepája Helenu s Elenou Salinkovou. Bratislava + Solár + Jozef: dvaja menovci 1904–1965 a 1913–nezistené, bez dôkazu väzby k Marcele. Veľká Čalomija + Okolensk: 0. Index je neúplný; počet výsledkov nepreukazuje životný stav ani nepríbuznosť. Nové osoby nepripojené. Ruženin manžel a syn majú zatiaľ nezistené priezvisko. Celé meno Sylvie a kombinácie mien tetiek vo všeobecnom vyhľadávaní neposkytli použiteľnú novú väzbu. Podrobnosti a hranice hľadania sú vo výskumnej správe na GitHube.",
+      "status": "Preverené indexy · ďalšia rodinná väzba zatiaľ nedoložená"
     }
   ],
   "sources": [
@@ -1101,9 +1107,30 @@
       "url": "https://www.cintoriny.sk/src/index.php?cintorinId=1198&hrobId=1198000618",
       "note": "Karta hrobu1198000618: MUDr. Jozef Salinka 3.1.1949–19.12.2022 a Ing. Elena Salinkova 19.5.1949–22.4.1999. Rodina následne potvrdila, že Helenin manžel bol lekár, čo s menom a Malackami podporuje identifikáciu Jozefa. Fotografia uvádza len Elenu; Helena/Elena ostáva nevyjasnené a jej dátumy neboli prebraté do profilu. Verejná kronika neuvádza deti; Sylvia je osobitné rodinné podanie S035.",
       "checked": "2026-10-13"
+    },
+    {
+      "id": "S036",
+      "title": "Oprava Pavlových rodičov · otcova vetva",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/manzelia-a-deti.md",
+      "note": "S036 — Používateľ 13. 10. 2026 opravil zaradenie Pavla P024: syn Ruženy P011 a jej manžela Pavla P019, otcova vetva. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S037",
+      "title": "Potvrdené priezviská detí a sestier",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/manzelia-a-deti.md",
+      "note": "S037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S038",
+      "title": "Nové hľadanie rodín tetiek · rodné priezviská a lokality",
+      "url": "https://www.cintoriny.sk/src/index.php?simpleSearch&type=1&city=Malacky&surname=Salink",
+      "note": "13. 10. 2026: sedem konkrétnych anonymných dotazov verejného indexu Cintoriny.sk. Malacky + Salink: Jozef 1949–2022 a Elena 1949–1999. Rodné priezvisko Ďuriš + Elena: 2 záznamy, Helena: 12 vrátane Ďurišinová, Ružena: 0, Marcela: 0; žiadny záznam neprepája Helenu s Elenou Salinkovou. Bratislava + Solár + Jozef: dvaja menovci 1904–1965 a 1913–nezistené, bez dôkazu väzby k Marcele. Veľká Čalomija + Okolensk: 0. Index je neúplný; počet výsledkov nepreukazuje životný stav ani nepríbuznosť. Nové osoby nepripojené.",
+      "checked": "2026-10-13"
     }
   ],
-  "seedRevision": 5,
+  "seedRevision": 6,
   "seedUpdates": [
     {
       "revision": 2,
@@ -1371,6 +1398,204 @@
           "relationshipId": "L018",
           "ifSource": "S020 — Náhrobok v Sobranciach, C/148: Rudolf Ďuriš „a manželka Alžbeta rod. Čakanová“. Sobášny matričný zápis zatiaľ nebol prečítaný."
         }
+      ]
+    },
+    {
+      "revision": 6,
+      "sources": [
+        "S036",
+        "S037",
+        "S038"
+      ],
+      "updateParentage": [
+        {
+          "personId": "P024",
+          "ifUnchanged": [
+            {
+              "id": "L040",
+              "type": "parent",
+              "from": "P010",
+              "to": "P024",
+              "kind": "unknown",
+              "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+              "status": "NEOVERENÉ"
+            },
+            {
+              "id": "L041",
+              "type": "parent",
+              "from": "P018",
+              "to": "P024",
+              "kind": "unknown",
+              "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+              "status": "NEOVERENÉ"
+            }
+          ],
+          "relationships": [
+            "L040",
+            "L041"
+          ]
+        }
+      ],
+      "updatePeople": [
+        {
+          "personId": "P024",
+          "ifUnchanged": {
+            "firstName": "Pavel",
+            "lastName": "",
+            "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu.",
+            "note": "Syn Márie Maľovej a Pavla Maľu; odlišný od svojho otca P018. Priezvisko, dátumy, partner a životný stav nezistené."
+          },
+          "fields": [
+            "source",
+            "note"
+          ],
+          "ifParents": [
+            "P011",
+            "P019"
+          ]
+        },
+        {
+          "personId": "P026",
+          "ifUnchanged": {
+            "firstName": "Patrik",
+            "lastName": "",
+            "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+            "note": "Dieťa Marianny Okolenskej podľa používateľa. Priezvisko, otec, dátumy a životný stav zatiaľ nezistené."
+          },
+          "fields": [
+            "lastName",
+            "source",
+            "note"
+          ]
+        },
+        {
+          "personId": "P027",
+          "ifUnchanged": {
+            "firstName": "Vanesa",
+            "lastName": "",
+            "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+            "note": "Dieťa Marianny Okolenskej podľa používateľa. Priezvisko, otec, dátumy a životný stav zatiaľ nezistené."
+          },
+          "fields": [
+            "lastName",
+            "source",
+            "note"
+          ]
+        },
+        {
+          "personId": "P029",
+          "ifUnchanged": {
+            "firstName": "Ľuboš",
+            "lastName": "",
+            "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+            "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Odlišná osoba od otca P028. Priezvisko, dátumy a životný stav zatiaľ nezistené."
+          },
+          "fields": [
+            "lastName",
+            "source",
+            "note"
+          ]
+        },
+        {
+          "personId": "P030",
+          "ifUnchanged": {
+            "firstName": "Robert",
+            "lastName": "",
+            "source": "S034 — Používateľ 13. 10. 2026 uviedol manželov a deti Marianny Okolenskej a Denisy Baranovej; rodinné podanie bez nezávislého dokladu.",
+            "note": "Syn Denisy Baranovej a Ľuboša Barana podľa používateľa. Priezvisko, dátumy a životný stav zatiaľ nezistené."
+          },
+          "fields": [
+            "lastName",
+            "source",
+            "note"
+          ]
+        },
+        {
+          "personId": "P004",
+          "ifUnchanged": {
+            "firstName": "Blanka",
+            "lastName": "",
+            "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+            "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené."
+          },
+          "fields": [
+            "lastName",
+            "source",
+            "note"
+          ]
+        },
+        {
+          "personId": "P005",
+          "ifUnchanged": {
+            "firstName": "Mária",
+            "lastName": "",
+            "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.",
+            "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené."
+          },
+          "fields": [
+            "lastName",
+            "source",
+            "note"
+          ]
+        },
+        {
+          "personId": "P022",
+          "ifUnchanged": {
+            "firstName": "Marianna",
+            "lastName": "Okolenská",
+            "note": "Dcéra Márie Maľovej a Pavla Maľu. Používateľ uviedol dnešné priezvisko Okolenská; meno manžela, rodné priezvisko, dátumy a životný stav nezistené.\nS034: Používateľ uviedol manžela Juraja Okolenského a spoločný pobyt vo Veľkej Čalomiji. Jej deti sú Patrik a Vanesa; otcovstvo Juraja zatiaľ nebolo výslovne uvedené.",
+            "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu."
+          },
+          "fields": [
+            "note",
+            "source"
+          ]
+        },
+        {
+          "personId": "P023",
+          "ifUnchanged": {
+            "firstName": "Denisa",
+            "lastName": "Baranová",
+            "note": "Dcéra Márie Maľovej a Pavla Maľu. Používateľ uviedol dnešné priezvisko Baranová; meno manžela, rodné priezvisko, dátumy a životný stav nezistené.",
+            "source": "S031 — Používateľ 13. 10. 2026 uviedol manželov tetiek a deti Márie a Pavla Maľu. Rodinné podanie; bez nezávislého matričného dokladu."
+          },
+          "fields": [
+            "note",
+            "source"
+          ]
+        }
+      ],
+      "updateQuestions": [
+        {
+          "questionId": "Q011",
+          "ifUnchanged": {
+            "detail": "Viera a Rudolf sú manželia podľa používateľa (S030). Mária Maľová + Pavel Maľa: deti Marianna Okolenská, Denisa Baranová a Pavel. Ružena + Pavel (priezvisko nezistené); Marcela + Jozef Solár; Helena + Jozef Salinka. Pridané oznámené osoby, partnerské a rodičovské väzby (S031). Mená detí ďalších troch párov zatiaľ nepoznáme."
+          },
+          "fields": [
+            "detail"
+          ]
+        },
+        {
+          "questionId": "Q012",
+          "ifUnchanged": {
+            "detail": "S032–S035: Používateľ potvrdil lekára Jozefa Salinku a ich dcéru Sylviu Offei Kwatya. Zhoda mena, povolania a Malaciek podporuje priradenie MUDr. Jozefa (3.1.1949–19.12.2022). Na staršej fotografii je Ing. Elena (19.5.1949–22.4.1999); rodina pozná Helenu/Helu a dokladové meno Elena nepotvrdila. Helenine dátumy zostávajú nevyplnené. Verejná kronika neuvádza deti; Sylvia je rodinné podanie. Ďalšie deti tohto páru, Ruženy a Marcely zatiaľ nezistené."
+          },
+          "fields": [
+            "detail"
+          ]
+        },
+        {
+          "questionId": "Q013",
+          "ifUnchanged": {
+            "detail": "Marianna + Juraj Okolenský žijú podľa používateľa vo Veľkej Čalomiji. Patrik a Vanesa sú oznámené Mariannine deti; otec zatiaľ nepotvrdený. Denisa + Ľuboš Baran majú synov Ľuboša a Roberta. Rovnomenní otcovia a synovia sú samostatné osoby; priezviská detí a dátumy zatiaľ neboli oznámené."
+          },
+          "fields": [
+            "detail"
+          ]
+        }
+      ],
+      "questions": [
+        "Q015"
       ]
     }
   ]

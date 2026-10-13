@@ -274,16 +274,31 @@ test("aligns both family branches by generation and keeps every focus inside the
   ];
   for (const row of rows) assert.equal(new Set(row.map(id => node(id).y)).size, 1);
   assert.equal(node("P002").x - node("P003").x, layout.columnStep);
-  for (const id of ["P003", "P008", "P009", "P011", "P012", "P013", "P031"])
+  for (const id of ["P003", "P008", "P009", "P011", "P012", "P013", "P024", "P031"])
     assert(node(id).x + layout.cardWidth < layout.boundary, id);
-  for (const id of ["P002", "P006", "P007", "P010", "P014", "P022", "P023", "P024", "P026", "P027", "P029", "P030"])
+  for (const id of ["P002", "P006", "P007", "P010", "P014", "P022", "P023", "P026", "P027", "P029", "P030"])
     assert(node(id).x > layout.boundary, id);
   for (const r of family.relationships.filter(r => r.type === "partner"))
     assert.equal(Math.abs(node(r.from).x - node(r.to).x), layout.columnStep, r.id);
   const parentsOf = id => layout.parentGroups.find(g => g.children.some(c => c.id === id)).parents.sort();
   assert.deepEqual(parentsOf("P026"), ["P022"]); // A spouse is not automatically a parent.
   assert.deepEqual(parentsOf("P031"), ["P013", "P021"]);
+  assert.deepEqual(parentsOf("P024"), ["P011", "P019"]);
+  assert.equal(node("P024").x, (node("P011").x + node("P019").x) / 2);
   assert.deepEqual(parentsOf("P004"), ["P002", "P003"]);
+  // Expected from the user's family statements and the cited 1930 census.
+  const recordedParents = {
+    P001: ["P002", "P003"], P002: ["P006", "P007"], P003: ["P008", "P009"],
+    P004: ["P002", "P003"], P005: ["P002", "P003"], P007: ["P014"],
+    P010: ["P006", "P007"], P011: ["P008", "P009"], P012: ["P008", "P009"], P013: ["P008", "P009"],
+    P015: ["P014"], P016: ["P014"], P017: ["P014"],
+    P022: ["P010", "P018"], P023: ["P010", "P018"], P024: ["P011", "P019"],
+    P026: ["P022"], P027: ["P022"], P029: ["P023", "P028"], P030: ["P023", "P028"], P031: ["P013", "P021"],
+  };
+  for (const person of family.people)
+    assert.deepEqual(relatives(family, person.id).parents.map(r => r.person.id).sort(), recordedParents[person.id] || [], person.id);
+  assert.equal(family.relationships.filter(r => r.type === "parent" && r.kind === "adoptive").length, 4);
+
   for (const person of family.people) {
     const view = treeLayout(family, person.id);
     for (const n of view.nodes) {
@@ -295,4 +310,47 @@ test("aligns both family branches by generation and keeps every focus inside the
       for (let i = 1; i < row.length; i++) assert(row[i].x >= row[i-1].x + view.cardWidth, `${person.id}: overlapping cards`);
     }
   }
+});
+
+test("corrects Pavel's saved parent pair atomically and applies confirmed surnames without losing edits", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const raw = JSON.parse(await readFile(new URL("../src/initial-family.json", import.meta.url), "utf8"));
+  const correction = raw.seedUpdates.find(u => u.revision === 6);
+  const old = parseFamily(JSON.stringify(raw));
+  old.seedRevision = 5;
+  for (const before of correction.updateParentage[0].ifUnchanged)
+    Object.assign(old.relationships.find(r => r.id === before.id), before);
+  for (const change of correction.updatePeople)
+    Object.assign(old.people.find(p => p.id === change.personId), change.ifUnchanged);
+  for (const change of correction.updateQuestions)
+    Object.assign(old.questions.find(q => q.id === change.questionId), change.ifUnchanged);
+  old.sources = old.sources.filter(s => !correction.sources.includes(s.id));
+  const untouched = JSON.stringify(old);
+  const migrated = applySeedUpdates(old, raw);
+  assert.deepEqual(relatives(migrated, "P024").parents.map(r => r.person.id).sort(), ["P011", "P019"]);
+  assert.deepEqual(relatives(migrated, "P010").children.map(r => r.person.id).sort(), ["P022", "P023"]);
+  assert.equal(migrated.people.filter(p => p.id === "P024").length, 1);
+  assert.equal(migrated.people.length, 31);
+  assert.equal(migrated.relationships.length, 51);
+  for (const id of ["P004", "P005", "P026", "P027", "P029", "P030"])
+    assert.equal(migrated.people.find(p => p.id === id).lastName, raw.people.find(p => p.id === id).lastName);
+  assert(migrated.questions.find(q => q.id === "Q011").detail.includes("syn Pavel P024"));
+  assert.equal(JSON.stringify(old), untouched);
+  assert.equal(applySeedUpdates(migrated, raw), migrated);
+
+  const edited = structuredClone(old);
+  edited.people.find(p => p.id === "P026").lastName = "Vlastná úprava";
+  edited.people.find(p => p.id === "P001").note = "Moje poznámky";
+  edited.relationships.find(r => r.id === "L040").source = "Vlastný doklad";
+  const preserved = applySeedUpdates(edited, raw);
+  assert.deepEqual(relatives(preserved, "P024").parents.map(r => r.person.id).sort(), ["P010", "P018"]);
+  assert.equal(preserved.people.find(p => p.id === "P026").lastName, "Vlastná úprava");
+  assert.equal(preserved.people.find(p => p.id === "P001").note, "Moje poznámky");
+  const missingLink = { ...old, relationships: old.relationships.filter(r => r.id !== "L041") };
+  assert.deepEqual(relatives(applySeedUpdates(missingLink, raw), "P024").parents.map(r => r.person.id), ["P010"]);
+  assert.equal(applySeedUpdates(removePerson(old, "P024"), raw).people.some(p => p.id === "P024"), false);
+  const extra = addRelationship(old, link("P014", "P024"));
+  assert.equal(relatives(applySeedUpdates(extra, raw), "P024").parents.length, 3);
+  const cyclic = addRelationship(old, link("P024", "P011"));
+  assert.deepEqual(relatives(applySeedUpdates(cyclic, raw), "P024").parents.map(r => r.person.id).sort(), ["P010", "P018"]);
 });

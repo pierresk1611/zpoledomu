@@ -301,6 +301,27 @@ export function applySeedUpdates(family, rawSeed) {
       const source = seed.sources.find(s => s.id === id);
       if (source) next.sources.push(source);
     }
+    for (const item of update.updateParentage || []) {
+      const existing = next.relationships.filter(r => r.type === "parent" && r.to === item.personId);
+      const expected = item.ifUnchanged || [];
+      if (existing.length !== expected.length || !expected.every(before =>
+        existing.some(r => r.id === before.id && Object.entries(before).every(([key, value]) => r[key] === value)))) continue;
+      const replacements = (item.relationships || []).map(id => seed.relationships.find(r => r.id === id));
+      if (replacements.some(r => !r || r.type !== "parent" || r.to !== item.personId ||
+        ![r.from, r.to].every(id => next.people.some(p => p.id === id)))) continue;
+      // Apply the whole parent pair or leave the user's edited family alone.
+      let candidate = { ...next, relationships: next.relationships.filter(r => !existing.some(old => old.id === r.id)) };
+      try {
+        for (const relation of replacements) candidate = addRelationship(candidate, relation);
+        next = candidate;
+      } catch { /* A local ancestry edit may make the canonical correction invalid. */ }
+    }
+    for (const item of update.updateQuestions || []) {
+      const recorded = seed.questions.find(q => q.id === item.questionId);
+      if (recorded) next.questions = next.questions.map(q => q.id === item.questionId &&
+        Object.entries(item.ifUnchanged || {}).every(([key, value]) => q[key] === value)
+          ? { ...q, ...Object.fromEntries((item.fields || []).map(key => [key, recorded[key]])) } : q);
+    }
     for (const item of update.updateUnions || []) {
       const recorded = seed.relationships.find(r => r.id === item.relationshipId && r.type === "partner");
       if (recorded) next.relationships = next.relationships.map(r =>
@@ -310,6 +331,7 @@ export function applySeedUpdates(family, rawSeed) {
     for (const item of update.updatePeople || []) {
       const person = seed.people.find(p => p.id === item.personId);
       if (!person) continue;
+      if (item.ifParents && JSON.stringify(relatives(next, item.personId).parents.map(r => r.person.id).sort()) !== JSON.stringify([...item.ifParents].sort())) continue;
       next.people = next.people.map(p => p.id === item.personId &&
         Object.entries(item.ifUnchanged || {}).every(([key, value]) => p[key] === value)
         ? { ...p, ...Object.fromEntries((item.fields || []).map(key => [key, person[key]])) }
@@ -414,7 +436,7 @@ export function treeLayout(family, focusId) {
       let ids = blocks.flat();
       let start = side === "paternal" ? boundary - ids.length * columnStep : side === "maternal" ? boundary : boundary - ids.length * columnStep / 2;
       if (level === 0) start = side === "paternal" ? boundary - (sharedGap + ids.length) * columnStep : boundary + sharedGap * columnStep - columnStep / 2;
-      if (level > 0) {
+      if (level >= 0) {
         // Each child group sits under its own recorded parents. No inferred
         // paternity from a spouse, and no bus shared by unrelated households.
         const groups = new Map();
@@ -427,7 +449,7 @@ export function treeLayout(family, focusId) {
         const ordered = [...groups.values()].map(g => ({ ...g, target: g.parents.length
           ? g.parents.reduce((sum,r) => sum + positions.get(r.person.id).x + cardWidth / 2, 0) / g.parents.length
           : start + columnStep / 2 })).sort((a,b) => a.target - b.target);
-        let end = side === "paternal" ? padding : side === "maternal" ? boundary : padding;
+        let end = side === "paternal" ? padding + cardWidth / 2 : side === "maternal" ? boundary + (level === 0 ? sharedGap * columnStep : cardWidth / 2) : padding + cardWidth / 2;
         for (const group of ordered) {
           const left = Math.max(end, group.target - (group.ids.length - 1) * columnStep / 2);
           group.ids.forEach((id,i) => put(id, left + i * columnStep, level));

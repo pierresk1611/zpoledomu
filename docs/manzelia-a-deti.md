@@ -7,14 +7,14 @@ Viera a Rudolf sú podľa používateľa manželia. Doplnená výslovná manžel
 | Pár | Oznámené deti |
 | --- | --- |
 | Viera Ďurišová + Rudolf Ďuriš | Peter, Blanka a Mária; pôvodné adoptívne väzby zachované |
-| Mária Maľová + Pavel Maľa | Marianna Okolenská, Denisa Baranová, Pavel |
-| Ružena + Pavel, priezvisko zatiaľ neznáme | Zatiaľ nezistené |
+| Mária Maľová + Pavel Maľa | Marianna Okolenská, Denisa Baranová |
+| Ružena + Pavel, priezvisko zatiaľ neznáme | Pavel (P024, oprava S036) |
 | Marcela Solárová + Jozef Solár | Zatiaľ nezistené |
 | Helena Salinková + Jozef Salinka | Sylvia Offei Kwatya; ďalšie deti nezistené |
 | Marianna Okolenská + Juraj Okolenský | Mariannine deti Patrik a Vanesa; Jurajovo otcovstvo zatiaľ výslovne nepotvrdené |
 | Denisa Baranová + Ľuboš Baran | Ľuboš a Robert, obaja rodičia oznámení používateľom |
 
-Marianna a Juraj žijú podľa používateľa vo Veľkej Čalomiji; údaj nie je použitý ako rodisko. Nové osoby nemajú domyslené narodenia, úmrtia či rodné priezviská. Dve osoby Pavel — manželia Márie a Ruženy — sú odlíšené; Pavel, Máriin syn, je tretia osoba. Ľuboš Baran a jeho syn Ľuboš majú samostatné ID. Priezviská detí, ktoré používateľ neuviedol, zatiaľ nie sú odvodené od priezviska otca.
+Marianna a Juraj žijú podľa používateľa vo Veľkej Čalomiji; údaj nie je použitý ako rodisko. Nové osoby nemajú domyslené narodenia, úmrtia či rodné priezviská. Dve osoby Pavel — manželia Márie a Ruženy — sú odlíšené; Pavel, syn Ruženy a jej manžela Pavla, je tretia osoba (oprava S036). Ľuboš Baran a jeho syn Ľuboš majú samostatné ID. Priezviská detí, ktoré používateľ neuviedol, zatiaľ nie sú odvodené od priezviska otca.
 
 Nové rodinné tvrdenia zostávajú označené **NEOVERENÉ**, pretože nezávislý doklad zatiaľ chýba. Celkovo **31 osôb a 51 vzťahov**, vrátane štyroch adoptívnych rodičovských väzieb a siedmich nových manželstiev. Staršie manželstvo otcových rodičov L018 vyplýva z náhrobku a zostáva podložené týmto prameňom.
 
@@ -34,3 +34,11 @@ Verejná kronika pri Jozefovi nemá životopis, spomienky ani fotografie; číta
 Virtuálny cintorín pri priezvisku Salinka uvádza troch zosnulých v jednom hrobe Komárna; ide o inú, zatiaľ nepriradenú stopu. Pri priezvisku Salinková tam výsledok nebol. Nie je to úplná evidencia všetkých osôb ani dôkaz, že Helena zomrela. Bing pri šiestich konkrétnych dotazoch vracal nesúvisiace anglické výsledky; nemožno z neho vyvodzovať, že deti alebo verejné rodinné zmienky neexistujú.
 
 **Mená detí Ruženy a Marcely a ďalších detí Heleny zatiaľ nie sú doložené.** Do rodokmeňa sa nevkladajú osoby iba podľa rovnakého priezviska či spoločného hrobu. Pokračovanie stojí na identifikácii konkrétneho páru a prameni, ktorý výslovne uvedie ich deti.
+
+### S036 — oprava zaradenia Pavla
+
+Používateľ 13. 10. 2026 opravil Pavla P024 na syna Ruženy P011 a Pavla P019. Väzby L040/L041 nahrádzajú pôvodné zaradenie k Maľovcom; Pavel patrí do otcovej vetvy. ID osoby ostáva zachované, nevytvára sa ďalší menovec. Starší výrok S031 je historické podanie, aktuálne zaradenie vychádza zo S036. Rev6 opravuje aj pôvodné nezmenené rodičovské väzby uložené v prehliadači; vlastné úpravy alebo vymazania neobnovuje.
+
+### S037 — potvrdené priezviská
+
+Používateľ výslovne potvrdil mená Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Priezviská nie sú iba automatický odhad podľa rodičov. Potvrdenie priezviska nemení rodičovské väzby; Jurajovo otcovstvo zostáva nezistené. Ruženin manžel Pavel P019 a syn Pavel P024 zostávajú bez zisteného priezviska.

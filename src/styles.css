@@ -1743,7 +1743,7 @@ td {
 }
 
 .tree-lanes { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #e3e8de; font-size: 11px; color: #627259; }
-.tree-lanes span { padding: 10px 16px; text-align: center; background: #f4f7f9; }
+.tree-lanes span { min-width: 0; overflow: hidden; white-space: nowrap; padding: 10px 16px; text-align: center; background: #f4f7f9; }
 .tree-lanes span + span { background: #f7f8f0; border-left: 1px solid #e1e5da; }
 
 /* One shared generation grid; the profile opens without shrinking the tree. */

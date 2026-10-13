@@ -6,6 +6,8 @@
 
 Otcova línia je naľavo, maminkina napravo. Každá generácia má spoločný riadok: rodičia s tetami a strýkami, Peter so sestrami a bratrancami/sesternicami, pod nimi ďalšia generácia. Páry sú vedľa seba; deti spája iba línia ich zaznamenaných rodičov. Tlačidlo **Celý strom** otvorí veľký prehľad. Detail osoby sa otvára po kliknutí na kartu.
 
+[Nové hľadanie a oprava Pavla](docs/vyskum-rodiny-2026-10-13.md): Pavel je syn Ruženy a Pavla z otcovej vetvy; doplnených šesť potvrdených priezvisk. Sedem nových dotazov cintorínskych indexov zatiaľ neprinieslo ďalšiu doloženú väzbu.
+
 [Manželia a deti](docs/manzelia-a-deti.md): doplnené rodiny tetiek, Marianny a Denisy aj Sylvia Offei Kwatya; manželia sú vedľa seba a strom zobrazuje aj deti príbuzných. Ďalšie deti tetiek zostávajú otvoreným výskumom.
 
 ## Otvorenie bez inštalácie
