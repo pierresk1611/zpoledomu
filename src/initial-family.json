@@ -88,8 +88,8 @@
       "gender": "male",
       "birthDate": "1919-10-18",
       "deathDate": "1970-12-16",
-      "birthPlace": "",
-      "note": "Dátumy sú čitateľné na spoločnom náhrobku s Máriou Kulichovou. Spoločný hrob sám osebe nedokazuje sobáš; rodičovská väzba k Viere zatiaľ pochádza z rodinného podania.",
+      "birthPlace": "Zvolenská Slatina",
+      "note": "Dátumy sú čitateľné na spoločnom náhrobku s Máriou Kulichovou. Spoločný hrob sám osebe nedokazuje sobáš; rodičovská väzba k Viere zatiaľ pochádza z rodinného podania.\nS029: Sčítanie 1930, dom 197, domácnosť 3, uvádza Jozefa Kulicha s presným dátumom 18. 10. 1919 a rodiskom Zvolenská Slatina ako syna Márie Kulichovej. V tej istej domácnosti sú jej deti Anna, Ján a Martin. Matkin muž je poznamenaný v Kanade bez mena; otca Jozefa zatiaľ nepoznáme.",
       "source": "S008 + S009 + S011 — Cintorín Zvolenská Slatina, hrob 1549 (pôvodné číslo 676), záznam z_slatina_z.372; fotografia https://mobec.sk/photos/zvolenska_slatina/258.jpg, prístup 12. 10. 2026. Náhrobok vizuálne skontrolovala AI; totožnosť podporilo potvrdenie rodiny.",
       "status": "PODLOŽENÝ ZÁVER"
     },
@@ -128,7 +128,7 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Sestra Viery. Podľa používateľa žije vo Zvolenskej Slatine. Dátum narodenia, rodné priezvisko a jej rodičia zatiaľ nie sú doložení.",
+      "note": "Sestra Viery. Podľa používateľa žije vo Zvolenskej Slatine. Dátum narodenia, rodné priezvisko zatiaľ nie sú doložené matrikou. Používateľ potvrdil oboch rodičov (S026): Mária a Jozef Kulichovci.",
       "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     },
@@ -141,7 +141,7 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žije v Prahe. Priezvisko, dátumy a jej rodičia zatiaľ nie sú doložení.",
+      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žije v Prahe. Priezvisko, dátumy zatiaľ nie sú doložené matrikou. Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci.",
       "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     },
@@ -154,7 +154,7 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Sestra Rudolfa (1950–2013). Oznámený pobyt: Bratislava. Dátumy, životný stav a jej rodičia zatiaľ nie sú doložení.",
+      "note": "Sestra Rudolfa (1950–2013). Oznámený pobyt: Bratislava. Dátumy, životný stav zatiaľ nie sú doložené matrikou. Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci.",
       "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     },
@@ -167,9 +167,61 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žila v Malackách; tento údaj nepotvrdzuje úmrtie. Dátumy, súčasný pobyt a jej rodičia zatiaľ nie sú doložení.",
+      "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žila v Malackách; tento údaj nepotvrdzuje úmrtie. Dátumy, súčasný pobyt zatiaľ nie sú doložené matrikou. Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci.",
       "source": "S014 — Mená a pobyty oznámené používateľom v rozhovore, 12. 10. 2026; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P014",
+      "firstName": "Mária",
+      "lastName": "Kulichová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1900",
+      "deathDate": "",
+      "birthPlace": "Zvolenská Slatina",
+      "note": "Prednostka tretej domácnosti v dome 197. Jozef je uvedený ako jej syn; Anna, Ján a Martin ako jej dcéra a synovia. Rodné priezvisko a úmrtie nepoznáme. Hárok uvádza sobáš v roku 1920 a poznámku „muž v Kanade“, bez jeho mena. Meno otca detí ani spoločné otcovstvo z toho neurčujeme.",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P015",
+      "firstName": "Anna",
+      "lastName": "Kulichová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1921",
+      "deathDate": "",
+      "birthPlace": "Zvolenská Slatina",
+      "note": "V sčítaní 1930 dcéra Márie Kulichovej v domácnosti 3, dome 197. Súrodenecký vzťah k Jozefovi je podložený spoločnou matkou v zázname; otec, neskoršie priezvisko a úmrtie zatiaľ nezistené.",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P016",
+      "firstName": "Ján",
+      "lastName": "Kulich",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1924",
+      "deathDate": "",
+      "birthPlace": "Zvolenská Slatina",
+      "note": "V sčítaní 1930 syn Márie Kulichovej v domácnosti 3, dome 197. Súrodenecký vzťah k Jozefovi je podložený spoločnou matkou v zázname; otec a úmrtie zatiaľ nezistené.",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P017",
+      "firstName": "Martin",
+      "lastName": "Kulich",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1926",
+      "deathDate": "",
+      "birthPlace": "Zvolenská Slatina",
+      "note": "V sčítaní 1930 syn Márie Kulichovej v domácnosti 3, dome 197. Súrodenecký vzťah k Jozefovi je podložený spoločnou matkou v zázname; otec a úmrtie zatiaľ nezistené.",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
     }
   ],
   "relationships": [
@@ -334,6 +386,114 @@
       "kind": "unknown",
       "status": "PODLOŽENÝ ZÁVER",
       "source": "S020 — Náhrobok v Sobranciach, C/148: Rudolf Ďuriš „a manželka Alžbeta rod. Čakanová“. Sobášny matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L019",
+      "type": "parent",
+      "from": "P006",
+      "to": "P010",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L020",
+      "type": "parent",
+      "from": "P007",
+      "to": "P010",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L021",
+      "type": "parent",
+      "from": "P008",
+      "to": "P011",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L022",
+      "type": "parent",
+      "from": "P009",
+      "to": "P011",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L023",
+      "type": "parent",
+      "from": "P008",
+      "to": "P012",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L024",
+      "type": "parent",
+      "from": "P009",
+      "to": "P012",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L025",
+      "type": "parent",
+      "from": "P008",
+      "to": "P013",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L026",
+      "type": "parent",
+      "from": "P009",
+      "to": "P013",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S026 — Používateľ 13. 10. 2026 výslovne potvrdil oboch rodičov v oboch súrodeneckých skupinách. Matričný zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L027",
+      "type": "parent",
+      "from": "P014",
+      "to": "P007",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L028",
+      "type": "parent",
+      "from": "P014",
+      "to": "P015",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L029",
+      "type": "parent",
+      "from": "P014",
+      "to": "P016",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný."
+    },
+    {
+      "id": "L030",
+      "type": "parent",
+      "from": "P014",
+      "to": "P017",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný."
     }
   ],
   "questions": [
@@ -358,7 +518,7 @@
     {
       "id": "Q004",
       "title": "Súrodenci rodičov",
-      "detail": "Viera má sestru Máriu Maľovú (Zvolenská Slatina). Používateľ opravil počet: Rudolf mal tri sestry, Ruženu (Praha), Marcelu Solárovú (Bratislava) a Helenu Salinkovú (predtým Malacky). Pridané sú oznámené súrodenecké väzby; ich rodičov ani dátumy z týchto údajov neodvodzujeme.",
+      "detail": "Rudolf mal tri sestry: Ruženu, Marcelu Solárovú a Helenu Salinkovú; Viera má sestru Máriu Maľovú. Používateľ 13. 10. 2026 potvrdil oboch rodičov oboch skupín (S026); doplnené rodičovské väzby sú rodinným podaním bez matričného dokladu.",
       "status": "Doplnené rodinné údaje"
     },
     {
@@ -372,6 +532,30 @@
       "title": "Rudolf a Alžbeta · hrob C/148",
       "detail": "Na základe výpisu používateľa bol otvorený pôvodný detail aj fotografia: Rudolf 10. 8. 1922 – 30. 5. 1986; Alžbeta, rod. Čakanová, 26. 1. 1925 – 12. 6. 2019. Nápis uvádza manželku. Nasleduje rodný alebo sobášny matričný zápis pre rodiská a rodičov; tieto údaje hrob neposkytuje.",
       "status": "Dátumy a manželstvo podložené náhrobkom"
+    },
+    {
+      "id": "Q007",
+      "title": "Rodičia tetiek · doplnené väzby",
+      "detail": "Používateľ výslovne potvrdil: Viera a Mária Maľová majú rodičov Máriu a Jozefa Kulichových; Rudolf a tri sestry Ružena, Marcela a Helena majú rodičov Alžbetu a Rudolfa Ďurišových. Pridaných osem rodičovských väzieb s citáciou rodinného podania. Matričný zápis zatiaľ chýba.",
+      "status": "Potvrdené používateľom · bez matričného dokladu"
+    },
+    {
+      "id": "Q008",
+      "title": "Nová generácia · Jozefova matka",
+      "detail": "S029: Originál sčítania 1930 uvádza Jozefa Kulicha nar. 18. 10. 1919 ako syna Márie Kulichovej (1900) v dome 197 Zvolenská Slatina. Pridaná Mária a jej ďalšie deti Anna (1921), Ján (1924), Martin (1926), štyri rodičovské väzby. Identifikácia je podložený záver; rodné priezvisko matky a meno otca zostávajú otvorené.",
+      "status": "Podložené originálom sčítania · matrika nasleduje"
+    },
+    {
+      "id": "Q009",
+      "title": "Nepriradené stopy · Juraj a Július",
+      "detail": "Juraj Ďuriš 1911–1991 v Sobranciach C/25: používateľ ho nepozná; väzba nenájdená. Július Gašparík je sčítací revízor Čierneho Balogu v roku 1930; bez dokladu väzby k Márii Gašparíkovej. Tieto osoby zatiaľ nie sú členmi rodokmeňa.",
+      "status": "Stopy bez potvrdeného príbuzenstva"
+    },
+    {
+      "id": "Q010",
+      "title": "Ďalší zápis · Jozef 1919 a Mária 1900",
+      "detail": "Vyhľadať rodný zápis Jozefa z 18. 10. 1919 v Zvolenskej Slatine a sobáš Márie z 2. 11. 1920 podľa sčítacieho hárku. Jozef sa narodil pred zapísaným sobášom; manžela nemožno automaticky označiť za jeho otca. Zistiť rodné priezvisko Márie, manžela, rodičov a vysvetlenie poznámky o Kanade.",
+      "status": "Konkrétne dátumy pre pokračovanie v matrike"
     }
   ],
   "sources": [
@@ -451,9 +635,58 @@
       "url": "https://www.virtualnycintorin.sk/obrazok/hm/FXMzMwNTIzMU8xNzQzNDUx",
       "note": "AI prečítala Rudolf *10. 8. 1922 †30. 5. 1986; „a manželka Alžbeta rod. Čakanová“ *26. 1. 1925 †12. 6. 2019. Ide o náhrobok, nie rodný ani sobášny matričný zápis.",
       "checked": "2026-10-12"
+    },
+    {
+      "id": "S021",
+      "title": "Juraj Ďuriš · nepriradený hrob C/25",
+      "url": "https://www.virtualnycintorin.sk/hrob/420210",
+      "note": "Náhrobok uvádza 1911–1991. Používateľ Juraja nepozná; nebol pridaný do rodiny. Rovnaké priezvisko a cintorín nedokazujú príbuzenstvo.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S022",
+      "title": "Juraj Ďuriš · fotografia náhrobku",
+      "url": "https://www.virtualnycintorin.sk/obrazok/hm/FXMjM4NTEzMU8xNTQwNDUx",
+      "note": "Pôvodná fotografia prečítaná AI: 1911–1991; žiadny nápis dokladajúci väzbu k Rudolfovi.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S024",
+      "title": "Cintoriny.sk · Jozef Kulich",
+      "url": "https://www.cintoriny.sk/src/index.php",
+      "note": "Verejný index vrátil 20 menovcov Jozef Kulich. Zodpovedajúci dátum 18. 10. 1919 / 16. 12. 1970 nezistený; Detva 23. 10. 1919 – 20. 3. 1999 je iný muž.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S025",
+      "title": "Praha · starý súpis obyvateľov",
+      "url": "https://katalog.ahmp.cz/pragapublica/",
+      "note": "V zbierke Soupis pražského obyvatelstva 1830–1910 (1920), xid 59F886CC3AA211E0824A00166F1163D4, dotazy Ďuriš, Duriš, Čakan a Kulich vrátili 0. Kontrolný prázdny dotaz zobrazil 270174 položiek. Nevylučuje neskorší pobyt rodiny v Prahe; osobná snímka nebola získaná.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S027",
+      "title": "Čierny Balog 1930 · Július Gašparík",
+      "url": "https://slovakiana.sk/scitacie-harky/cair-ko26xh3",
+      "note": "Hárok 1186/138 je obecný prehľad; Július Gašparík je uvedený ako sčítací revízor. Nie je doložený jeho vzťah k Márii Gašparíkovej. Katalóg obce má 903 položiek, nie 903 prečítaných rodinných hárkov.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S028",
+      "title": "Pozor na zaradenie · originál hárku Slatinky",
+      "url": "https://slovakiana.sk/scitacie-harky/cair-ko29ung",
+      "note": "Katalóg označuje 1257/75 ako Zvolenskú Slatinu, ale originál výslovne uvádza Slatinku. Výskum musí overovať obec na snímke. Dom 5 Slatinky (1141/326) neobsahuje hľadaného Jozefa 1919.",
+      "checked": "2026-10-13"
+    },
+    {
+      "id": "S029",
+      "title": "Jozefova matka a súrodenci · sčítanie 1930",
+      "url": "https://slovakiana.sk/scitacie-harky/cair-ko28dhx",
+      "note": "Originál hárku 1141/132, druhá strana: domácnosť 3, dom 197 Zvolenská Slatina. Mária Kulichová (1900), prednostka; Jozef, syn, 18. 10. 1919; Anna, dcéra, 1921; Ján, syn, 1924; Martin, syn, 1926. Rodisko pri všetkých Zvolenská Slatina. Zhoda Jozefovho mena a celého dátumu narodenia podporuje identifikáciu s P007. Poznámka „muž v Kanade“ neuvádza otca menom. Nie je to matričný zápis.",
+      "checked": "2026-10-13"
     }
   ],
-  "seedRevision": 3,
+  "seedRevision": 4,
   "seedUpdates": [
     {
       "revision": 2,
@@ -545,6 +778,113 @@
         {
           "personId": "P008",
           "text": "S019–S020: spoločný hrob C/148 v Sobranciach. Náhrobok uvádza Alžbeta rod. Čakanová, *26. 1. 1925, †12. 6. 2019, a označuje ju ako manželku Rudolfa Ďuriša. Pôvodný neistý variant Čekanová zostáva v histórii. Náhrobok skontrolovala AI; rodisko a matričný zápis zatiaľ nepoznáme."
+        }
+      ]
+    },
+    {
+      "revision": 4,
+      "people": [
+        "P014",
+        "P015",
+        "P016",
+        "P017"
+      ],
+      "relationships": [
+        "L019",
+        "L020",
+        "L021",
+        "L022",
+        "L023",
+        "L024",
+        "L025",
+        "L026",
+        "L027",
+        "L028",
+        "L029",
+        "L030"
+      ],
+      "sources": [
+        "S021",
+        "S022",
+        "S024",
+        "S025",
+        "S027",
+        "S028",
+        "S029"
+      ],
+      "questions": [
+        "Q007",
+        "Q008",
+        "Q009",
+        "Q010"
+      ],
+      "appendNotes": [
+        {
+          "personId": "P010",
+          "text": "Používateľ potvrdil oboch rodičov (S026): Mária a Jozef Kulichovci."
+        },
+        {
+          "personId": "P011",
+          "text": "Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci."
+        },
+        {
+          "personId": "P012",
+          "text": "Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci."
+        },
+        {
+          "personId": "P013",
+          "text": "Používateľ potvrdil oboch rodičov (S026): Alžbeta a Rudolf Ďurišovci."
+        },
+        {
+          "personId": "P007",
+          "text": "S029: Sčítanie 1930, dom 197, domácnosť 3, uvádza Jozefa Kulicha s presným dátumom 18. 10. 1919 a rodiskom Zvolenská Slatina ako syna Márie Kulichovej. V tej istej domácnosti sú jej deti Anna, Ján a Martin. Matkin muž je poznamenaný v Kanade bez mena; otca Jozefa zatiaľ nepoznáme."
+        }
+      ],
+      "updatePeople": [
+        {
+          "personId": "P010",
+          "ifUnchanged": {
+            "note": "Sestra Viery. Podľa používateľa žije vo Zvolenskej Slatine. Dátum narodenia, rodné priezvisko a jej rodičia zatiaľ nie sú doložení."
+          },
+          "fields": [
+            "note"
+          ]
+        },
+        {
+          "personId": "P011",
+          "ifUnchanged": {
+            "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žije v Prahe. Priezvisko, dátumy a jej rodičia zatiaľ nie sú doložení."
+          },
+          "fields": [
+            "note"
+          ]
+        },
+        {
+          "personId": "P012",
+          "ifUnchanged": {
+            "note": "Sestra Rudolfa (1950–2013). Oznámený pobyt: Bratislava. Dátumy, životný stav a jej rodičia zatiaľ nie sú doložení."
+          },
+          "fields": [
+            "note"
+          ]
+        },
+        {
+          "personId": "P013",
+          "ifUnchanged": {
+            "note": "Sestra Rudolfa (1950–2013). Podľa používateľa žila v Malackách; tento údaj nepotvrdzuje úmrtie. Dátumy, súčasný pobyt a jej rodičia zatiaľ nie sú doložení."
+          },
+          "fields": [
+            "note"
+          ]
+        },
+        {
+          "personId": "P007",
+          "ifUnchanged": {
+            "birthPlace": ""
+          },
+          "fields": [
+            "birthPlace"
+          ]
         }
       ]
     }
