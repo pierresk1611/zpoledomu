@@ -4,6 +4,8 @@
 
 [Výsledky výskumu z 13. 10. 2026](docs/vyskum-vazby-2026-10-13.md): sčítanie 1930 uvádza matku a troch súrodencov Jozefa Kulicha (18. 10. 1919). Aktuálna rodina má 31 osôb a 51 vzťahov, vrátane potvrdených väzieb tetám. [Živý rodokmeň](https://durisovci.vercel.app/).
 
+Otcova línia je naľavo, maminkina napravo. Každá generácia má spoločný riadok: rodičia s tetami a strýkami, Peter so sestrami a bratrancami/sesternicami, pod nimi ďalšia generácia. Páry sú vedľa seba; deti spája iba línia ich zaznamenaných rodičov. Tlačidlo **Celý strom** otvorí veľký prehľad. Detail osoby sa otvára po kliknutí na kartu.
+
 [Manželia a deti](docs/manzelia-a-deti.md): doplnené rodiny tetiek, Marianny a Denisy aj Sylvia Offei Kwatya; manželia sú vedľa seba a strom zobrazuje aj deti príbuzných. Ďalšie deti tetiek zostávajú otvoreným výskumom.
 
 ## Otvorenie bez inštalácie
@@ -68,9 +70,10 @@ V izolovanom náhľade môže byť ukladanie prehliadača zakázané. Aplikácia
 npm test
 npm run build
 python3 tests/browser_smoke.py
+python3 tests/generation_layout_smoke.py
 ```
 
-Jednotkové testy kontrolujú rodinné väzby, cykly v pôvode, adopcie, dátumy, citácie, import a odstraňovanie. Test prehliadača vyžaduje bežiaci server na porte 3000, Python Playwright a Chromium, ktoré sú v tomto cloudovom prostredí dostupné. Používa izolovaný prehliadač a fiktívne dáta; skutočný rodinný súbor nemení. Voliteľne nastavte `TEST_BASE_URL` a `CHROMIUM_PATH`.
+Jednotkové testy kontrolujú rodinné väzby, cykly v pôvode, adopcie, dátumy, citácie, import a odstraňovanie. Test prehliadača vyžaduje bežiaci server na porte 3000, Python Playwright a Chromium, ktoré sú v tomto cloudovom prostredí dostupné. Používa izolovaný prehliadač a fiktívne dáta; skutočný rodinný súbor nemení. Test `generation_layout_smoke.py` navyše kontroluje generačné riadky, oddelené vetvy, susediace páry a rodičovské spojnice predvolenej verejnej rodiny bez jej úprav. Voliteľne nastavte `TEST_BASE_URL` a `CHROMIUM_PATH`.
 
 ## Výskum a dôkazy
 

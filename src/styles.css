@@ -1741,3 +1741,37 @@ td {
   margin-top: 8px;
   line-height: 1.6;
 }
+
+.tree-lanes { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #e3e8de; font-size: 11px; color: #627259; }
+.tree-lanes span { padding: 10px 16px; text-align: center; background: #f4f7f9; }
+.tree-lanes span + span { background: #f7f8f0; border-left: 1px solid #e1e5da; }
+
+/* One shared generation grid; the profile opens without shrinking the tree. */
+.workspace-grid { grid-template-columns: minmax(0, 1fr); }
+.paternal-background { fill: #f0f5f8; }
+.maternal-background { fill: #f7f8ee; }
+.clan-divider { stroke: #cbd4c3; stroke-width: 1; stroke-dasharray: 2 5; }
+.generation-rule { stroke: #e2e8df; stroke-width: 1; }
+.generation-label { fill: #6d7c62; font: 12px Arial, sans-serif; }
+.couple-frame { fill: none; stroke: #c6d4b9; stroke-width: 1; }
+.compact-node { padding: 7px 8px; }
+.compact-node .node-top { margin-bottom: 4px; gap: 3px; }
+.compact-node .avatar { width: 20px; height: 20px; font-size: 9px; }
+.compact-node .node-generation { font-size: 6px; letter-spacing: .5px; }
+.compact-node strong { font-size: 15px; line-height: 17px; overflow-wrap: anywhere; white-space: normal; text-overflow: clip; }
+.compact-node .node-dates { margin-top: auto; font-size: 9px; }
+.compact-node .node-dot { bottom: 7px; right: 6px; width: 4px; height: 4px; }
+.expand-tree-button { white-space: nowrap; margin-left: auto; }
+.expanded-tree { position: fixed; inset: 12px; z-index: 50; display: flex; flex-direction: column; box-shadow: 0 0 0 100vmax #29362480; }
+.expanded-tree .tree-scroll { flex: 1; min-height: 0; max-height: none; }
+.expanded-tree .tree-explainer { flex-shrink: 0; }
+.details-drawer { position: fixed; right: 20px; top: 65px; width: 340px; max-width: calc(100vw - 24px); max-height: calc(100vh - 85px); overflow: auto; z-index: 60; border-radius: 8px; box-shadow: 0 10px 50px #2d3b3540; background: #fffefb; }
+.details-drawer[hidden] { display: none; }
+.details-drawer .detail-panel { width: auto; position: static; min-height: 0; padding-top: 38px; }
+.close-details { position: absolute; top: 7px; right: 7px; z-index: 1; }
+@media (max-width: 700px) {
+  .tree-panel .panel-header { flex-wrap: wrap; }
+  .tree-panel .panel-header > div { flex-basis: 100%; }
+  .expand-tree-button { margin-left: 0; }
+  .expanded-tree { inset: 4px; }
+}

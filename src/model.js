@@ -333,131 +333,154 @@ export function generations(family) {
   return Math.max(0, ...family.people.map((p) => depth(p.id)));
 }
 export function treeLayout(family, focusId) {
-  if (!family.people.length)
-    return { nodes: [], edges: [], width: 840, height: 440 };
-  const focus = family.people.find((p) => p.id === focusId) || family.people[0];
-  const depths = new Map([[focus.id, 0]]);
-  const ancestors = new Set();
-  let current = [focus.id];
+  const cardWidth = 128, cardHeight = 98, columnStep = 144, rowStep = 148, padding = 32;
+  if (!family.people.length) return { nodes: [], edges: [], parentGroups: [], width: 840, height: 440, cardWidth, cardHeight, columnStep };
+  const focus = family.people.find(p => p.id === focusId) || family.people[0];
+  const orderedParents = id => relatives(family, id).parents.slice().sort((a,b) =>
+    ({ male: 0, female: 1 }[a.person.gender] ?? 2) - ({ male: 0, female: 1 }[b.person.gender] ?? 2));
+  const depths = new Map([[focus.id, 0]]), sides = new Map([[focus.id, "shared"]]), ancestors = new Set();
+  let frontier = [focus.id];
   for (let depth = 1; depth <= 3; depth++) {
     const next = [];
-    for (const id of current)
-      for (const { person } of relatives(family, id).parents)
-        if (!depths.has(person.id)) {
-          depths.set(person.id, -depth);
-          ancestors.add(person.id);
-          next.push(person.id);
-        }
-    current = next;
+    for (const id of frontier) for (const { person } of orderedParents(id)) if (!depths.has(person.id)) {
+      depths.set(person.id, -depth);
+      sides.set(person.id, depth === 1 ? person.gender === "female" ? "maternal" : "paternal" : sides.get(id));
+      ancestors.add(person.id); next.push(person.id);
+    }
+    frontier = next;
   }
-  const { children, partners, siblings } = relatives(family, focus.id);
-  for (const { person } of [...partners, ...siblings])
-    if (!depths.has(person.id)) depths.set(person.id, 0);
-  for (const { person } of children)
-    if (!depths.has(person.id)) depths.set(person.id, 1);
-  // Show siblings of the ancestors too, without assuming their parents.
-  for (const id of ancestors) {
-    for (const { person } of relatives(family, id).siblings)
-      if (!depths.has(person.id)) depths.set(person.id, depths.get(id));
+  const rels = relatives(family, focus.id);
+  for (const { person } of [...rels.siblings, ...rels.partners]) if (!depths.has(person.id)) {
+    depths.set(person.id, 0); sides.set(person.id, "shared");
   }
-  const auntsUncles = new Set([...ancestors].filter(id => depths.get(id) === -1)
-    .flatMap(id => relatives(family, id).siblings.map(r => r.person.id)));
-  const cousins = new Set();
-  const niecesNephews = new Set();
-  const partnerIds = new Set(partners.map(r => r.person.id));
-  const spouseIds = new Set(partners.filter(r => r.relation.union === "married").map(r => r.person.id));
-  // Include relatives' children and one further generation, then partners.
-  // Keep the expansion bounded instead of recursively loading the whole tree.
+  for (const id of ancestors) for (const { person } of relatives(family, id).siblings) if (!depths.has(person.id)) {
+    depths.set(person.id, depths.get(id)); sides.set(person.id, sides.get(id));
+  }
   let familyFrontier = [...depths];
   for (let generation = 0; generation < 2; generation++) {
     const next = [];
-    for (const [id, level] of familyFrontier) {
-      if (level >= 2) continue;
-      for (const { person } of relatives(family, id).children) {
-        if (!depths.has(person.id)) {
-          depths.set(person.id, level + 1);
-          next.push([person.id, level + 1]);
-        }
-        if (auntsUncles.has(id)) cousins.add(person.id);
-        if (siblings.some(r => r.person.id === id)) niecesNephews.add(person.id);
-      }
+    for (const [id, level] of familyFrontier) for (const { person } of relatives(family, id).children) if (level < 2 && !depths.has(person.id)) {
+      depths.set(person.id, level + 1); sides.set(person.id, sides.get(id)); next.push([person.id, level + 1]);
     }
     familyFrontier = next;
   }
-  for (const [id, level] of [...depths]) {
-    for (const { person, relation } of relatives(family, id).partners) {
-      if (!depths.has(person.id)) {
-        depths.set(person.id, level);
-        partnerIds.add(person.id);
-        if (relation.union === "married") spouseIds.add(person.id);
+  const partnerIds = new Set(rels.partners.map(r => r.person.id));
+  for (const [id, level] of [...depths]) for (const { person } of relatives(family, id).partners) if (!depths.has(person.id)) {
+    depths.set(person.id, level); sides.set(person.id, sides.get(id)); partnerIds.add(person.id);
+  }
+  const levels = [...new Set(depths.values())].sort((a,b) => a-b);
+  const idsAt = (level, side) => [...depths].filter(([id, d]) => d === level && sides.get(id) === side).map(([id]) => id);
+  const sharedCount = idsAt(0, "shared").length;
+  const sharedGap = (sharedCount + 1) / 2;
+  const reserve = Math.ceil(sharedGap);
+  const paternalColumns = Math.max(3, ...levels.map(l => idsAt(l, "paternal").length + (l === 0 ? reserve : 0)));
+  const maternalColumns = Math.max(3, ...levels.map(l => idsAt(l, "maternal").length + (l === 0 ? reserve : 0)));
+  let boundary = padding + paternalColumns * columnStep;
+  let width = padding * 2 + (paternalColumns + maternalColumns) * columnStep;
+  const height = Math.max(390, levels.length * rowStep + 68);
+  const positions = new Map();
+  const pairBlocks = ids => {
+    const seen = new Set(), blocks = [];
+    for (const id of ids) {
+      if (seen.has(id)) continue;
+      seen.add(id);
+      const linked = relatives(family, id);
+      const coParents = linked.children.flatMap(r => orderedParents(r.person.id).map(p => p.person.id));
+      const buddy = [...linked.partners.map(r => r.person.id), ...coParents].find(key => key !== id && ids.includes(key) && !seen.has(key));
+      const block = [id]; if (buddy) { seen.add(buddy); block.push(buddy); }
+      blocks.push(block);
+    }
+    return blocks;
+  };
+  const put = (id, centre, level) => positions.set(id, { x: centre - cardWidth / 2, y: levels.indexOf(level) * rowStep + 42 });
+  const rootParentIds = orderedParents(focus.id).map(r => r.person.id);
+  // Reserve the central joining point for the focus family. All side families
+  // remain inside the fixed paternal/maternal lanes, on the same generation row.
+  for (const level of [-1, -2, -3, 0, 1, 2]) {
+    if (!levels.includes(level)) continue;
+    if (level === 0) {
+      const partners = rels.partners.map(r => r.person.id).filter(id => depths.get(id) === 0);
+      const siblings = rels.siblings.map(r => r.person.id).filter(id => depths.get(id) === 0 && !partners.includes(id));
+      const ordered = [...siblings.slice(0,1), focus.id, ...partners, ...siblings.slice(1)];
+      const common = pairBlocks([...ordered, ...idsAt(0, "shared").filter(id => !ordered.includes(id))]).flat();
+      common.forEach((id,i) => put(id, boundary + (i - (common.length - 1) / 2) * columnStep, level));
+    }
+    for (const side of ["paternal", "maternal", "shared"]) {
+      if (level === 0 && side === "shared") continue;
+      const blocks = pairBlocks(idsAt(level, side));
+      if (level === -1) blocks.sort((a,b) => side === "paternal"
+        ? Number(a.some(id => rootParentIds.includes(id))) - Number(b.some(id => rootParentIds.includes(id)))
+        : Number(b.some(id => rootParentIds.includes(id))) - Number(a.some(id => rootParentIds.includes(id))));
+      let ids = blocks.flat();
+      let start = side === "paternal" ? boundary - ids.length * columnStep : side === "maternal" ? boundary : boundary - ids.length * columnStep / 2;
+      if (level === 0) start = side === "paternal" ? boundary - (sharedGap + ids.length) * columnStep : boundary + sharedGap * columnStep - columnStep / 2;
+      if (level > 0) {
+        // Each child group sits under its own recorded parents. No inferred
+        // paternity from a spouse, and no bus shared by unrelated households.
+        const groups = new Map();
+        for (const block of blocks) {
+          const parents = block.map(id => orderedParents(id).filter(r => positions.has(r.person.id))).find(p => p.length) || [];
+          const key = parents.map(r => r.person.id).sort().join("|") || block[0];
+          if (!groups.has(key)) groups.set(key, { ids: [], parents });
+          groups.get(key).ids.push(...block);
+        }
+        const ordered = [...groups.values()].map(g => ({ ...g, target: g.parents.length
+          ? g.parents.reduce((sum,r) => sum + positions.get(r.person.id).x + cardWidth / 2, 0) / g.parents.length
+          : start + columnStep / 2 })).sort((a,b) => a.target - b.target);
+        let end = side === "paternal" ? padding : side === "maternal" ? boundary : padding;
+        for (const group of ordered) {
+          const left = Math.max(end, group.target - (group.ids.length - 1) * columnStep / 2);
+          group.ids.forEach((id,i) => put(id, left + i * columnStep, level));
+          end = left + group.ids.length * columnStep;
+        }
+      } else {
+        if (level === 0 && side === "paternal" && ids.length === 1) {
+          const parents = orderedParents(ids[0]).filter(r => positions.has(r.person.id));
+          if (parents.length) start = parents.reduce((sum,r) => sum + positions.get(r.person.id).x + cardWidth / 2, 0) / parents.length - columnStep / 2;
+        }
+        if (level === -3 && ids.length === 1) {
+          const children = relatives(family, ids[0]).children.filter(r => positions.has(r.person.id));
+          if (children.length) start = positions.get(children[0].person.id).x + cardWidth / 2 - columnStep / 2;
+        }
+        ids.forEach((id,i) => put(id, start + (i + .5) * columnStep, level));
       }
     }
   }
-  const levels = [...new Set(depths.values())].sort((a, b) => a - b);
-  const width = Math.max(
-    840,
-    ...levels.map(
-      (l) => [...depths.values()].filter((d) => d === l).length * 202 + 70,
-    ),
-  );
-  const height = Math.max(390, levels.length * 165 + 70);
-  const nodes = levels.flatMap((l, row) => {
-    const rawIds = [...depths].filter(([, d]) => d === l).map(([id]) => id);
-    const ids = [];
-    const seen = new Set();
-    for (const first of rawIds) {
-      const queue = [first];
-      while (queue.length) {
-        const id = queue.shift();
-        if (seen.has(id)) continue;
-        seen.add(id); ids.push(id);
-        // Place a couple together before walking either person's siblings.
-        for (const { person } of relatives(family, id).partners) {
-          if (rawIds.includes(person.id) && !seen.has(person.id)) {
-            seen.add(person.id);
-            ids.push(person.id);
-            queue.push(...relatives(family, person.id).siblings.map(r => r.person.id));
-          }
-        }
-        queue.push(...relatives(family, id).siblings.map(r => r.person.id).filter(key => rawIds.includes(key) && !seen.has(key)));
-        // Only traverse relatives already assigned to this generation.
-        for (let j = queue.length - 1; j >= 0; j--)
-          if (!rawIds.includes(queue[j])) queue.splice(j, 1);
-      }
-    }
-    return ids.map((id, i) => {
-      const person = family.people.find((p) => p.id === id);
-      let role = "RODINA";
-      if (id === focus.id) role = "VÝCHODISKO";
-      else if (ancestors.has(id)) {
-        role = l === -1
-          ? person.gender === "female" ? "MATKA" : person.gender === "male" ? "OTEC" : "RODIČ"
-          : l === -3 ? "PRASTARÝ RODIČ" : "STARÝ RODIČ";
-      } else if (partnerIds.has(id)) {
-        role = spouseIds.has(id)
-          ? person.gender === "female" ? "MANŽELKA" : "MANŽEL"
-          : person.gender === "female" ? "PARTNERKA" : "PARTNER";
-      } else if (auntsUncles.has(id)) {
-        role = person.gender === "female" ? "TETA" : person.gender === "male" ? "STRÝKO" : "RODINA";
-      } else if (l === 0 && siblings.some(r => r.person.id === id)) role = "SÚRODENEC";
-      else if (cousins.has(id)) role = person.gender === "female" ? "SESTERNICA" : person.gender === "male" ? "BRATRANEC" : "RODINA";
-      else if (niecesNephews.has(id)) role = person.gender === "female" ? "NETER" : person.gender === "male" ? "SYNOVEC" : "RODINA";
-      else if (children.some(r => r.person.id === id)) role = "DIEŤA";
-      return {
-      person,
-      x: width / 2 + (i - (ids.length - 1) / 2) * 202 - 87,
-      y: row * 165 + 36,
-      level: l,
-      role,
-    };
-    });
+  // A focus change may reveal a wider household. Keep all cards inside the
+  // canvas without clipping or changing any recorded family relationships.
+  const shift = Math.max(0, padding - Math.min(...[...positions.values()].map(n => n.x)));
+  if (shift) { for (const n of positions.values()) n.x += shift; boundary += shift; }
+  width = Math.max(width + shift, ...[...positions.values()].map(n => n.x + cardWidth + padding));
+  const parentGroups = new Map();
+  for (const [childId] of depths) {
+    const parents = relatives(family, childId).parents.filter(r => depths.has(r.person.id));
+    if (!parents.length) continue;
+    const key = parents.map(r => r.person.id).sort().join("|") + ":" + depths.get(childId);
+    if (!parentGroups.has(key)) parentGroups.set(key, { id: key, parents: parents.map(r => r.person.id), children: [] });
+    parentGroups.get(key).children.push({ id: childId, relations: parents.map(r => r.relation) });
+  }
+  const nodes = [...depths].map(([id, level]) => {
+    const person = family.people.find(p => p.id === id);
+    let role = "RODINA";
+    if (id === focus.id) role = "VÝCHODISKO";
+    else if (ancestors.has(id)) role = level === -1 ? person.gender === "female" ? "MATKA" : person.gender === "male" ? "OTEC" : "RODIČ" : level === -3 ? "PRASTARÝ RODIČ" : "STARÝ RODIČ";
+    else if (partnerIds.has(id)) {
+      const married = family.relationships.some(r => r.type === "partner" && r.union === "married" && (r.from === id || r.to === id));
+      role = married ? person.gender === "female" ? "MANŽELKA" : "MANŽEL" : person.gender === "female" ? "PARTNERKA" : "PARTNER";
+    } else if (rels.siblings.some(r => r.person.id === id)) role = "SÚRODENEC";
+    else if (level === -1) role = person.gender === "female" ? "TETA" : "STRÝKO";
+    else if (level === -2) role = person.gender === "female" ? "PRATETA" : "PRASTRÝKO";
+    else if (level === 0) role = person.gender === "female" ? "SESTERNICA" : "BRATRANEC";
+    else if (rels.children.some(r => r.person.id === id)) role = "DIEŤA";
+    return { person, ...positions.get(id), level, role, side: sides.get(id) };
   });
-  return {
-    nodes,
-    edges: family.relationships.filter(
-      (r) => depths.has(r.from) && depths.has(r.to),
-    ),
-    width,
-    height,
-  };
+  const edges = family.relationships.filter(r => {
+    if (!depths.has(r.from) || !depths.has(r.to)) return false;
+    if (r.type === "partner") return true;
+    if (r.type !== "sibling") return false;
+    const parents = relatives(family, r.from).parents.map(p => p.person.id);
+    return !relatives(family, r.to).parents.some(p => parents.includes(p.person.id));
+  });
+  return { nodes, edges,
+    parentGroups: [...parentGroups.values()], levels, boundary, width, height, cardWidth, cardHeight, columnStep };
 }

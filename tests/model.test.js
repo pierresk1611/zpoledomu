@@ -180,16 +180,15 @@ test("research additions preserve edits and deletions and apply only once", () =
   assert.equal(applySeedUpdates(unrelated, seed), unrelated);
 });
 
-test("shows a parent's sister without assigning grandparents as her parents", () => {
+test("keeps a parent's sister in its own branch without assigning grandparents", () => {
   let family = fixture();
   family.people.find(p => p.id === "d").gender = "female";
   family = addRelationship(family, link("a", "b"));
   family = addRelationship(family, link("b", "c"));
   family = addRelationship(family, link("b", "d", "sibling"));
   const layout = treeLayout(family, "c");
-  assert.equal(layout.nodes.find(n => n.person.id === "d").role, "TETA");
-  assert.equal(layout.nodes.find(n => n.person.id === "b").level, -1);
   assert.equal(layout.nodes.find(n => n.person.id === "d").level, -1);
+  assert.equal(layout.nodes.find(n => n.person.id === "b").level, -1);
   assert.equal(relatives(family, "d").parents.length, 0);
   assert.equal(layout.edges.some(r => r.from === "a" && r.to === "d"), false);
 });
@@ -210,7 +209,7 @@ test("record corrections fill unchanged profiles without overwriting user dates"
   assert.equal(applySeedUpdates(removePerson(before, "a"), seed).people.some(p => p.id === "a"), false);
 });
 
-test("keeps parents and an aunt's partner together and shows their children", () => {
+test("keeps parents together and puts an aunt and her children in the maternal branch", () => {
   let family = { ...fixture(), people: ["mother", "aunt", "father", "focus", "spouse", "cousin", "unrelated"].map(person) };
   family.people.find(p => p.id === "mother").gender = "female";
   family.people.find(p => p.id === "father").gender = "male";
@@ -224,17 +223,21 @@ test("keeps parents and an aunt's partner together and shows their children", ()
   const layout = treeLayout(family, "focus");
   const node = id => layout.nodes.find(n => n.person.id === id);
   assert.equal(node("mother").y, node("father").y);
-  assert.equal(Math.abs(node("mother").x - node("father").x), 202);
-  assert.equal(node("aunt").y, node("spouse").y);
-  assert.equal(Math.abs(node("aunt").x - node("spouse").x), 202);
-  assert.equal(node("cousin").level, 0);
-  assert.equal(node("cousin").role, "SESTERNICA");
+  assert.equal(Math.abs(node("mother").x - node("father").x), layout.columnStep);
+  assert(node("father").x < node("mother").x);
+  assert.equal(node("aunt").y, node("mother").y);
+  assert.equal(node("spouse").y, node("aunt").y);
+  assert.equal(node("cousin").y, node("focus").y);
+  assert.equal(node("aunt").side, "maternal");
+  assert.equal(node("cousin").side, "maternal");
+  assert.equal(node("father").side, "paternal");
+  assert.equal(node("spouse").x - node("aunt").x, layout.columnStep);
+  assert.deepEqual(layout.parentGroups.find(g => g.children.some(c => c.id === "cousin")).parents.sort(), ["aunt", "spouse"]);
   assert.equal(node("mother").role, "MATKA");
   assert.equal(node("father").role, "OTEC");
-  assert.equal(node("spouse").role, "PARTNER");
   assert.equal(node("unrelated"), undefined);
   assert.equal(new Set(layout.nodes.map(n => n.person.id)).size, layout.nodes.length);
-  assert.equal(layout.edges.filter(r => r.to === "cousin" && r.type === "parent").length, 2);
+  assert.equal(layout.edges.some(r => r.to === "cousin"), false);
   assert.equal(JSON.stringify(family), before);
   const auntFocus = treeLayout(family, "aunt");
   assert.equal(auntFocus.nodes.find(n => n.person.id === "cousin").role, "DIEŤA");
@@ -255,4 +258,41 @@ test("preserves marriage through export/import without treating every partner as
   assert.equal(applySeedUpdates(saved, seed).relationships[0].union, "married");
   const edited = { ...saved, relationships: saved.relationships.map(r => ({ ...r, source: "User correction" })) };
   assert.equal(applySeedUpdates(edited, seed).relationships[0].union, "unknown");
+});
+
+test("aligns both family branches by generation and keeps every focus inside the canvas", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const family = parseFamily(await readFile(new URL("../src/initial-family.json", import.meta.url), "utf8"));
+  const layout = treeLayout(family, "P001");
+  const node = id => layout.nodes.find(n => n.person.id === id);
+  const rows = [
+    ["P014"],
+    ["P006", "P007", "P008", "P009", "P015", "P016", "P017"],
+    ["P002", "P003", "P010", "P011", "P012", "P013", "P018", "P019", "P020", "P021"],
+    ["P001", "P004", "P005", "P022", "P023", "P024", "P025", "P028", "P031"],
+    ["P026", "P027", "P029", "P030"],
+  ];
+  for (const row of rows) assert.equal(new Set(row.map(id => node(id).y)).size, 1);
+  assert.equal(node("P002").x - node("P003").x, layout.columnStep);
+  for (const id of ["P003", "P008", "P009", "P011", "P012", "P013", "P031"])
+    assert(node(id).x + layout.cardWidth < layout.boundary, id);
+  for (const id of ["P002", "P006", "P007", "P010", "P014", "P022", "P023", "P024", "P026", "P027", "P029", "P030"])
+    assert(node(id).x > layout.boundary, id);
+  for (const r of family.relationships.filter(r => r.type === "partner"))
+    assert.equal(Math.abs(node(r.from).x - node(r.to).x), layout.columnStep, r.id);
+  const parentsOf = id => layout.parentGroups.find(g => g.children.some(c => c.id === id)).parents.sort();
+  assert.deepEqual(parentsOf("P026"), ["P022"]); // A spouse is not automatically a parent.
+  assert.deepEqual(parentsOf("P031"), ["P013", "P021"]);
+  assert.deepEqual(parentsOf("P004"), ["P002", "P003"]);
+  for (const person of family.people) {
+    const view = treeLayout(family, person.id);
+    for (const n of view.nodes) {
+      assert(Number.isFinite(n.x) && Number.isFinite(n.y), `${person.id}: ${n.person.id}`);
+      assert(n.x >= 0 && n.x + view.cardWidth <= view.width, `${person.id}: ${n.person.id} outside canvas`);
+    }
+    for (const level of view.levels) {
+      const row = view.nodes.filter(n => n.level === level).sort((a,b) => a.x - b.x);
+      for (let i = 1; i < row.length; i++) assert(row[i].x >= row[i-1].x + view.cardWidth, `${person.id}: overlapping cards`);
+    }
+  }
 });

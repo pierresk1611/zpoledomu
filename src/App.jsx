@@ -362,98 +362,81 @@ function RelationshipForm({ family, person, onSave, onClose }) {
 
 function Tree({ family, focusId, selectedId, onSelect, zoom, onAdd }) {
   const layout = useMemo(() => treeLayout(family, focusId), [family, focusId]);
-  if (!family.people.length)
-    return (
-      <div className="empty-tree">
-        <div className="empty-emblem">
-          <Sprout size={44} strokeWidth={1.3} />
-        </div>
-        <span className="eyebrow">PRVÝ KROK K VAŠIM KOREŇOM</span>
-        <h2>Váš príbeh sa začína vami.</h2>
-        <p>
-          Pridajte prvú osobu a postupne objavujte
-          <br />
-          ľudí, ktorí sú súčasťou vašej rodiny.
-        </p>
-        <button className="button primary" onClick={onAdd}>
-          <Plus size={17} />
-          Pridať prvú osobu
-        </button>
-      </div>
-    );
-  const positions = new Map(layout.nodes.map((n) => [n.person.id, n]));
+  const viewport = useRef(null);
+  const [fit, setFit] = useState(1);
+  const scale = zoom * fit;
+  useEffect(() => {
+    const element = viewport.current;
+    if (!element) return;
+    const observer = new ResizeObserver(() => setFit(Math.max(.75, Math.min(1, (element.clientWidth - 16) / layout.width))));
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [layout.width, family.people.length]);
+  useEffect(() => {
+    const node = layout.nodes.find(n => n.person.id === focusId), element = viewport.current;
+    if (!element || !node) return;
+    element.scrollLeft = Math.max(0, (node.x + layout.cardWidth / 2) * scale - element.clientWidth / 2);
+    element.scrollTop = Math.max(0, (node.y + layout.cardHeight / 2) * scale - element.clientHeight * .65);
+  }, [focusId, layout.width, layout.height, scale]);
+  if (!family.people.length) return (
+    <div className="empty-tree"><div className="empty-emblem"><Sprout size={44} strokeWidth={1.3} /></div>
+      <span className="eyebrow">PRVÝ KROK K VAŠIM KOREŇOM</span><h2>Váš príbeh sa začína vami.</h2>
+      <p>Pridajte prvú osobu a postupne objavujte ľudí, ktorí sú súčasťou vašej rodiny.</p>
+      <button className="button primary" onClick={onAdd}><Plus size={17} />Pridať prvú osobu</button>
+    </div>
+  );
+  const positions = new Map(layout.nodes.map(n => [n.person.id, n]));
+  const midpoint = n => n.x + layout.cardWidth / 2;
+  const generationLabel = level => level === -3 ? "Prastarí rodičia" : level === -2 ? "Starí rodičia a ich súrodenci" : level === -1 ? "Rodičia a ich súrodenci" : level === 0 ? "Vy, súrodenci, bratranci a sesternice" : "Ďalšia generácia";
   return (
-    <div className="tree-scroll">
-      <div
-        style={{ width: layout.width * zoom, height: layout.height * zoom }}
-        className="tree-sized"
-      >
-        <div
-          className="tree-canvas"
-          style={{
-            width: layout.width,
-            height: layout.height,
-            transform: `scale(${zoom})`,
-          }}
-        >
-          <svg
-            className="connectors"
-            width={layout.width}
-            height={layout.height}
-            aria-hidden="true"
-          >
-            {layout.edges.map((r) => {
-              const a = positions.get(r.from),
-                b = positions.get(r.to);
-              let path;
-              if (r.type === "parent") {
-                const x1 = a.x + 87,
-                  x2 = b.x + 87,
-                  y1 = a.y + 108,
-                  y2 = b.y,
-                  mid = (y1 + y2) / 2;
-                path = `M ${x1} ${y1} V ${mid} H ${x2} V ${y2}`;
-              } else if (r.type === "sibling") {
-                const y = Math.min(a.y, b.y) - 16;
-                path = `M ${a.x + 87} ${a.y} V ${y} H ${b.x + 87} V ${b.y}`;
-              } else {
-                const left = a.x < b.x ? a : b,
-                  right = a.x < b.x ? b : a;
-                if (left.y === right.y && right.x - left.x === 202) {
-                  path = `M ${left.x + 174} ${left.y + 54} H ${right.x}`;
-                } else {
-                  const y = Math.min(left.y, right.y) - 28;
-                  path = `M ${left.x + 87} ${left.y} V ${y} H ${right.x + 87} V ${right.y}`;
-                }
-              }
-              return (
-                <path
-                  key={r.id}
-                  d={path}
-                  className={`${isSupported(r.status) ? "proven" : "uncertain"} ${r.kind === "adoptive" ? "adoptive" : ""}`}
-                />
-              );
+    <div className="tree-scroll" ref={viewport}>
+      <div className="tree-sized" style={{ width: layout.width * scale, height: layout.height * scale }}>
+        <div className="tree-canvas" style={{ width: layout.width, height: layout.height, transform: `scale(${scale})` }}>
+          <svg className="connectors" width={layout.width} height={layout.height} aria-hidden="true">
+            <rect className="paternal-background" width={layout.boundary} height={layout.height} />
+            <rect className="maternal-background" x={layout.boundary} width={layout.width - layout.boundary} height={layout.height} />
+            <line className="clan-divider" x1={layout.boundary} x2={layout.boundary} y1="0" y2={layout.height} />
+            {layout.levels.map((level, row) => (
+              <g key={level}>
+                <text className="generation-label" x="12" y={row * 148 + 10}>{generationLabel(level)}</text>
+                <line className="generation-rule" x1="0" x2={layout.width} y1={row * 148 + 30} y2={row * 148 + 30} />
+              </g>
+            ))}
+            {layout.parentGroups.map(group => {
+              const parents = group.parents.map(id => positions.get(id));
+              const children = group.children.map(child => ({ ...child, node: positions.get(child.id) }));
+              const rail = Math.max(...parents.map(n => n.y + layout.cardHeight)) + 22;
+              const parentX = parents.reduce((sum,n) => sum + midpoint(n), 0) / parents.length;
+              const xs = [...children.map(c => midpoint(c.node)), parentX];
+              const supported = children.every(c => c.relations.every(r => isSupported(r.status)));
+              return <g key={group.id} data-parent-group={group.parents.join('|')}>
+                {parents.map(n => <path key={n.person.id} d={`M ${midpoint(n)} ${n.y + layout.cardHeight} V ${rail} H ${parentX}`}
+                  className={supported ? "proven" : "uncertain"} />)}
+                <path d={`M ${Math.min(...xs)} ${rail} H ${Math.max(...xs)}`} className={supported ? "proven" : "uncertain"} />
+                {children.map(child => <path key={child.id} d={`M ${midpoint(child.node)} ${rail} V ${child.node.y}`}
+                  data-child-id={child.id}
+                  className={`${child.relations.every(r => isSupported(r.status)) ? "proven" : "uncertain"} ${child.relations.some(r => r.kind === "adoptive") ? "adoptive" : ""}`} />)}
+              </g>;
+            })}
+            {layout.edges.map(r => {
+              const a = positions.get(r.from), b = positions.get(r.to), left = a.x < b.x ? a : b, right = a.x < b.x ? b : a;
+              const adjacent = left.y === right.y && right.x - left.x === layout.columnStep;
+              const path = r.type === "sibling" ? `M ${midpoint(left)} ${left.y} V ${left.y - 8} H ${midpoint(right)} V ${right.y}` : adjacent ? `M ${left.x + layout.cardWidth} ${left.y + 49} H ${right.x}`
+                : `M ${midpoint(left)} ${left.y} V ${Math.min(left.y,right.y)-8} H ${midpoint(right)} V ${right.y}`;
+              return <g key={r.id}>
+                {r.type === "partner" && adjacent && <rect className="couple-frame" x={left.x - 5} y={left.y - 5}
+                  width={layout.columnStep + layout.cardWidth + 10} height={layout.cardHeight + 10} rx="7" />}
+                <path d={path} className={isSupported(r.status) ? "proven" : "uncertain"} />
+              </g>;
             })}
           </svg>
-          {layout.nodes.map(({ person, x, y, role }) => (
-            <button
-              key={person.id}
-              className={`person-node ${selectedId === person.id ? "selected" : ""} ${person.id === focusId ? "focused" : ""}`}
-              style={{ left: x, top: y }}
-              onClick={() => onSelect(person.id)}
-              aria-label={`Zobraziť osobu ${fullName(person)}, ${lifeDates(person)}`}
-            >
-              <span className="node-top">
-                <Avatar person={person} />
-                <span className="node-generation">
-                  {role}
-                </span>
-              </span>
-              <strong>{fullName(person)}</strong>
-              <span className="node-dates">{lifeDates(person)}</span>
-              <i
-                className={`node-dot ${isSupported(person.status) ? "proven" : ""}`}
-              />
+          {layout.nodes.map(({ person, x, y, role, side, level }) => (
+            <button key={person.id} className={`person-node compact-node ${side} ${selectedId === person.id ? "selected" : ""} ${person.id === focusId ? "focused" : ""}`}
+              style={{ left: x, top: y, width: layout.cardWidth, height: layout.cardHeight }} onClick={() => onSelect(person.id)}
+              aria-label={`Zobraziť osobu ${fullName(person)}, ${lifeDates(person)}`} data-person-id={person.id} data-generation={level}>
+              <span className="node-top"><Avatar person={person} /><span className="node-generation">{role}</span></span>
+              <strong>{fullName(person)}</strong><span className="node-dates">{lifeDates(person)}</span>
+              <i className={`node-dot ${isSupported(person.status) ? "proven" : ""}`} />
             </button>
           ))}
         </div>
@@ -634,7 +617,9 @@ export default function App() {
     [focusId, setFocusId] = useState(""),
     [view, setView] = useState("tree"),
     [modal, setModal] = useState(null),
-    [zoom, setZoom] = useState(0.9),
+    [zoom, setZoom] = useState(1),
+    [detailsOpen, setDetailsOpen] = useState(false),
+    [treeExpanded, setTreeExpanded] = useState(false),
     [query, setQuery] = useState(""),
     [notice, setNotice] = useState(""),
     [storageError, setStorageError] = useState(""),
@@ -729,7 +714,17 @@ export default function App() {
     const id = setTimeout(() => setNotice(""), 6000);
     return () => clearTimeout(id);
   }, [notice]);
+  useEffect(() => {
+    const close = event => {
+      if (event.key !== "Escape" || modal) return;
+      if (detailsOpen) setDetailsOpen(false);
+      else if (treeExpanded) setTreeExpanded(false);
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [modal, detailsOpen, treeExpanded]);
   const selected = family.people.find((p) => p.id === selectedId);
+  const selectPerson = id => { setSelectedId(id); setDetailsOpen(true); };
   const filtered = family.people.filter((p) =>
     `${fullName(p)} ${p.birthName} ${p.birthPlace} ${p.birthDate}`
       .toLocaleLowerCase("sk")
@@ -774,7 +769,7 @@ export default function App() {
         ? family.people.map((p) => (p.id === person.id ? person : p))
         : [...family.people, person],
     });
-    setSelectedId(person.id);
+    selectPerson(person.id);
     if (!focusId) setFocusId(person.id);
     setModal(null);
     setNotice("Osoba bola uložená.");
@@ -972,7 +967,7 @@ export default function App() {
           </div>
           {view === "tree" ? (
             <div className="workspace-grid">
-              <section className="tree-panel">
+              <section className={`tree-panel ${treeExpanded ? "expanded-tree" : ""}`}>
                 <div className="panel-header">
                   <div>
                     <h2>
@@ -980,9 +975,12 @@ export default function App() {
                       <span className="subtle-tag">RODOKMEŇ</span>
                     </h2>
                     <p>
-                      Predkovia, manželia a partneri, súrodenci a ich deti.
+                      Otcova vetva naľavo, maminkina napravo. Každý riadok je jedna generácia.
                     </p>
                   </div>
+                  <button className="button secondary expand-tree-button" onClick={() => setTreeExpanded(value => !value)}>
+                    <Maximize size={15} />{treeExpanded ? "Zavrieť veľký strom" : "Celý strom"}
+                  </button>
                   <button
                     className="icon-button"
                     onClick={exportFamily}
@@ -1018,11 +1016,15 @@ export default function App() {
                     <ChevronDown size={13} />
                   </label>
                 </div>
+                {relatives(family, focusId).parents.some(r => r.person.gender === "male") &&
+                  relatives(family, focusId).parents.some(r => r.person.gender === "female") && (
+                  <div className="tree-lanes"><span>Otcova línia</span><span>Maminkina línia</span></div>
+                )}
                 <Tree
                   family={family}
                   focusId={focusId}
                   selectedId={selectedId}
-                  onSelect={setSelectedId}
+                  onSelect={selectPerson}
                   zoom={zoom}
                   onAdd={newPerson}
                 />
@@ -1066,7 +1068,7 @@ export default function App() {
                     <button
                       className="icon-button"
                       aria-label="Obnoviť mierku"
-                      onClick={() => setZoom(0.9)}
+                      onClick={() => setZoom(1)}
                     >
                       <Maximize size={14} />
                     </button>
@@ -1079,13 +1081,17 @@ export default function App() {
                     že vzťah ešte nie je doložený záznamom.
                   </p>
                 </div>
+
               </section>
+              <div className="details-drawer" hidden={!detailsOpen}>
+                <button className="icon-button close-details" onClick={() => setDetailsOpen(false)} aria-label="Zavrieť detail osoby"><X size={18} /></button>
               <Details
                 family={family}
                 person={selected}
-                onSelect={setSelectedId}
+                onSelect={selectPerson}
                 onFocus={() => {
                   setFocusId(selectedId);
+                  setDetailsOpen(false);
                   setNotice("Strom je zameraný na vybranú osobu.");
                 }}
                 onEdit={() => setModal({ type: "person", initial: selected })}
@@ -1095,6 +1101,7 @@ export default function App() {
                   setModal({ type: "deleteLink", relation })
                 }
               />
+              </div>
             </div>
           ) : view === "people" ? (
             <section className="people-panel">
@@ -1136,7 +1143,7 @@ export default function App() {
                           <button
                             className="person-cell"
                             onClick={() => {
-                              setSelectedId(p.id);
+                              selectPerson(p.id);
                               setFocusId(p.id);
                               navigate("tree");
                             }}
@@ -1436,7 +1443,7 @@ export default function App() {
                       initialFamily.seedRevision,
                     ),
                   });
-                  setSelectedId(modal.data.people[0]?.id || "");
+                  selectPerson(modal.data.people[0]?.id || "");
                   setFocusId(modal.data.people[0]?.id || "");
                   setLoaded(true);
                   setModal(null);

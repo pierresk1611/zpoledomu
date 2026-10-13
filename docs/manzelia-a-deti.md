@@ -1,6 +1,6 @@
 # Manželia a deti — 13. október 2026
 
-Viera a Rudolf sú podľa používateľa manželia. Doplnená výslovná manželská väzba, strom drží ich karty vedľa seba. Rozloženie zobrazuje aj manželov súrodencov, ich deti a ďalšiu generáciu. V detaile osoby je manželstvo odlíšené od iného partnerstva; možno ho vybrať aj pri pridávaní novej väzby.
+Viera a Rudolf sú podľa používateľa manželia. Doplnená výslovná manželská väzba, strom drží ich karty vedľa seba. Otcova línia je naľavo a maminkina napravo. Strom má spoločné generačné riadky pre oba rody: rodičia a ich súrodenci na jednom riadku, Peter so sestrami a bratrancami/sesternicami na ďalšom, deti tejto generácie pod nimi. Páry zostávajú vedľa seba a rodinné spojnice spájajú iba zaznamenaných rodičov s ich deťmi. Rozšírený prehľad otvorí tlačidlo Celý strom. V detaile osoby je manželstvo odlíšené od iného partnerstva; možno ho vybrať aj pri pridávaní novej väzby.
 
 ## Rodinné údaje S030, S031, S034, S035
 
