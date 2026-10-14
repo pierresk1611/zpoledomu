@@ -1,5 +1,7 @@
 # Rodiny súrodencov Márie z Pustého — pokračovanie 14. 10. 2026
 
+Ďalšie pokračovanie: [nájdené archívne fondy pre poručenské, notárske a matričné zápisy](vyskum-balog-archivne-fondy.md). Konkrétny rodinný spis zatiaľ nebol získaný.
+
 Východisko je [originál85/200](https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h): Anna Kupec1909, Rudolf Kupec1911, Jozef Kupec1914 a Antónia Gašperík1924, deti Márie Medveďovej. Hľadajú sa ich manželia a deti, nie ďalší menovci.
 
 ## Konkrétne nové stopy
