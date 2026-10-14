@@ -45,3 +45,49 @@ Konkrétne [číslo2/2018, strana4](https://www.zvolenskaslatina.sk/modules/file
 - Historický článok Ivana Hraška **Významní rodáci – Martin Kulich** uvádza13.1.1906, rodičovJána Kulicha a Máriu rod.Husárikovú, úmrtie2.12.1979 na Poľane. **Nie je to náš Martin P017 narodený4.11.1926.** Jeho rodičia sa neprenášajú do našej vetvy. Spoločné priezvisko a obec nie sú dokladom ďalšej príbuznosti.
 
 Priebežné znovuoverenie siete: `www.canada.ca` stále odmieta proxyHTTP403; kanadský katalóg stáleHTTP403. Návrh doplnenia domény nebol týmto behom potvrdený ako aplikovaný. Nový potvrdený príbuzný ani meno muža v Kanade týmto kolom nezistené. ManifestPDF, texty, OCR a presné výsledky ostali v súkromnom pracovnom archíve, aby sa ďalšie kolo nezačínalo odznova.
+
+
+## Dom197: nájdené pokračovanie a rozlíšenie ďalšej rodiny
+
+Doplnené14.10.2026. Vizuálne prečítané obe strany [pokračovania1141/133](https://www.slovakiana.sk/scitacie-harky/cair-ko28dhz), výslovne označeného **197 (pokračovanie)**. Prvá strana uvádza domácnosť4, poradové čísla15–20:
+
+| Osoba | Rok narodenia | Vzťah uvedený v domácnosti4 |
+| --- | --- | --- |
+| Pavel Kulich |1887| Prednosta, ženatý |
+| Mária Kulichová |1893| Manželka |
+| Mária Kulichová |1914| Dcéra |
+| Pavel Kulich |1919| Syn |
+| Anna Kulichová |1921| Dcéra |
+| Jozef Kulich |1928| Syn |
+
+Druhá strana tohto pokračovania je prázdna vrátane oddielu dočasne neprítomných. Roky a dátum Anny overené aj zväčšeným výrezom originálu. Anna v domácnosti4 má zapísané **11.9.1921**, kým naša P015 v domácnosti3 má **24.8.1921**. Pavel1919 v domácnosti4 má **10.10.1919**, kým náš Jozef P007 má **18.10.1919**. Zhodný rok narodenia ani dom nestačia na stotožnenie.
+
+Rodina z domácnosti4 má nápadnú štvoritú zhodu mien a rokov s náhrobkom zo slatinského staršieho indexuMobec: hrob1109, staré číslo236, fotografia520 — Mária1893–1964, Anna1921–1943, Pavel1919–1948 a Jozef1928–2020. Fotografia bola prečítaná. Ide o silnú pracovnú zhodu pre **túto druhú domácnosť**, nie o doložené úmrtia našich P014/P015/P007. Na potvrdenie totožnosti jednotlivých osôb sú potrebné ďalšie rozlišujúce údaje.
+
+Pavel medzi spolumajiteľmi domu197 je preto kandidátom na Pavla1887 z domácnosti4. **Nie je doklad, že bol manželom našej Márie1900 alebo mužom v Kanade.** Ani susedné domácnosti samy osebe nedokladajú vzájomné príbuzenstvo. Táto vetva nebola pripojená k rodokmeňu.
+
+## Rozsah systematickej kontroly slatinského sčítania
+
+Z verejného indexu získaných326 položiek:320 popisných hárkov1141 a6 obecných prehľadov1257/70–75. Všetkých320 **prvých strán** bolo stiahnutých a ich menné stĺpce vizuálne skontrolované v40 prehľadoch. Nie sú tým prečítané všetky druhé strany a nemožno tvrdiť, že je skontrolovaný každý obyvateľ obce.
+
+Obecné prehľady boli prečítané na oboch stranách. Položka1257/75 má v katalógu Slatinu, ale originál označuje **Slatinku**; jej domácnosti sa nemiešajú so Zvolenskou Slatinou. Pri cielenom hľadaní podľa vlastníkov boli prečítané obe strany10 hárkov pre domy16,84,95,96,100,198,199,216,246 a248, následne aj pokračovanie domu197. Dom305 uvedený v prehľade nebol týmto výberom identifikovaný ako samostatný prečítaný hárok.
+
+Osobitne skontrolované prvé strany ďalších výskytov Kulich vrátane1141/196 ([dom27](https://www.slovakiana.sk/scitacie-harky/cair-ko28egj)) a1141/208 ([dom38](https://www.slovakiana.sk/scitacie-harky/cair-ko28eh7)); žiadny z nich sám neidentifikuje manžela Márie1900. V dome96 je pri inej Márii Kulichovej, narodenej1889, poznámka **„muž v Argentíne“**. Nie je to naša Mária1900 s poznámkou o Kanade.
+
+Presný zoznam súborov,320 skenov prvých strán,40 obrazových prehľadov a detailné pracovné poznámky sú uložené v súkromnom pracovnom archíve.
+
+## Konkrétny lodný záznam: Pál Kulich,1907 — nepriradený
+
+Otvorený a prečítaný [verejný prepis Geneanet/Bremen Passenger Lists](https://en.geneanet.org/cercles/view/colgnecmbremen/155137):
+
+- cestujúci **Pal Kulich**, číslo1765, muž,24 rokov, ženatý (`verh`);
+- bydlisko **Nagyszalatna**, štátna príslušnosť `Ungarn`, povolanie `Landw.Tagel.`;
+- loď **Rhein**, odchod z Brém **24.3.1907**, prístav príchoduNewYork;
+- cieľ **Johnstown, Pennsylvania**;
+- archívny identifikátor **STAB-24.03.1907_4,57/5-09_M**.
+
+Toto je prečítaný **prepis**, nie otvorený originálny lodný zoznam. Stránka sama upozorňuje na možné chyby prepisu; všeobecný opis zbierky sa sústreďuje na1920–1939, hoci konkrétna položka uvádza1907. Dátum preto treba overiť na origináli. Identifikácia historického názvuNagyszalatna s konkrétnou dnešnou obcou nebola v tomto kole nezávisle doložená. Vek24 rokov v1907 približne zodpovedá narodeniu1882/1883, nezhoduje sa s Pavlom1887 v domácnosti4.
+
+Záznam uvádza **USA, nie Kanadu**. Neobsahuje meno manželky ani spojenie s Máriou1900. Je zachovaný ako samostatná vysťahovalecká stopa; žiadna osoba ani rodičovstvo sa z neho do rodokmeňa nepridáva.
+
+Samostatne otvorený [kanadský sobášny index PaulKulich/LouisePerrault](https://en.geneanet.org/collaborative-indexes/view/82188/346425), lokalitaSt-Jérôme(St-Lucien), neukazuje dátum sobáša ani rodičov. Široký rozsah zbierky1642–2000 nie je dátum udalosti. Bez rozlišujúcich údajov záznam nemožno spojiť s našou rodinou.
