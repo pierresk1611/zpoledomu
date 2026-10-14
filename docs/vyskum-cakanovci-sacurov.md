@@ -32,6 +32,19 @@ Cintoriny.sk pri vyhľadaní samotnej obce Sačurov neposkytlo žiadnu obec ani 
 
 ## Zachované rozpracované hľadanie v Sobranciach
 
-Získaných244 katalógových položiek, z toho238 prvých strán domácností. Prečítaných prvých40 menových výrezov a miestne prehľady1240/6–8; bez jasnej zhody. Druhé strany a zvyšné prvé strany zostávajú rozpracované. Katalógové prehľady1240/64 a1240/65 majú zavádzajúce zaradenie: na origináloch sú Remetské Hámry a Beňatín, preto sa ich obyvatelia nepovažujú za Sobrance.
+Získaných244 katalógových položiek, z toho238 prvých strán domácností. Doplnené14.10.2026: dokončená vizuálna kontrola menných stĺpcov všetkých238 prvých strán v30 obrazových prehľadoch; miestne prehľady1240/6–8 boli prečítané už predtým. Hľadaný RudolfĎuriš1922 ani AlžbetaČakanová1925 neboli identifikovaní. Druhé strany ostatných domácností zostávajú neprejdené; nejde o úplné vylúčenie rodiny v meste. Katalógové prehľady1240/64 a1240/65 majú zavádzajúce zaradenie: na origináloch sú Remetské Hámry a Beňatín, preto sa ich obyvatelia nepovažujú za Sobrance.
 
 Ďalšie overovanie sa má sústrediť na rozpor pri Alžbete a na sobáš Rudolfa Ďuriša s Alžbetou Čakanovou. Zhodné meno a obec samy osebe nepostačujú na priradenie rodičov.
+
+
+## Ďalšie overenie Čakanovcov v okolí
+
+Doplnené14.10.2026. Opätovne zväčšený pôvodný zápis domu168: pri Alžbete je **26.jún1924**, pri Michalovi **27.jún1897**. Rozpor s náhrobkom P008(26.1.1925) zahŕňa mesiac aj rok. Domácnosť ostáva kandidátom podľa rodinnej spomienky a priezviska; rodičovstvo P008 nepotvrdzuje.
+
+Otvorené verejné zoznamy Virtuálneho cintorína pre priezviskoČakan a zobrazené rodné priezviská:
+
+- [Hriadky, Nový cintorín](https://www.virtualnycintorin.sk/zosnuli/998?s=%C4%8Cakan): **Michal Cakan, hrob248**, bez dátumu narodenia, úmrtia a veku. Otvorený aj [detail474996](https://www.virtualnycintorin.sk/hrob/474996) a jeho verejná fotografia. Dostupná fotografia má335×500bodov, nápis na pomníku nebol spoľahlivo prečítateľný. Dátumy sa z nej nedopĺňajú. Totožnosť s Michalom1897 zo Sačurova nie je doložená.
+- [Malá Domaša](https://www.virtualnycintorin.sk/zosnuli/1332?s=%C4%8Cakan): osem zobrazených položiek vrátane rodných priezvisk; MichalČakan zomrel1981 vo veku58, preto približne1922/1923, nie Michal1897 zo Sačurova. V rovnakom hrobe192 je AnnaČakanová rod.Dzurčaninová, zomrela30.3.2012 vo veku88. Totožnosť sa s našou rodinou nepreukázala.
+- [Vranov nad Topľou](https://www.virtualnycintorin.sk/zosnuli/521?s=%C4%8Cakan): MichalČakan, zomrel2.3.2010 vo veku82, teda približne1927/1928; nie Michal1897. Spoločný hrobH/135 s Helenou rod.Klubertovou nedokladá príbuzenstvo k P008.
+
+Názvy, veky a dátumy v týchto troch odsekoch pochádzajú zo zoznamov. Okrem Hriadok neboli v tomto kole prečítané náhrobné fotografie; vekom odvodené roky nie sú presné dátumy narodenia. Žiadna z položiek sa nepridáva ako potvrdený príbuzný.

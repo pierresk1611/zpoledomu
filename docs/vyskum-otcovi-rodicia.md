@@ -28,3 +28,10 @@ Dátumy uvedené hore boli zistené až z nového zdroja S019–S020. Menovci z 
 Ďalší konkrétny podklad je sobášny zápis Rudolfa a Alžbety alebo rodný zápis ich syna Rudolfa (12. 9. 1950). Môže pomôcť určiť rodiská a rodičov. Miesto sobáša nepoznáme; pobyty Praha, Plzeň a Sobrance nemusia byť rodiskami ani miestom sobáša. FamilySearch zostáva blokovaný ochranou stránky a Porta fontium vrátilo 503. Žiadny konkrétny matričný zápis ešte nebol získaný.
 
 Rodinná oprava: otec mal **tri** sestry — Ruženu, Marcelu Solárovú a Helenu Salinkovú. Pôvodný počet štyri bol používateľom opravený. Do webu sú pridané ich oznámené súrodenecké väzby; rodičia a dátumy sa z nich neodvodzujú.
+
+
+## Doplnená kontrola Sobrancov a Sačurova14.10.2026
+
+V sobranskej zbierke sčítania1930 dokončená vizuálna kontrola menných stĺpcov všetkých238 prvých strán, vrátane skôr neprečítaných198. Hľadaný RudolfĎuriš1922 ani AlžbetaČakanová1925 neboli identifikovaní. Všetky druhé strany týmto nie sú prečítané a pohrebisko nemožno zamieňať s rodiskom. Negatívny výsledok nie je dôkaz, že rodina v Sobranciach nikdy nebývala.
+
+Pokračovanie čakanovskej stopy obsahuje [samostatný zápis o Sačurove](vyskum-cakanovci-sacurov.md): kontrolu rozdielneho dátumu Alžbety a konkrétne prečítané zoznamy z Hriadok, Malej Domaše a Vranova. MichalČakan v Hriadkach ostáva nepriradený, keďže index nemá dátumy a fotografia nápisu je nečitateľná. Noví rodičia ani súrodenci starých rodičov týmto kolom nepotvrdení.
