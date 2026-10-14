@@ -25,3 +25,11 @@ Používateľ meno Jindrišky nepozná. **Žiadna z týchto štyroch osôb sa pr
 - Alžbeta rod.Čakanová1925: rodný prefix Čak + rok1925 vracia Máriu Sekáčovú rod.Cákovú s odlišnými údajmi. Nie je to Alžbeta P008.
 
 Úplné pracovné odpovede a fotografie sú uložené mimo checkoutu. Počet zostáva40 osôb a60 vzťahov; doplnené sú Jánove dátumy, zdroj S048 a otvorená otázka Q020.
+
+## Následné overovanie manželstva a rodného mena
+
+**Nový údaj S049: Jindriška je v indexe zapísaná ako Kulichová, rod.Tomašuľová.** Dotaz s rodným prefixom Tomaš, menom Jind a rokom narodenia1924 vrátil jednu položku s presnými dátumami26.10.1924–5.3.1987 a rovnakým hrobom59002057. Jej rodné priezvisko už teda nie je iba domnienkou z mien na pomníku.
+
+Verejné kroniky oboch osôb boli samostatne otvorené cez čítacie rozhranie portálu. Pri Jánovi aj Jindriške uvádzajú, že životopis zatiaľ nie je k dispozícii;0 spomienok a0 fotografií. Nové webové dotazy s oboma menami v slovenskej aj českej podobe neposkytli parte alebo sobášny doklad. Oficiálny web mesta Zvolen sa nepodarilo otvoriť pre sieťové odmietnutie CONNECT403; mestský archív oznamov nebol prečítaný.
+
+**Manželstvo Jána a Jindrišky zostáva nepotvrdené.** Zhodné manželské priezvisko, spoločný hrob a rovnaký ročník sú indície, ktoré ho robia možným, nie výslovný doklad vzťahu. Rovnako rodné priezvisko Tomašuľová samo neurčuje, že pochovaní Ján a Jindřiška Tomašuľovci sú jej rodičmi. Osoby a vzťahy sa zatiaľ nepridávajú; zdroj S049 a otázka Q020 zachovávajú nové zistenie.

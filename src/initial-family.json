@@ -1192,8 +1192,8 @@
     {
       "id": "Q020",
       "title": "Ján Kulich1924 · rodinné väzby v hrobe A18/74",
-      "detail": "S048: Ján má presne rovnaké narodenie24.5.1924 ako P016 v sčítaní. Jindriška Kulichová1924–1987 je pochovaná v rovnakom hrobe spolu s Tomašuľovcami a Martou Drobnou. Hľadáme doklad, či je Jindriška jeho manželka, jej rodné priezvisko a ich prípadné deti. Zatiaľ žiadna z týchto osôb nepridaná iba podľa hrobu. Používateľ meno Jindrišky nepozná; rodinné potvrdenie tejto väzby zatiaľ nemáme.",
-      "status": "Zhoda Jána podložená · ďalšie vzťahy otvorené"
+      "detail": "S048–S049: Ján Kulich24.5.1924–10.12.2016 a Jindriška Kulichová26.10.1924–5.3.1987 sú v hrobe A18/74 vo Zvolene. Verejné vyhľadávanie podľa rodného prefixu Tomaš potvrdilo pri Jindriške rodné priezvisko Tomašuľová. Manželstvo s Jánom zatiaľ výslovne nepotvrdil žiadny prečítaný prameň. Obe verejné kroniky sú bez životopisu a spomienok. Používateľ meno Jindrišky nepozná. Tomašuľovci v rovnakom hrobe sa bez dokladu neoznačujú za jej rodičov. Hľadáme sobášny doklad alebo parte s výslovným vzťahom.",
+      "status": "Rodné meno overené · manželstvo zatiaľ nepotvrdené"
     }
   ],
   "sources": [
@@ -1427,9 +1427,16 @@
       "url": "https://www.cintoriny.sk/src/index.php?cintorinId=59&hrobId=59002057",
       "note": "Index zosnulých uvádza Ján Kulich24.5.1924–10.12.2016 a Jindriška Kulichová26.10.1924–5.3.1987, ďalej Ján Tomašuľa1892–1961, Jindřiška Tomašuľová1896–1967 a MUDr.Marta M.Drobná1900–1969. Zhoda celého dátumu Jána s P016 v S029 a regiónu podporuje stotožnenie, nejde o prečítaný matričný zápis. Fotografia bola otvorená a uvádza staršie mená Tomašuľovcov a Drobnej, nie čitateľné dátumy Kulichovcov. Zo spoločného hrobu sa neodvodzuje manželstvo ani rodičovstvo. Údaje1.1. pri starších osobách sa nepovažujú za presné dátumy.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S049",
+      "title": "Jindriška Kulichová · rod.Tomašuľová",
+      "url": "https://www.cintoriny.sk/src/index.php?cintorinId=59&hrobId=59002057",
+      "note": "Verejné anonymné hľadanie Cintoriny.sk (POST api/htmlSearch.php), maidenSurname=Tomaš, name=Jind, narodenie v roku1924, vrátilo jedinú položku: Kulichová Jindriška rod.Tomašuľová,26.10.1924–5.3.1987, Zvolen Zlatý potok, hrob59002057. Oba dátumy aj hrob sa zhodujú s S048. Verejné kroniky Jána a Jindrišky boli prečítané: životopis nie je k dispozícii,0 spomienok,0 fotografií. Rodné priezvisko je overené indexom; výslovné potvrdenie manželstva alebo rodičovstva v týchto prameňoch chýba.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 16,
+  "seedRevision": 17,
   "seedUpdates": [
     {
       "revision": 2,
@@ -2213,6 +2220,25 @@
         {
           "personId": "P016",
           "text": "S048: cintorín Zvolen, Zlatý potok, A18/74, hrob59002057, uvádza Jána Kulicha nar.24.5.1924, zomr.10.12.2016. Meno a celý dátum narodenia sa zhodujú so synom Márie zo sčítania1930 (S029); regionálna zhoda podporuje stotožnenie ako podložený záver. Rodný ani úmrtný matričný doklad zatiaľ nebol prečítaný. Jindriška Kulichová v rovnakom hrobe je zatiaľ nepriradená osoba; manželstvo nie je doložené."
+        }
+      ]
+    },
+    {
+      "revision": 17,
+      "sources": [
+        "S049"
+      ],
+      "updateQuestions": [
+        {
+          "questionId": "Q020",
+          "ifUnchanged": {
+            "detail": "S048: Ján má presne rovnaké narodenie24.5.1924 ako P016 v sčítaní. Jindriška Kulichová1924–1987 je pochovaná v rovnakom hrobe spolu s Tomašuľovcami a Martou Drobnou. Hľadáme doklad, či je Jindriška jeho manželka, jej rodné priezvisko a ich prípadné deti. Zatiaľ žiadna z týchto osôb nepridaná iba podľa hrobu. Používateľ meno Jindrišky nepozná; rodinné potvrdenie tejto väzby zatiaľ nemáme.",
+            "status": "Zhoda Jána podložená · ďalšie vzťahy otvorené"
+          },
+          "fields": [
+            "detail",
+            "status"
+          ]
         }
       ]
     }
