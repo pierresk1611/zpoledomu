@@ -48,3 +48,12 @@ Otvorené verejné zoznamy Virtuálneho cintorína pre priezviskoČakan a zobraz
 - [Vranov nad Topľou](https://www.virtualnycintorin.sk/zosnuli/521?s=%C4%8Cakan): MichalČakan, zomrel2.3.2010 vo veku82, teda približne1927/1928; nie Michal1897. Spoločný hrobH/135 s Helenou rod.Klubertovou nedokladá príbuzenstvo k P008.
 
 Názvy, veky a dátumy v týchto troch odsekoch pochádzajú zo zoznamov. Okrem Hriadok neboli v tomto kole prečítané náhrobné fotografie; vekom odvodené roky nie sú presné dátumy narodenia. Žiadna z položiek sa nepridáva ako potvrdený príbuzný.
+
+
+## Hypotéza: je Alžbeta1924 sestrou našej Alžbety1925?
+
+Používateľ navrhol sesterskú väzbu. Zatiaľ **nepotvrdená**, nie definitívne vylúčená. Ak sa otázka vzťahuje na Alžbetu z domu168, medzi jej zapísaným narodením26.6.1924 a narodením P00826.1.1925 je iba214 dní. To nesedí s bežným odstupom narodení dvoch vlastných sestier; prípadný chybný dátum ani iný typ súrodenectva nie sú doložené. Samotné rovnaké krstné meno ani priezvisko nestačia na vylúčenie alebo potvrdenie. Ostatné dcéry domu168 sú Anna1918, Mária1920, Elena1922 a Zuzka1926; sestrami našej P008 by boli až po doložení spoločného rodiča.
+
+Nové verejné dotazy Cintoriny.sk: rodné priezviskoČakanová + Alžbeta s narodením1924, rodné priezviskoČakanová + Anna s narodením1918 a samostatné rodné priezviskoČakanová vrátili0. Širší prefix rodného priezviskaČakan vrátil2 menovkyne s rodnými priezviskamiČakanková/Čakánková a rokmi1941/1932; nijaká neidentifikuje hľadané sestry. Prefix aktuálneho priezviskaČakan vrátil7 položiek vrátaneČakaný/Čakánek/Čakanková. ElenaČakanová v Prešove narodená1931 nezodpovedá Elene1922 z domu168. Funkčnosť dátumového dotazu overená na už známom JánoviKulichovi24.5.1924, ktorý sa vrátil správne. Tieto výsledky nepokrývajú všetky cintoríny a nie sú dôkazom neprítomnosti rodiny.
+
+K rozhodnutiu chýba rodný alebo sobášny záznam **našej P008**, ktorý by určil jej rodičov. Až ich porovnanie s Michalom1897 a Annou1895 alebo s rodičmi inej kandidátky môže sesterskú väzbu podložiť. Do rodokmeňa sa hypotéza nepridáva ako skutočnosť.
