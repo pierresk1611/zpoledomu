@@ -26,3 +26,11 @@ V súkromnom pracovnom archíve je pripravený presný neodoslaný dopyt na sob�
 - Bežné webové vyhľadávanie vracalo nesúvisiace výsledky o pečive „kulich“ a iné nerelevantné stránky. Tento výsledok sa nepoužíva ako dôkaz neprítomnosti rodiny v Kanade.
 
 **Výsledok:** kanadská stopa je doložená poznámkou v sčítaní; meno muža, odchod, loď, kanadské pôsobisko a jeho vzťah k jednotlivým deťom zostávajú nezistené. Sobášny zápis je cesta k identifikácii, ale ešte nebol prečítaný. Rodinné osoby ani vzťahy sa týmto kolom hľadania nemenia.
+
+## Doplnené overenie dostupnosti a verejných indexov
+
+Pôvodný hostiteľ `library-archives.canada.ca` vraciaHTTP302 na **https://www.canada.ca/en/library-archives.html**. Chýbajúca doména `www.canada.ca` bola doplnená do návrhu siete pri zachovaní všetkých doterajších povolených domén; návrh je uložený a vyžaduje uloženie/publikovanie používateľom. Zmenu nemožno označiť za aplikovanú do behu. Katalóg `recherche-collection-search.bac-lac.gc.ca/eng/Home/Index` nezávisle vraciaHTTP403 s kódom1010; povolenie informačnej stránky samo osebe neodstraňuje odmietnutie katalógu.
+
+Geneanet s bežným verejným filtrom **Don't show Premium entries**: pri Kulich a intervale1880–1905 sa zobrazilo40 položiek, vrátane dátumov mimo intervalu; preto sa filter nepovažuje za spoľahlivý výber roku narodenia. Tieto výsledky boli prečítané. Následne získané všetky3 stránky verejného výberu Kulich bez dátumov (227 položiek) a v texte vyhľadané lokalityCanada, Slatina, Szalatna a československý/slovenský pôvod. Nejde o227 potvrdených osôb ani kompletné prehľadanie všetkých prémiových zbierok.
+
+Konkrétny verejný výsledok Nickolas Kulich1903 uvádza pôvodYugoslavia, manželkuMona Florence Mooney a sobáš22.2.1930 v Hamiltone v Ontáriu (stromtangrid). Nedokladá spojenie so Slatinou ani Máriou a nie je pridaný do rodokmeňa. Verejné výskyty Johna a Winifred Kulichovcov z Československa (stroms3archer3) uvádzajú odlišnú partnerku a neobsahujú v prečítaných výsledkoch spojenie so Slatinou; tiež nepriradené. Historický miestny variantZólyomszalatna pri Kulich nevrátil verejnú zhodu. Negatívny výsledok nie je dôkazom, že hľadaný muž v Kanade nebol.

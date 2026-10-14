@@ -1132,8 +1132,8 @@
     {
       "id": "Q010",
       "title": "Ďalší zápis · Jozef 1919 a Mária 1900",
-      "detail": "Vyhľadať rodný zápis Jozefa z 18. 10. 1919 v Zvolenskej Slatine a sobáš Márie z 2. 11. 1920 podľa sčítacieho hárku. Jozef sa narodil pred zapísaným sobášom; manžela nemožno automaticky označiť za jeho otca. Zistiť rodné priezvisko Márie, manžela, rodičov a vysvetlenie poznámky o Kanade.",
-      "status": "Konkrétne dátumy pre pokračovanie v matrike"
+      "detail": "Vyhľadať rodný zápis Jozefa z 18. 10. 1919 v Zvolenskej Slatine a sobáš Márie z 2. 11. 1920 podľa sčítacieho hárku. Jozef sa narodil pred zapísaným sobášom; manžela nemožno automaticky označiť za jeho otca. Zistiť rodné priezvisko Márie, manžela, rodičov a vysvetlenie poznámky o Kanade. S051: oficiálny zoznam pre Archív Zvolen uvádza štátne matriky5207/5208, cirkevné matriky5186/5206 a notársky fond4784 pre Zvolenskú Slatinu. Rozsah rokov konkrétnych kníh ešte nepotvrdený. Zoznam dočasne neprítomných na druhej strane sčítania je prázdny. Kanadský katalóg a FamilySearch odmietli prístup403; meno manžela ani osobný kanadský záznam zatiaľ nezískané. Presný archívny dopyt je pripravený, neodoslaný.",
+      "status": "Archívne fondy určené · sobášny zápis ešte nezískaný"
     },
     {
       "id": "Q011",
@@ -1447,9 +1447,16 @@
       "url": "https://www.slovakiana.sk/scitacie-harky/cair-ko28o0j",
       "note": "Hárok1105/466, obe strany vizuálne prečítané14.10.2026. Michal Čakan1897, manželka Anna1895; dcéry Anna1918, Mária1920, Elena1922, Alžbeta1924, Zuzka1926. V stĺpci vzťahu sú výslovne manželka a dcéry. Všetci majú rodisko Sačurov. Druhá strana bez ďalších osôb. Ide o samostatnú domácnosť; väzba na P008 sa nepotvrdila, najmä nesedí rok narodenia. Bez ďalšieho dokladu sa nezaraďuje do rodokmeňa. Dom168 patril Pavlovi Dobranskému, uvedenému ako pobývajúci v Amerike; vlastníctvo nie je dôkazom príbuznosti.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S051",
+      "title": "Kulichovci · matriky a notársky fond Archívu Zvolen",
+      "url": "https://www.minv.sk/?zoznam-zbierok",
+      "note": "Oficiálny zoznam zbierok pod pracoviskom Archív Zvolen uvádza5186,5206,5207,5208. Samostatný zoznam orgánov verejnej moci (https://www.minv.sk/?zoznam-fondov-organy-verejnej-moci) uvádza4784 Obvodný notársky úrad vo Zvolenskej Slatine. Prečítané verejné zoznamy, nie konkrétna matričná kniha alebo osobný spis. Dostupnosť sobáša2.11.1920 sa tým nepotvrdzuje. Podrobnosti: docs/vyskum-kulich-kanada.md.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 18,
+  "seedRevision": 19,
   "seedUpdates": [
     {
       "revision": 2,
@@ -2267,6 +2274,25 @@
         {
           "personId": "P008",
           "text": "Rodinná stopa z 14.10.2026: podľa používateľa Čakanovci možno pochádzali zo Sačurova. S050: v sčítaní1930 nájdená Alžbeta Čakanová v dome168 s rodičmi Michalom a Annou a sestrami Annou, Máriou, Elenou a Zuzkou. Hárok uvádza rok1924, ktorý sa nezhoduje s rokom1925 na náhrobku P008. Totožnosť ani príbuznosť zatiaľ nepotvrdená; rodisko P008 sa nemení."
+        }
+      ]
+    },
+    {
+      "revision": 19,
+      "sources": [
+        "S051"
+      ],
+      "updateQuestions": [
+        {
+          "questionId": "Q010",
+          "ifUnchanged": {
+            "detail": "Vyhľadať rodný zápis Jozefa z 18. 10. 1919 v Zvolenskej Slatine a sobáš Márie z 2. 11. 1920 podľa sčítacieho hárku. Jozef sa narodil pred zapísaným sobášom; manžela nemožno automaticky označiť za jeho otca. Zistiť rodné priezvisko Márie, manžela, rodičov a vysvetlenie poznámky o Kanade.",
+            "status": "Konkrétne dátumy pre pokračovanie v matrike"
+          },
+          "fields": [
+            "detail",
+            "status"
+          ]
         }
       ]
     }
