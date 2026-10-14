@@ -1,10 +1,12 @@
 # Ďurišovci
 
+[Nový nález v Čiernom Balogu · 14. 10. 2026](docs/vyskum-balog-2026-10-14.md): originál sčítania uvádza starkú Máriu s presným dátumom 27. 10. 1921 ako dcéru Márie Medveďovej; pridaná matka a štyria súrodenci.
+
 [Rodiny sestier · 14. 10. 2026](docs/rodiny-sestier.md): Mária Ševčíková, manžel Jozef, deti Tobias a Lucas; Blankina dcéra Patrícia. Doplnené podľa používateľa.
 
 `zpoledomu` je názov repozitára, **Ďurišovci** je názov rodokmeňa.
 
-[Výsledky výskumu z 13. 10. 2026](docs/vyskum-vazby-2026-10-13.md): sčítanie 1930 uvádza matku a troch súrodencov Jozefa Kulicha (18. 10. 1919). Aktuálna rodina má 35 osôb a 55 vzťahov, vrátane potvrdených väzieb tetám. [Živý rodokmeň](https://durisovci.vercel.app/).
+[Výsledky výskumu z 13. 10. 2026](docs/vyskum-vazby-2026-10-13.md): sčítanie 1930 uvádza matku a troch súrodencov Jozefa Kulicha (18. 10. 1919). Aktuálna rodina má 40 osôb a 60 vzťahov, vrátane potvrdených väzieb tetám. [Živý rodokmeň](https://durisovci.vercel.app/).
 
 Otcova línia je naľavo, maminkina napravo. Každá generácia má spoločný riadok: rodičia s tetami a strýkami, Peter so sestrami a bratrancami/sesternicami, pod nimi ďalšia generácia. Páry sú vedľa seba; deti spája iba línia ich zaznamenaných rodičov. Tlačidlo **Celý strom** otvorí veľký prehľad. Detail osoby sa otvára po kliknutí na kartu.
 
@@ -14,7 +16,7 @@ Otcova línia je naľavo, maminkina napravo. Každá generácia má spoločný r
 
 ## Otvorenie bez inštalácie
 
-V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Na požiadanie používateľa predvolená verzia obsahuje 35 členov rodiny Ďurišovcov a oznámené či výskumom podložené vzťahy. Narodenia žijúcich alebo osôb bez doloženého úmrtia sú vo verejnom nasadení iba v rozsahu roku. Šesť identifikovaných zosnulých má dátumy podložené cintorínskymi záznamami a náhrobkami; súkromné presné narodenia živých a výskumný archív zostávajú mimo repozitára. Rodinné podanie je označené ako NEOVERENÉ, podložené závery majú citované zdroje.
+V repozitári otvorte `index.html`, použite **Download raw file** a stiahnutý súbor otvorte v prehliadači. Tento súbor už obsahuje celý JavaScript aj štýly; nepotrebuje server. Na požiadanie používateľa predvolená verzia obsahuje 40 členov rodiny Ďurišovcov a oznámené či výskumom podložené vzťahy. Narodenia žijúcich alebo osôb bez doloženého úmrtia sú vo verejnom nasadení iba v rozsahu roku. Šesť identifikovaných zosnulých má dátumy podložené cintorínskymi záznamami a náhrobkami; súkromné presné narodenia živých a výskumný archív zostávajú mimo repozitára. Rodinné podanie je označené ako NEOVERENÉ, podložené závery majú citované zdroje.
 
 ![Ukážka rozhrania s fiktívnymi osobami](docs/preview.png)
 
@@ -43,7 +45,7 @@ npm ci --cache /workspace/.npm-cache --no-audit --no-fund
 npm run dev -- --port 3000 --strictPort
 ```
 
-Predvolená verzia načíta dodaných 35 osôb aj bez dátového servera. Starší prázdny zápis v prehliadači sa pri prvom načítaní doplní; existujúce osoby a úpravy zostanú zachované. Nové výskumné vydanie pridáva výslovne uvedené nové osoby a väzby aj do existujúceho rodokmeňa, pričom neprepisuje úpravy ani neobnovuje vymazané osoby zo starších vydaní. Po neskoršom úmyselnom odstránení osôb sa rodina automaticky neobnovuje. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
+Predvolená verzia načíta dodaných 40 osôb aj bez dátového servera. Starší prázdny zápis v prehliadači sa pri prvom načítaní doplní; existujúce osoby a úpravy zostanú zachované. Nové výskumné vydanie pridáva výslovne uvedené nové osoby a väzby aj do existujúceho rodokmeňa, pričom neprepisuje úpravy ani neobnovuje vymazané osoby zo starších vydaní. Po neskoršom úmyselnom odstránení osôb sa rodina automaticky neobnovuje. Zálohu možno importovať vo webovom rozhraní. Voliteľný lokálny súbor načíta vývojový server pri prvom otvorení v prehliadači:
 
 ```sh
 GENEALOGY_DATA_FILE=/workspace/genealogia-private/rodokmen.json npm run dev -- --port 3000 --strictPort

@@ -7,8 +7,8 @@ from playwright.sync_api import sync_playwright, expect
 BASE_URL = os.environ.get('TEST_BASE_URL', 'http://127.0.0.1:3000')
 KEY = 'zpoledomu.family.v1'
 ROWS = [
-    ['P014'],
-    ['P006', 'P007', 'P008', 'P009', 'P015', 'P016', 'P017'],
+    ['P014', 'P036'],
+    ['P006', 'P007', 'P008', 'P009', 'P015', 'P016', 'P017', 'P037', 'P038', 'P039', 'P040'],
     ['P002', 'P003', 'P010', 'P011', 'P012', 'P013', 'P018', 'P019', 'P020', 'P021'],
     ['P001', 'P004', 'P005', 'P022', 'P023', 'P024', 'P025', 'P028', 'P031', 'P032'],
     ['P026', 'P027', 'P029', 'P030', 'P033', 'P034', 'P035'],
@@ -21,7 +21,7 @@ with sync_playwright() as p:
     page.on('pageerror', lambda e: errors.append(str(e)))
     page.goto(BASE_URL, wait_until='networkidle')
     before = page.evaluate('key => localStorage.getItem(key)', KEY)
-    expect(page.locator('.person-node')).to_have_count(35)
+    expect(page.locator('.person-node')).to_have_count(40)
     positions = page.locator('.person-node').evaluate_all('nodes => Object.fromEntries(nodes.map(n => [n.dataset.personId, {x:parseFloat(n.style.left), y:parseFloat(n.style.top)}]))')
     for row in ROWS:
         assert len({positions[pid]['y'] for pid in row}) == 1, row
@@ -97,7 +97,7 @@ with sync_playwright() as p:
     expect(tab.locator('.details-drawer .relative').filter(has_text='Ružena')).to_be_visible()
     tab.keyboard.press('Escape')
     tab.reload(wait_until='networkidle')
-    assert tab.evaluate('key => JSON.parse(localStorage.getItem(key)).relationships.length', KEY) == 55
+    assert tab.evaluate('key => JSON.parse(localStorage.getItem(key)).relationships.length', KEY) == 60
     assert not errors, errors
     print('PASS: previous saved release migrates to Pavel/Ružena/Pavel and confirmed surnames; own notes survive reload.')
     browser.close()

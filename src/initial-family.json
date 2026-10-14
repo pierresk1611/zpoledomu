@@ -75,9 +75,9 @@
       "gender": "female",
       "birthDate": "1921-10-27",
       "deathDate": "1983-12-08",
-      "birthPlace": "",
-      "note": "Na náhrobku je uvedené rodné priezvisko Gašparíková. Pôvodné rodinné podanie uvádzalo Gašperíková; variant zachovaný v histórii. Podľa rodinného podania pochádzala z Čierneho Balogu; rodisko zatiaľ nie je doložené matrikou.",
-      "source": "S008 + S009 + S011 — Cintorín Zvolenská Slatina, hrob 1549 (pôvodné číslo 676), záznam z_slatina_z.371; fotografia https://mobec.sk/photos/zvolenska_slatina/258.jpg, prístup 12. 10. 2026. Náhrobok vizuálne skontrolovala AI; totožnosť podporilo potvrdenie rodiny.",
+      "birthPlace": "Čierny Balog",
+      "note": "Na náhrobku je uvedené rodné priezvisko Gašparíková. Pôvodné rodinné podanie uvádzalo Gašperíková; variant zachovaný v histórii. S046: Sčítanie 1930 ju uvádza s presným dátumom 27.10.1921 a rodiskom Čierny Balog, osada Pustô, ako dcéru Márie Medveďovej v dome 2. Jej ďalšie deti sú Anna, Rudolf a Jozef Kupecovci a Antónia Gašperíková. Rodný zápis zatiaľ nebol prečítaný.",
+      "source": "S008 + S009 + S011 — Cintorín Zvolenská Slatina, hrob 1549 (pôvodné číslo 676), záznam z_slatina_z.371; fotografia https://mobec.sk/photos/zvolenska_slatina/258.jpg, prístup 12. 10. 2026. Náhrobok vizuálne skontrolovala AI; totožnosť podporilo potvrdenie rodiny.\nS046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
       "status": "PODLOŽENÝ ZÁVER"
     },
     {
@@ -456,6 +456,71 @@
       "note": "Dcéra Blanky Ďurišovej podľa používateľa. Otec a dátumy zatiaľ nepotvrdené.",
       "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.\nS042 — Používateľ potvrdil priezviská: Patrícia Rajčoková, Tobias Ševčík a Lucas Ševčík. Rodinné podanie; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P036",
+      "firstName": "Mária",
+      "lastName": "Medveďová",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1886",
+      "deathDate": "",
+      "birthPlace": "Čierny Balog",
+      "note": "Prednostka domácnosti 1, vdova, v prameni zapísaná „Medveď Mária“. Matka Anny, Rudolfa a Jozefa Kupecovcov, Márie P006 a Antónie Gašperíkovej. Uvedený posledný sobáš 17.1.1920 a ovdovenie 10.4.1926. Rodné priezvisko, mená manželov a vlastné úmrtie zatiaľ nepreukázané. Medveď sa automaticky nepovažuje za rodné priezvisko.",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P037",
+      "firstName": "Anna",
+      "lastName": "Kupec",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1909",
+      "deathDate": "",
+      "birthPlace": "Čierny Balog",
+      "note": "Dcéra Márie Medveďovej podľa sčítania; v origináli „Kupec Anna“. Súrodenecká väzba k Márii P006 cez spoločnú matku. Otec, neskoršie priezvisko a úmrtie nezistené.",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P038",
+      "firstName": "Rudolf",
+      "lastName": "Kupec",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1911",
+      "deathDate": "",
+      "birthPlace": "Čierny Balog",
+      "note": "Syn Márie Medveďovej podľa sčítania. Súrodenecká väzba k Márii P006 cez spoločnú matku; spoločný otec sa nepredpokladá. Úmrtie nezistené.",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P039",
+      "firstName": "Jozef",
+      "lastName": "Kupec",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "1914",
+      "deathDate": "",
+      "birthPlace": "Čierny Balog",
+      "note": "Syn Márie Medveďovej podľa sčítania. Odlišný od Jozefa Kulicha P007. Súrodenecká väzba k Márii P006 cez spoločnú matku; otec a úmrtie nezistené.",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
+    },
+    {
+      "id": "P040",
+      "firstName": "Antónia",
+      "lastName": "Gašperíková",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "1924",
+      "deathDate": "",
+      "birthPlace": "Čierny Balog",
+      "note": "Dcéra Márie Medveďovej podľa sčítania; v origináli „Gašperík Antónia“. Sestra Márie P006 cez spoločnú matku. Spoločné otcovstvo nie je doložené menom otca; neskoršie priezvisko a úmrtie nezistené.",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
+      "status": "PODLOŽENÝ ZÁVER"
     }
   ],
   "relationships": [
@@ -962,14 +1027,59 @@
       "kind": "unknown",
       "status": "NEOVERENÉ",
       "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+    },
+    {
+      "id": "L056",
+      "type": "parent",
+      "from": "P036",
+      "to": "P006",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný."
+    },
+    {
+      "id": "L057",
+      "type": "parent",
+      "from": "P036",
+      "to": "P037",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný."
+    },
+    {
+      "id": "L058",
+      "type": "parent",
+      "from": "P036",
+      "to": "P038",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný."
+    },
+    {
+      "id": "L059",
+      "type": "parent",
+      "from": "P036",
+      "to": "P039",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný."
+    },
+    {
+      "id": "L060",
+      "type": "parent",
+      "from": "P036",
+      "to": "P040",
+      "kind": "unknown",
+      "status": "PODLOŽENÝ ZÁVER",
+      "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný."
     }
   ],
   "questions": [
     {
       "id": "Q001",
       "title": "Materská vetva · Čierny Balog",
-      "detail": "Máriu (1921–1983), rod. Gašparíkovú, a Jozefa (1919–1970) sme identifikovali na základe indexu, náhrobku a potvrdenia rodiny. Nasleduje zistenie ich rodičov z rodného alebo sobášneho zápisu; Čierny Balog je zatiaľ doložený iba rodinným podaním.",
-      "status": "Prvé nálezy podložené"
+      "detail": "S046: V origináli sčítania 1930, Pustô dom 2, hárok85/200, nájdená Mária Gašperík s dátumom27.10.1921. Je dcéra Márie Medveďovej1886; jej ďalšie deti Anna1909, Rudolf1911 a Jozef1914 Kupec a Antónia Gašperík1924. Pridaná matka a štyria súrodenci cez spoločnú matku. Nasleduje zistenie mena otca a rodného priezviska matky z matričných zápisov; uvedený sobáš17.1.1920 a ovdovenie10.4.1926.",
+      "status": "Matka a štyria súrodenci podložení originálom"
     },
     {
       "id": "Q002",
@@ -1072,6 +1182,12 @@
       "title": "Kulichovci · dátumové zhody a Anna1921",
       "detail": "S045: Hľadanie presných dátumov Márie1900, Anny1921, Jána1924 a Martina1926 naprieč všetkými priezviskami slatinského indexu bez zhody; kontrolný dotaz našiel známych starých rodičov. Náhrobok hrobu1109 uvádza Annu1921–1943 bez dňa/mesiaca a rodičov. Neprenášať úmrtie1943 na P015 bez ďalšieho dokladu. Index nie je úplný súpis všetkých zosnulých.",
       "status": "Originály fotografií prečítané · ďalšia väzba nepreukázaná"
+    },
+    {
+      "id": "Q019",
+      "title": "Pustô · rodičia Márie Medveďovej a meno jej manžela",
+      "detail": "S046: Mária Medveďová1886, posledný sobáš17.1.1920, ovdovenie10.4.1926. Rodné priezvisko a meno manžela zatiaľ neurčené. Matričný zápis Márie Gašparíkovej27.10.1921 má preveriť otcovstvo; jeho meno sa zo samotného priezviska dcér neodvodzuje. Anna Gierth na druhej strane je teta v druhej domácnosti Daxnerovcov, nie doklad o tete našej Márie.",
+      "status": "Konkrétne nové matričné dátumy pre ďalšie hľadanie"
     }
   ],
   "sources": [
@@ -1284,9 +1400,16 @@
       "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/vyskum-hroby-2026-10-14.md",
       "note": "Verejný index Mobec: 60 položiek s prefixom Kulich v 32 hroboch; sedem položiek podľa rodných priezvisk. Presné dátumy Márie1900, Anny1921, Jána1924 a Martina1926 bez zhody naprieč všetkými priezviskami, kontrola známych starých rodičov úspešná. Anna1921–1943 na fotografii hrobu1109 nemá presný dátum ani určených rodičov; nepriradená. Fotografie hrobov166 a1565 nedávajú dátumy cieľových osôb.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S046",
+      "title": "Čierny Balog · nájdená matka a súrodenci Márie1921",
+      "url": "https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h",
+      "note": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 12,
+  "seedRevision": 13,
   "seedUpdates": [
     {
       "revision": 2,
@@ -1969,6 +2092,57 @@
       "questions": [
         "Q017",
         "Q018"
+      ]
+    },
+    {
+      "revision": 13,
+      "people": [
+        "P036",
+        "P037",
+        "P038",
+        "P039",
+        "P040"
+      ],
+      "relationships": [
+        "L056",
+        "L057",
+        "L058",
+        "L059",
+        "L060"
+      ],
+      "sources": [
+        "S046"
+      ],
+      "questions": [
+        "Q019"
+      ],
+      "updatePeople": [
+        {
+          "personId": "P006",
+          "ifUnchanged": {
+            "birthPlace": "",
+            "note": "Na náhrobku je uvedené rodné priezvisko Gašparíková. Pôvodné rodinné podanie uvádzalo Gašperíková; variant zachovaný v histórii. Podľa rodinného podania pochádzala z Čierneho Balogu; rodisko zatiaľ nie je doložené matrikou.",
+            "source": "S008 + S009 + S011 — Cintorín Zvolenská Slatina, hrob 1549 (pôvodné číslo 676), záznam z_slatina_z.371; fotografia https://mobec.sk/photos/zvolenska_slatina/258.jpg, prístup 12. 10. 2026. Náhrobok vizuálne skontrolovala AI; totožnosť podporilo potvrdenie rodiny."
+          },
+          "fields": [
+            "birthPlace",
+            "note",
+            "source"
+          ]
+        }
+      ],
+      "updateQuestions": [
+        {
+          "questionId": "Q001",
+          "ifUnchanged": {
+            "detail": "Máriu (1921–1983), rod. Gašparíkovú, a Jozefa (1919–1970) sme identifikovali na základe indexu, náhrobku a potvrdenia rodiny. Nasleduje zistenie ich rodičov z rodného alebo sobášneho zápisu; Čierny Balog je zatiaľ doložený iba rodinným podaním.",
+            "status": "Prvé nálezy podložené"
+          },
+          "fields": [
+            "detail",
+            "status"
+          ]
+        }
       ]
     }
   ]
