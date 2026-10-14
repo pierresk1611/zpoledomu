@@ -518,7 +518,7 @@
       "birthDate": "1924",
       "deathDate": "",
       "birthPlace": "Čierny Balog",
-      "note": "Dcéra Márie Medveďovej podľa sčítania; v origináli „Gašperík Antónia“. Sestra Márie P006 cez spoločnú matku. Spoločné otcovstvo nie je doložené menom otca; neskoršie priezvisko a úmrtie nezistené.",
+      "note": "Dcéra Márie Medveďovej podľa sčítania; v origináli „Gašperík Antónia“. Sestra Márie P006 cez spoločnú matku. Spoločné otcovstvo nie je doložené menom otca; neskoršie priezvisko a úmrtie nezistené. Podľa rodinného podania používateľa Antónia dožila v Čiernom Balogu (S047). Vydaté priezvisko, dátum úmrtia a miesto pochovania zatiaľ nezistené.",
       "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
       "status": "PODLOŽENÝ ZÁVER"
     }
@@ -1407,9 +1407,16 @@
       "url": "https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h",
       "note": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S047",
+      "title": "Antónia · posledné bydlisko podľa rodiny",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/antonia-cierny-balog.md",
+      "note": "Používateľ 14.10.2026 uviedol: „antonia dozila v ciernom balogu“. Rodinné podanie k P040; nejde o listinný doklad úmrtia ani o potvrdenie miesta pochovania.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 13,
+  "seedRevision": 14,
   "seedUpdates": [
     {
       "revision": 2,
@@ -2142,6 +2149,18 @@
             "detail",
             "status"
           ]
+        }
+      ]
+    },
+    {
+      "revision": 14,
+      "sources": [
+        "S047"
+      ],
+      "appendNotes": [
+        {
+          "personId": "P040",
+          "text": "Podľa rodinného podania používateľa Antónia dožila v Čiernom Balogu (S047). Vydaté priezvisko, dátum úmrtia a miesto pochovania zatiaľ nezistené."
         }
       ]
     }
