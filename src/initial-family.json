@@ -102,7 +102,7 @@
       "birthDate": "1925-01-26",
       "deathDate": "2019-06-12",
       "birthPlace": "",
-      "note": "Rodné priezvisko je neisté: Čakanová/Čekanová. Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme.\nS019–S020: spoločný hrob C/148 v Sobranciach. Náhrobok uvádza Alžbeta rod. Čakanová, *26. 1. 1925, †12. 6. 2019, a označuje ju ako manželku Rudolfa Ďuriša. Pôvodný neistý variant Čekanová zostáva v histórii. Náhrobok skontrolovala AI; rodisko a matričný zápis zatiaľ nepoznáme.",
+      "note": "Rodné priezvisko je neisté: Čakanová/Čekanová. Oznámené miesta pobytu: Sobrance, Praha, Plzeň. Roky a rodiská nepoznáme.\nS019–S020: spoločný hrob C/148 v Sobranciach. Náhrobok uvádza Alžbeta rod. Čakanová, *26. 1. 1925, †12. 6. 2019, a označuje ju ako manželku Rudolfa Ďuriša. Pôvodný neistý variant Čekanová zostáva v histórii. Náhrobok skontrolovala AI; rodisko a matričný zápis zatiaľ nepoznáme.\nRodinná stopa z 14.10.2026: podľa používateľa Čakanovci možno pochádzali zo Sačurova. S050: v sčítaní1930 nájdená Alžbeta Čakanová v dome168 s rodičmi Michalom a Annou a sestrami Annou, Máriou, Elenou a Zuzkou. Hárok uvádza rok1924, ktorý sa nezhoduje s rokom1925 na náhrobku P008. Totožnosť ani príbuznosť zatiaľ nepotvrdená; rodisko P008 sa nemení.",
       "source": "S019 + S020 — Virtuálny cintorín, Sobrance, hrob C/148; https://www.virtualnycintorin.sk/hrob/420333; fotografia https://www.virtualnycintorin.sk/obrazok/hm/FXMzMwNTIzMU8xNzQzNDUx; prístup 12. 10. 2026. Dátumy a nápis manželka prečítané z náhrobku AI; totožnosť je podložený záver z rodinných údajov a hrobu.",
       "status": "PODLOŽENÝ ZÁVER"
     },
@@ -1194,6 +1194,12 @@
       "title": "Ján Kulich1924 · rodinné väzby v hrobe A18/74",
       "detail": "S048–S049: Ján Kulich24.5.1924–10.12.2016 a Jindriška Kulichová26.10.1924–5.3.1987 sú v hrobe A18/74 vo Zvolene. Verejné vyhľadávanie podľa rodného prefixu Tomaš potvrdilo pri Jindriške rodné priezvisko Tomašuľová. Manželstvo s Jánom zatiaľ výslovne nepotvrdil žiadny prečítaný prameň. Obe verejné kroniky sú bez životopisu a spomienok. Používateľ meno Jindrišky nepozná. Tomašuľovci v rovnakom hrobe sa bez dokladu neoznačujú za jej rodičov. Hľadáme sobášny doklad alebo parte s výslovným vzťahom.",
       "status": "Rodné meno overené · manželstvo zatiaľ nepotvrdené"
+    },
+    {
+      "id": "Q021",
+      "title": "Čakanovci · Sačurov, dom168",
+      "detail": "Používateľ uviedol neistú stopu o pôvode Čakanovcov zo Sačurova. S050: Alžbeta Čakanová1924, rodičia Michal1897 a Anna1895, sestry Anna1918, Mária1920, Elena1922 a Zuzka1926. Rok1924 sa nezhoduje s náhrobkom Alžbety Ďurišovej rod.Čakanovej1925 (P008). Totožnosť vyžaduje ďalší doklad, napríklad sobášny alebo rodný zápis; rodinné väzby tejto domácnosti sa zatiaľ neprenášajú na P008. Ďalšia samostatná domácnosť je Michal1866 a Mária1868 v dome105, hárok1105/524; ani jej spojenie nie je dokázané.",
+      "status": "Konkrétna zhoda mena a obce · rozpor v roku narodenia"
     }
   ],
   "sources": [
@@ -1434,9 +1440,16 @@
       "url": "https://www.cintoriny.sk/src/index.php?cintorinId=59&hrobId=59002057",
       "note": "Verejné anonymné hľadanie Cintoriny.sk (POST api/htmlSearch.php), maidenSurname=Tomaš, name=Jind, narodenie v roku1924, vrátilo jedinú položku: Kulichová Jindriška rod.Tomašuľová,26.10.1924–5.3.1987, Zvolen Zlatý potok, hrob59002057. Oba dátumy aj hrob sa zhodujú s S048. Verejné kroniky Jána a Jindrišky boli prečítané: životopis nie je k dispozícii,0 spomienok,0 fotografií. Rodné priezvisko je overené indexom; výslovné potvrdenie manželstva alebo rodičovstva v týchto prameňoch chýba.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S050",
+      "title": "Sačurov1930 · domácnosť Čakanovcov, dom168",
+      "url": "https://www.slovakiana.sk/scitacie-harky/cair-ko28o0j",
+      "note": "Hárok1105/466, obe strany vizuálne prečítané14.10.2026. Michal Čakan1897, manželka Anna1895; dcéry Anna1918, Mária1920, Elena1922, Alžbeta1924, Zuzka1926. V stĺpci vzťahu sú výslovne manželka a dcéry. Všetci majú rodisko Sačurov. Druhá strana bez ďalších osôb. Ide o samostatnú domácnosť; väzba na P008 sa nepotvrdila, najmä nesedí rok narodenia. Bez ďalšieho dokladu sa nezaraďuje do rodokmeňa. Dom168 patril Pavlovi Dobranskému, uvedenému ako pobývajúci v Amerike; vlastníctvo nie je dôkazom príbuznosti.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 17,
+  "seedRevision": 18,
   "seedUpdates": [
     {
       "revision": 2,
@@ -2239,6 +2252,21 @@
             "detail",
             "status"
           ]
+        }
+      ]
+    },
+    {
+      "revision": 18,
+      "sources": [
+        "S050"
+      ],
+      "questions": [
+        "Q021"
+      ],
+      "appendNotes": [
+        {
+          "personId": "P008",
+          "text": "Rodinná stopa z 14.10.2026: podľa používateľa Čakanovci možno pochádzali zo Sačurova. S050: v sčítaní1930 nájdená Alžbeta Čakanová v dome168 s rodičmi Michalom a Annou a sestrami Annou, Máriou, Elenou a Zuzkou. Hárok uvádza rok1924, ktorý sa nezhoduje s rokom1925 na náhrobku P008. Totožnosť ani príbuznosť zatiaľ nepotvrdená; rodisko P008 sa nemení."
         }
       ]
     }
