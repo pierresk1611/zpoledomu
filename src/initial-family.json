@@ -518,7 +518,7 @@
       "birthDate": "1924",
       "deathDate": "",
       "birthPlace": "Čierny Balog",
-      "note": "Dcéra Márie Medveďovej podľa sčítania; v origináli „Gašperík Antónia“. Sestra Márie P006 cez spoločnú matku. Spoločné otcovstvo nie je doložené menom otca; neskoršie priezvisko a úmrtie nezistené. Podľa rodinného podania používateľa Antónia dožila v Čiernom Balogu (S047). Vydaté priezvisko, dátum úmrtia a miesto pochovania zatiaľ nezistené.",
+      "note": "Dcéra Márie Medveďovej podľa sčítania; v origináli „Gašperík Antónia“. Sestra Márie P006 cez spoločnú matku. Spoločné otcovstvo nie je doložené menom otca; neskoršie priezvisko a úmrtie nezistené. Podľa rodinného podania používateľa Antónia dožila v Čiernom Balogu (S047). Vydaté priezvisko, dátum úmrtia a miesto pochovania zatiaľ nezistené. V rodine ju podľa používateľa volali „tetka Tonka“; Tonka je rodinné oslovenie Antónie (doplnok k S047).",
       "source": "S046 — Slovenský národný archív, sčítanie 1930, Čierny Balog, osada Pustô, dom 2, hárok 85/200, prvá strana, domácnosť 1, riadky 1–6; https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h. Obe strany originálu a zväčšenie vizuálne prečítané 14. 10. 2026. Mária Gašperík, dcéra, nar. 27.10.1921: zhoda mena, variantu rodného priezviska, celého dátumu a rodinného pôvodu s P006. Matka Mária Medveď, vdova; ďalšie deti Anna, Rudolf, Jozef Kupec a Antónia Gašperík. Rodný ani sobášny zápis zatiaľ neprečítaný.",
       "status": "PODLOŽENÝ ZÁVER"
     }
@@ -1416,7 +1416,7 @@
       "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 14,
+  "seedRevision": 15,
   "seedUpdates": [
     {
       "revision": 2,
@@ -2161,6 +2161,15 @@
         {
           "personId": "P040",
           "text": "Podľa rodinného podania používateľa Antónia dožila v Čiernom Balogu (S047). Vydaté priezvisko, dátum úmrtia a miesto pochovania zatiaľ nezistené."
+        }
+      ]
+    },
+    {
+      "revision": 15,
+      "appendNotes": [
+        {
+          "personId": "P040",
+          "text": "V rodine ju podľa používateľa volali „tetka Tonka“; Tonka je rodinné oslovenie Antónie (doplnok k S047)."
         }
       ]
     }
