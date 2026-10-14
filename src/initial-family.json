@@ -401,8 +401,8 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Dcéra Heleny Salinkovej a Jozefa Salinku podľa používateľa. Vydala sa v UK; používateľ uviedol dnešné priezvisko Offei Kwatya. Krstné meno manžela, dátumy, rodné priezvisko a súčasný pobyt zatiaľ nezistené. Nie je doložené, že bola jediným dieťaťom.",
-      "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná.",
+      "note": "Dcéra Heleny Salinkovej a Jozefa Salinku podľa používateľa. Vydala sa v UK; používateľ uviedol dnešné priezvisko Offei Kwatya. Podľa nového rodinného údaja žije v Anglicku. Používateľ uviedol aj zápis „Offey Kwatia“; dokladová podoba priezviska zatiaľ nepotvrdená. Krstné meno manžela, dátumy a rodné priezvisko zatiaľ nezistené. Nie je doložené, že bola jediným dieťaťom.",
+      "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná.\nS043 — Používateľ 14. 10. 2026 uviedol, že Sylvia žije v Anglicku, s variantom mena „Sylvia Offey Kwatia“. Predchádzajúci rodinný zápis bol Offei Kwatya. Dokladové meno ani ďalšie rodinné väzby nezávisle neoverené.",
       "status": "NEOVERENÉ"
     },
     {
@@ -1251,9 +1251,16 @@
       "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/rodiny-sestier.md",
       "note": "S042 — Používateľ potvrdil priezviská: Patrícia Rajčoková, Tobias Ševčík a Lucas Ševčík. Rodinné podanie; bez nezávislého dokladu.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S043",
+      "title": "Sylvia · Anglicko a variant priezviska",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/vyskum-sylvia-2026-10-14.md",
+      "note": "S043 — Používateľ 14. 10. 2026 uviedol, že Sylvia žije v Anglicku, s variantom mena „Sylvia Offey Kwatia“. Predchádzajúci rodinný zápis bol Offei Kwatya. Dokladové meno ani ďalšie rodinné väzby nezávisle neoverené.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 10,
+  "seedRevision": 11,
   "seedUpdates": [
     {
       "revision": 2,
@@ -1904,6 +1911,25 @@
           },
           "fields": [
             "detail"
+          ]
+        }
+      ]
+    },
+    {
+      "revision": 11,
+      "sources": [
+        "S043"
+      ],
+      "updatePeople": [
+        {
+          "personId": "P031",
+          "ifUnchanged": {
+            "note": "Dcéra Heleny Salinkovej a Jozefa Salinku podľa používateľa. Vydala sa v UK; používateľ uviedol dnešné priezvisko Offei Kwatya. Krstné meno manžela, dátumy, rodné priezvisko a súčasný pobyt zatiaľ nezistené. Nie je doložené, že bola jediným dieťaťom.",
+            "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná."
+          },
+          "fields": [
+            "note",
+            "source"
           ]
         }
       ]
