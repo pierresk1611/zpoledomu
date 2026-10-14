@@ -468,6 +468,20 @@ export function treeLayout(family, focusId) {
       }
     }
   }
+  // Descendants from the central family and both side branches share a row.
+  // Space their household blocks together so independently placed lanes cannot
+  // overlap. Move couples as a unit to retain their adjacent cards.
+  for (const level of levels.filter(l => l >= 0)) {
+    const blocks = pairBlocks([...depths].filter(([, d]) => d === level).map(([id]) => id))
+      .sort((a, b) => Math.min(...a.map(id => positions.get(id).x)) - Math.min(...b.map(id => positions.get(id).x)));
+    let end = -Infinity;
+    for (const block of blocks) {
+      const left = Math.min(...block.map(id => positions.get(id).x));
+      const offset = Math.max(0, end - left);
+      for (const id of block) positions.get(id).x += offset;
+      end = Math.max(...block.map(id => positions.get(id).x)) + columnStep;
+    }
+  }
   // A focus change may reveal a wider household. Keep all cards inside the
   // canvas without clipping or changing any recorded family relationships.
   const shift = Math.max(0, padding - Math.min(...[...positions.values()].map(n => n.x)));

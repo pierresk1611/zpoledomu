@@ -50,21 +50,21 @@
       "birthDate": "1982",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.",
-      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.\nS040: Podľa používateľa je slobodná a má dcéru Patríciu. Dcéra sa volá Patrícia Rajčoková; otec zatiaľ nepotvrdený. Slobodný stav nevylučuje partnera.\nS041: Používateľ potvrdil pobyt Blanky Ďurišovej vo Zvolene. Ide o bydlisko, nie potvrdené rodisko.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.\nS040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     },
     {
       "id": "P005",
       "firstName": "Mária",
-      "lastName": "Ďurišová",
-      "birthName": "",
+      "lastName": "Ševčíková",
+      "birthName": "Ďurišová",
       "gender": "female",
       "birthDate": "1983",
       "deathDate": "",
       "birthPlace": "",
-      "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.",
-      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.",
+      "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.\nS040: Podľa používateľa sa po vydaji volá Ševčíková, manžel je Jozef Ševčík. Jej deti sú Tobias Ševčík a Lucas Ševčík. Jozefovo otcovstvo zatiaľ nebolo výslovne potvrdené.\nS041: Používateľ potvrdil pobyt Márie Ševčíkovej v Hodruši-Hámroch. Ide o bydlisko, nie potvrdené rodisko.",
+      "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.\nS040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     },
     {
@@ -403,6 +403,58 @@
       "birthPlace": "",
       "note": "Dcéra Heleny Salinkovej a Jozefa Salinku podľa používateľa. Vydala sa v UK; používateľ uviedol dnešné priezvisko Offei Kwatya. Krstné meno manžela, dátumy, rodné priezvisko a súčasný pobyt zatiaľ nezistené. Nie je doložené, že bola jediným dieťaťom.",
       "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P032",
+      "firstName": "Jozef",
+      "lastName": "Ševčík",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Manžel Márie Ševčíkovej podľa používateľa. Otcovstvo Tobiasa a Lucasa zatiaľ výslovne nepotvrdené.",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P033",
+      "firstName": "Tobias",
+      "lastName": "Ševčík",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dieťa Márie Ševčíkovej podľa používateľa. Otec a dátumy zatiaľ nepotvrdené.",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.\nS042 — Používateľ potvrdil priezviská: Patrícia Rajčoková, Tobias Ševčík a Lucas Ševčík. Rodinné podanie; bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P034",
+      "firstName": "Lucas",
+      "lastName": "Ševčík",
+      "birthName": "",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dieťa Márie Ševčíkovej podľa používateľa. Otec a dátumy zatiaľ nepotvrdené.",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.\nS042 — Používateľ potvrdil priezviská: Patrícia Rajčoková, Tobias Ševčík a Lucas Ševčík. Rodinné podanie; bez nezávislého dokladu.",
+      "status": "NEOVERENÉ"
+    },
+    {
+      "id": "P035",
+      "firstName": "Patrícia",
+      "lastName": "Rajčoková",
+      "birthName": "",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "note": "Dcéra Blanky Ďurišovej podľa používateľa. Otec a dátumy zatiaľ nepotvrdené.",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.\nS042 — Používateľ potvrdil priezviská: Patrícia Rajčoková, Tobias Ševčík a Lucas Ševčík. Rodinné podanie; bez nezávislého dokladu.",
       "status": "NEOVERENÉ"
     }
   ],
@@ -873,6 +925,43 @@
       "kind": "unknown",
       "status": "NEOVERENÉ",
       "source": "S035 — Používateľ 13. 10. 2026 potvrdil, že Helenin manžel Jozef bol lekár, a uviedol ich dcéru Sylviu, vydatú v UK, dnešným priezviskom Offei Kwatya. Rodinné meno Helena; podobu Elena v dokladoch nepozná."
+    },
+    {
+      "id": "L052",
+      "type": "partner",
+      "from": "P005",
+      "to": "P032",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.",
+      "union": "married"
+    },
+    {
+      "id": "L053",
+      "type": "parent",
+      "from": "P005",
+      "to": "P033",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+    },
+    {
+      "id": "L054",
+      "type": "parent",
+      "from": "P005",
+      "to": "P034",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+    },
+    {
+      "id": "L055",
+      "type": "parent",
+      "from": "P004",
+      "to": "P035",
+      "kind": "unknown",
+      "status": "NEOVERENÉ",
+      "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
     }
   ],
   "questions": [
@@ -965,6 +1054,12 @@
       "title": "Nové pátranie · rodné priezviská tetiek",
       "detail": "13. 10. 2026: sedem konkrétnych anonymných dotazov verejného indexu Cintoriny.sk. Malacky + Salink: Jozef 1949–2022 a Elena 1949–1999. Rodné priezvisko Ďuriš + Elena: 2 záznamy, Helena: 12 vrátane Ďurišinová, Ružena: 0, Marcela: 0; žiadny záznam neprepája Helenu s Elenou Salinkovou. Bratislava + Solár + Jozef: dvaja menovci 1904–1965 a 1913–nezistené, bez dôkazu väzby k Marcele. Veľká Čalomija + Okolensk: 0. Index je neúplný; počet výsledkov nepreukazuje životný stav ani nepríbuznosť. Nové osoby nepripojené. Ruženin manžel a syn majú zatiaľ nezistené priezvisko. Celé meno Sylvie a kombinácie mien tetiek vo všeobecnom vyhľadávaní neposkytli použiteľnú novú väzbu. Podrobnosti a hranice hľadania sú vo výskumnej správe na GitHube.",
       "status": "Preverené indexy · ďalšia rodinná väzba zatiaľ nedoložená"
+    },
+    {
+      "id": "Q016",
+      "title": "Rodiny sestier Márie a Blanky",
+      "detail": "S039–S040: Mária Ševčíková P005, rod. Ďurišová, má manžela Jozefa Ševčíka P032 a deti Tobiasa Ševčíka P033 a Lucasa Ševčíka P034. Blanka Ďurišová P004 je slobodná a má dcéru Patríciu Rajčokovú P035. Priezviská detí potvrdil používateľ (S042); dátumy a otcovstvo zatiaľ nepotvrdené. Údaje sú rodinné podanie.",
+      "status": "Mená doplnené používateľom · nezávislé overenie otvorené"
     }
   ],
   "sources": [
@@ -1128,9 +1223,37 @@
       "url": "https://www.cintoriny.sk/src/index.php?simpleSearch&type=1&city=Malacky&surname=Salink",
       "note": "13. 10. 2026: sedem konkrétnych anonymných dotazov verejného indexu Cintoriny.sk. Malacky + Salink: Jozef 1949–2022 a Elena 1949–1999. Rodné priezvisko Ďuriš + Elena: 2 záznamy, Helena: 12 vrátane Ďurišinová, Ružena: 0, Marcela: 0; žiadny záznam neprepája Helenu s Elenou Salinkovou. Bratislava + Solár + Jozef: dvaja menovci 1904–1965 a 1913–nezistené, bez dôkazu väzby k Marcele. Veľká Čalomija + Okolensk: 0. Index je neúplný; počet výsledkov nepreukazuje životný stav ani nepríbuznosť. Nové osoby nepripojené.",
       "checked": "2026-10-13"
+    },
+    {
+      "id": "S039",
+      "title": "Rodiny sestier Márie a Blanky · rodinné podanie",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/rodiny-sestier.md",
+      "note": "Používateľ 14. 10. 2026 uviedol: sestra Mária je vydatá a má dve deti; sestra Blanka je slobodná a má dcéru. Mená manžela a detí, Máriino priezvisko po vydaji, dátumy a otcovstvo detí zatiaľ neboli uvedené. Ide o rodinné podanie, nie nezávislé overenie.",
+      "checked": "2026-10-14"
+    },
+    {
+      "id": "S040",
+      "title": "Mená manžela a detí sestier",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/rodiny-sestier.md",
+      "note": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu.",
+      "checked": "2026-10-14"
+    },
+    {
+      "id": "S041",
+      "title": "Bydliská sestier · rodinné podanie",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/rodiny-sestier.md",
+      "note": "Používateľ 14. 10. 2026 uviedol, že Mária žije v Hodruši-Hámroch a Blanka vo Zvolene. Obce pobytu nie sú dôkazom rodiska.",
+      "checked": "2026-10-14"
+    },
+    {
+      "id": "S042",
+      "title": "Priezviská detí sestier · potvrdené používateľom",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/rodiny-sestier.md",
+      "note": "S042 — Používateľ potvrdil priezviská: Patrícia Rajčoková, Tobias Ševčík a Lucas Ševčík. Rodinné podanie; bez nezávislého dokladu.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 6,
+  "seedRevision": 10,
   "seedUpdates": [
     {
       "revision": 2,
@@ -1596,6 +1719,193 @@
       ],
       "questions": [
         "Q015"
+      ]
+    },
+    {
+      "revision": 7,
+      "sources": [
+        "S039"
+      ],
+      "questions": [
+        "Q016"
+      ],
+      "appendNotes": [
+        {
+          "personId": "P004",
+          "text": "S039: Podľa používateľa (14. 10. 2026) je slobodná a má dcéru. Meno a priezvisko dcéry, dátum narodenia a otec zatiaľ nezistené. Slobodný stav neznamená, že nemá partnera."
+        },
+        {
+          "personId": "P005",
+          "text": "S039: Podľa používateľa (14. 10. 2026) je vydatá a má dve deti. Meno manžela, priezvisko po vydaji, mená a údaje detí zatiaľ nezistené. Doterajšie priezvisko Ďurišová nie je potvrdením súčasného priezviska po sobáši."
+        }
+      ]
+    },
+    {
+      "revision": 8,
+      "people": [
+        "P032",
+        "P033",
+        "P034",
+        "P035"
+      ],
+      "relationships": [
+        "L052",
+        "L053",
+        "L054",
+        "L055"
+      ],
+      "sources": [
+        "S040"
+      ],
+      "updatePeople": [
+        {
+          "personId": "P004",
+          "ifUnchanged": {
+            "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.\nS039: Podľa používateľa (14. 10. 2026) je slobodná a má dcéru. Meno a priezvisko dcéry, dátum narodenia a otec zatiaľ nezistené. Slobodný stav neznamená, že nemá partnera.",
+            "lastName": "Ďurišová"
+          },
+          "fields": [
+            "note",
+            "source",
+            "lastName",
+            "birthName"
+          ]
+        },
+        {
+          "personId": "P005",
+          "ifUnchanged": {
+            "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.\nS039: Podľa používateľa (14. 10. 2026) je vydatá a má dve deti. Meno manžela, priezvisko po vydaji, mená a údaje detí zatiaľ nezistené. Doterajšie priezvisko Ďurišová nie je potvrdením súčasného priezviska po sobáši.",
+            "lastName": "Ďurišová"
+          },
+          "fields": [
+            "note",
+            "source",
+            "lastName",
+            "birthName"
+          ]
+        }
+      ],
+      "appendNotes": [
+        {
+          "personId": "P004",
+          "text": "S040: Podľa používateľa je slobodná a má dcéru Patríciu. Priezvisko dcéry a otec zatiaľ nepotvrdení. Slobodný stav nevylučuje partnera."
+        },
+        {
+          "personId": "P005",
+          "text": "S040: Podľa používateľa sa po vydaji volá Ševčíková, manžel je Jozef Ševčík. Jej deti sú Tobias a Lucas. Priezviská detí a Jozefovo otcovstvo zatiaľ neboli výslovne potvrdené."
+        }
+      ],
+      "updateQuestions": [
+        {
+          "questionId": "Q016",
+          "ifUnchanged": {
+            "detail": "S039: Mária P005 je podľa používateľa vydatá a má dve deti. Blanka P004 je slobodná a má dcéru. Pre doplnenie konkrétnych osôb potrebujeme mená; pri Márii aj priezvisko po vydaji a meno manžela. Neurčovať manžela automaticky ako otca detí a slobodný stav nezamieňať s neprítomnosťou partnera."
+          },
+          "fields": [
+            "detail",
+            "status"
+          ]
+        }
+      ]
+    },
+    {
+      "revision": 9,
+      "sources": [
+        "S041"
+      ],
+      "appendNotes": [
+        {
+          "personId": "P005",
+          "text": "S041: Používateľ potvrdil pobyt Márie Ševčíkovej v Hodruši-Hámroch. Ide o bydlisko, nie potvrdené rodisko."
+        },
+        {
+          "personId": "P004",
+          "text": "S041: Používateľ potvrdil pobyt Blanky Ďurišovej vo Zvolene. Ide o bydlisko, nie potvrdené rodisko."
+        }
+      ]
+    },
+    {
+      "revision": 10,
+      "sources": [
+        "S042"
+      ],
+      "updatePeople": [
+        {
+          "personId": "P004",
+          "ifUnchanged": {
+            "lastName": "Ďurišová",
+            "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.\nS040: Podľa používateľa je slobodná a má dcéru Patríciu. Priezvisko dcéry a otec zatiaľ nepotvrdení. Slobodný stav nevylučuje partnera.\nS041: Používateľ potvrdil pobyt Blanky Ďurišovej vo Zvolene. Ide o bydlisko, nie potvrdené rodisko.",
+            "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.\nS040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+          },
+          "fields": [
+            "lastName",
+            "note",
+            "source"
+          ]
+        },
+        {
+          "personId": "P005",
+          "ifUnchanged": {
+            "lastName": "Ševčíková",
+            "note": "Adoptovaná Vierou a Rudolfom podľa rodinných údajov. Presné údaje adopcie nie sú doložené.\nS040: Podľa používateľa sa po vydaji volá Ševčíková, manžel je Jozef Ševčík. Jej deti sú Tobias a Lucas. Priezviská detí a Jozefovo otcovstvo zatiaľ neboli výslovne potvrdené.\nS041: Používateľ potvrdil pobyt Márie Ševčíkovej v Hodruši-Hámroch. Ide o bydlisko, nie potvrdené rodisko.",
+            "source": "Rodinné údaje používateľa (S001–S003); bez nezávislého dokladu.\nS037 — Používateľ 13. 10. 2026 výslovne potvrdil priezviská: Patrik Okolenský, Vanesa Okolenská, Ľuboš Baran, Robert Baran, Blanka Ďurišová a Mária Ďurišová. Rodinné podanie; bez nezávislého matričného dokladu.\nS040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+          },
+          "fields": [
+            "lastName",
+            "note",
+            "source"
+          ]
+        },
+        {
+          "personId": "P033",
+          "ifUnchanged": {
+            "lastName": "",
+            "note": "Dieťa Márie Ševčíkovej podľa používateľa. Priezvisko, otec a dátumy nepotvrdené.",
+            "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+          },
+          "fields": [
+            "lastName",
+            "note",
+            "source"
+          ]
+        },
+        {
+          "personId": "P034",
+          "ifUnchanged": {
+            "lastName": "",
+            "note": "Dieťa Márie Ševčíkovej podľa používateľa. Priezvisko, otec a dátumy nepotvrdené.",
+            "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+          },
+          "fields": [
+            "lastName",
+            "note",
+            "source"
+          ]
+        },
+        {
+          "personId": "P035",
+          "ifUnchanged": {
+            "lastName": "",
+            "note": "Dcéra Blanky Ďurišovej podľa používateľa. Priezvisko, otec a dátumy nepotvrdené.",
+            "source": "S040 — Používateľ 14. 10. 2026 uviedol Máriino priezvisko Ševčíková, manžela Jozefa Ševčíka, deti Tobiasa a Lucasa a Blankinu dcéru Patríciu. Rodinné podanie; bez nezávislého dokladu."
+          },
+          "fields": [
+            "lastName",
+            "note",
+            "source"
+          ]
+        }
+      ],
+      "updateQuestions": [
+        {
+          "questionId": "Q016",
+          "ifUnchanged": {
+            "detail": "S039–S040: Mária Ševčíková P005, rod. Ďurišová, má manžela Jozefa Ševčíka P032 a deti Tobiasa P033 a Lucasa P034. Blanka Ďurišová P004 je slobodná a má dcéru Patríciu P035. Priezviská detí, dátumy a otcovstvo zatiaľ nepotvrdené. Údaje sú rodinné podanie."
+          },
+          "fields": [
+            "detail"
+          ]
+        }
       ]
     }
   ]

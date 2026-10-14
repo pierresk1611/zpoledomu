@@ -269,8 +269,8 @@ test("aligns both family branches by generation and keeps every focus inside the
     ["P014"],
     ["P006", "P007", "P008", "P009", "P015", "P016", "P017"],
     ["P002", "P003", "P010", "P011", "P012", "P013", "P018", "P019", "P020", "P021"],
-    ["P001", "P004", "P005", "P022", "P023", "P024", "P025", "P028", "P031"],
-    ["P026", "P027", "P029", "P030"],
+    ["P001", "P004", "P005", "P022", "P023", "P024", "P025", "P028", "P031", "P032"],
+    ["P026", "P027", "P029", "P030", "P033", "P034", "P035"],
   ];
   for (const row of rows) assert.equal(new Set(row.map(id => node(id).y)).size, 1);
   assert.equal(node("P002").x - node("P003").x, layout.columnStep);
@@ -293,7 +293,7 @@ test("aligns both family branches by generation and keeps every focus inside the
     P010: ["P006", "P007"], P011: ["P008", "P009"], P012: ["P008", "P009"], P013: ["P008", "P009"],
     P015: ["P014"], P016: ["P014"], P017: ["P014"],
     P022: ["P010", "P018"], P023: ["P010", "P018"], P024: ["P011", "P019"],
-    P026: ["P022"], P027: ["P022"], P029: ["P023", "P028"], P030: ["P023", "P028"], P031: ["P013", "P021"],
+    P026: ["P022"], P027: ["P022"], P029: ["P023", "P028"], P030: ["P023", "P028"], P031: ["P013", "P021"], P033: ["P005"], P034: ["P005"], P035: ["P004"],
   };
   for (const person of family.people)
     assert.deepEqual(relatives(family, person.id).parents.map(r => r.person.id).sort(), recordedParents[person.id] || [], person.id);
@@ -330,8 +330,8 @@ test("corrects Pavel's saved parent pair atomically and applies confirmed surnam
   assert.deepEqual(relatives(migrated, "P024").parents.map(r => r.person.id).sort(), ["P011", "P019"]);
   assert.deepEqual(relatives(migrated, "P010").children.map(r => r.person.id).sort(), ["P022", "P023"]);
   assert.equal(migrated.people.filter(p => p.id === "P024").length, 1);
-  assert.equal(migrated.people.length, 31);
-  assert.equal(migrated.relationships.length, 51);
+  assert.equal(migrated.people.length, raw.people.length);
+  assert.equal(migrated.relationships.length, raw.relationships.length);
   for (const id of ["P004", "P005", "P026", "P027", "P029", "P030"])
     assert.equal(migrated.people.find(p => p.id === id).lastName, raw.people.find(p => p.id === id).lastName);
   assert(migrated.questions.find(q => q.id === "Q011").detail.includes("syn Pavel P024"));
