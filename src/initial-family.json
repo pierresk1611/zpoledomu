@@ -1060,6 +1060,18 @@
       "title": "Rodiny sestier Márie a Blanky",
       "detail": "S039–S040: Mária Ševčíková P005, rod. Ďurišová, má manžela Jozefa Ševčíka P032 a deti Tobiasa Ševčíka P033 a Lucasa Ševčíka P034. Blanka Ďurišová P004 je slobodná a má dcéru Patríciu Rajčokovú P035. Priezviská detí potvrdil používateľ (S042); dátumy a otcovstvo zatiaľ nepotvrdené. Údaje sú rodinné podanie.",
       "status": "Mená doplnené používateľom · nezávislé overenie otvorené"
+    },
+    {
+      "id": "Q017",
+      "title": "Anna Bartosova · nepriradená stopa pri Salinkovcoch",
+      "detail": "S044: V karte spoločného hrobu1198000618 je Anna Bartosova (2.1.1886–11.12.1917). Nevieme, či je príbuzná, ani ku komu by patrila. Nepridáva sa ako predok na základe spoločného hrobu. Helena/Elena zostáva otvorené.",
+      "status": "Nová stopa · príbuzenstvo nepreukázané"
+    },
+    {
+      "id": "Q018",
+      "title": "Kulichovci · dátumové zhody a Anna1921",
+      "detail": "S045: Hľadanie presných dátumov Márie1900, Anny1921, Jána1924 a Martina1926 naprieč všetkými priezviskami slatinského indexu bez zhody; kontrolný dotaz našiel známych starých rodičov. Náhrobok hrobu1109 uvádza Annu1921–1943 bez dňa/mesiaca a rodičov. Neprenášať úmrtie1943 na P015 bez ďalšieho dokladu. Index nie je úplný súpis všetkých zosnulých.",
+      "status": "Originály fotografií prečítané · ďalšia väzba nepreukázaná"
     }
   ],
   "sources": [
@@ -1258,9 +1270,23 @@
       "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/vyskum-sylvia-2026-10-14.md",
       "note": "S043 — Používateľ 14. 10. 2026 uviedol, že Sylvia žije v Anglicku, s variantom mena „Sylvia Offey Kwatia“. Predchádzajúci rodinný zápis bol Offei Kwatya. Dokladové meno ani ďalšie rodinné väzby nezávisle neoverené.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S044",
+      "title": "Salinkovci · tretia osoba v spoločnom hrobe",
+      "url": "https://www.cintoriny.sk/src/index.php?cintorinId=1198&hrobId=1198000618",
+      "note": "Karta overená 14. 10. 2026 uvádza okrem Jozefa a Eleny Salinkových aj Annu Bartosovu 2.1.1886–11.12.1917. Rodinná väzba Anny nepreukázaná; spoločný hrob ju neurčuje. Fotografia uvádza Ing. Elenu; totožnosť s Helenou zostáva otvorená.",
+      "checked": "2026-10-14"
+    },
+    {
+      "id": "S045",
+      "title": "Slatina · presné dátumy naprieč priezviskami a tri fotografie",
+      "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/vyskum-hroby-2026-10-14.md",
+      "note": "Verejný index Mobec: 60 položiek s prefixom Kulich v 32 hroboch; sedem položiek podľa rodných priezvisk. Presné dátumy Márie1900, Anny1921, Jána1924 a Martina1926 bez zhody naprieč všetkými priezviskami, kontrola známych starých rodičov úspešná. Anna1921–1943 na fotografii hrobu1109 nemá presný dátum ani určených rodičov; nepriradená. Fotografie hrobov166 a1565 nedávajú dátumy cieľových osôb.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 11,
+  "seedRevision": 12,
   "seedUpdates": [
     {
       "revision": 2,
@@ -1932,6 +1958,17 @@
             "source"
           ]
         }
+      ]
+    },
+    {
+      "revision": 12,
+      "sources": [
+        "S044",
+        "S045"
+      ],
+      "questions": [
+        "Q017",
+        "Q018"
       ]
     }
   ]
