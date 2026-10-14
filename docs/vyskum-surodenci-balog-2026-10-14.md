@@ -30,3 +30,15 @@ Pri prvých podrobných zoznamoch bolo možné čítať položky Rudna nad Hrono
 Žiadny nový manžel, dieťa ani úmrtie neboli dostatočne doložené. Rodokmeň zostáva na40 osobách a60 vzťahoch. Najkonkrétnejšie pokračovanie je overiť Rudolfa Kupca v Pohorelej proti presnému dátumu zo sčítania a následne prípadnú fotografiu náhrobku a mená spolupochovaných. Pri Jozefovi treba preveriť päť uvedených blízkych obcí. Samotný spoločný hrob ešte nebude dôkazom otcovstva.
 
 Pracovné odpovede a výsledky sú zachované mimo checkoutu v súkromnom výskumnom archíve. Žiadne správy správcom cintorínov ani rodine neboli odoslané.
+
+## Ďalšie preverovanie po opakovanom odmietnutí detailov
+
+- Cintoriny.sk: dotaz `surname=Kup&name=Anna` vrátil52 položiek. Prečítaná bola prvá strana50 aj pokračovanie2 cez verejné tlačidlo „viac údajov“. Žiadny uvedený dátum narodenia sa nezhoduje s Annou zo sčítania; položky bez dátumu nemožno vylúčiť. Ide aj o prefixové zhody ako Kupková či Kupčíková, nie52 rodinných kandidátok.
+- Širšie dotazy podľa rodného priezviska `Gaš` a `Kup` ukazujú541 a199 položiek, ale úvodná odpoveď zobrazuje iba50. Tieto dve široké množiny **neboli celé prečítané** a nemožno z nich vyvodzovať neprítomnosť osoby. Predchádzajúce užšie dotazy s menom Anna a Ant boli menšie a bez stránkovania.
+- Verejné konfigurácie máp Mobec pre Čierny Balog, Pohorelú, Hronec, Michalovú, Valaskú, Predajnú a Pohronskú Polhoru boli dostupné. Neobsahovali vrstvu cintorína či zosnulých; prítomnosť obce v mapovom portáli sama neznamená dostupnosť cintorínskej evidencie.
+- Geneanet bez obmedzenia na obec: Rudolf Kupec vracia aj voľne čitateľné rodokmene. Rudolf Eduard1911–1911 z Viedne, Rudolf1886 z Koryt a Rudolf1916–1942 z Mariboru nie sú Rudolfom1911 z Pustého. Jozef1891–1974 zo Slovinska nie je Jozefom1914. Anna Maria Kupec1909–1971 z Viedne má odlišný presný dátum narodenia a rodičov; nebola priradená.
+- Pre Antóniu boli preverené aj varianty Gasparik, Gasperik, Gašparíková a Gašperíková. Kratší variant Gasparik vracia27 indexových položiek vrátane starších rodičovských zmienok; v prečítanom verejnom obsahu nie je doložená totožnosť Antónie1924 z Pustého. Mená partnerov z iných storočí nie sú jej manželmi.
+- Hľadanie Márie Medveďovej v Balogu s rokom1886 na Geneanete vracia8 indexových položiek. Presné dátumy a rodičia sú v uzamknutých podrobnostiach; verejný široký interval1850–1900 a zhoda mena na identifikáciu nestačia. Filter roku nie je náhradou prečítania originálu. Rodné priezvisko Márie sa tým nepotvrdilo.
+- Priamy verejný pokus vo FamilySearch vrátil403. Oficiálna stránka Čierneho Balogu zobrazila hCaptcha. Ani jedna odpoveď nie je genealogickým nulovým výsledkom; ochrany sa neobchádzali.
+
+Výsledkom tohto pokračovania sú ďalšie vylúčené menovité zhody, nie nová doložená rodinná väzba. Údaje osôb ani vzťahov sa nemenili.
