@@ -203,11 +203,11 @@
       "lastName": "Kulich",
       "birthName": "",
       "gender": "male",
-      "birthDate": "1924",
-      "deathDate": "",
+      "birthDate": "1924-05-24",
+      "deathDate": "2016-12-10",
       "birthPlace": "Zvolenská Slatina",
-      "note": "V sčítaní 1930 syn Márie Kulichovej v domácnosti 3, dome 197. Súrodenecký vzťah k Jozefovi je podložený spoločnou matkou v zázname; otec a úmrtie zatiaľ nezistené.",
-      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný.",
+      "note": "V sčítaní 1930 syn Márie Kulichovej v domácnosti 3, dome 197. Súrodenecký vzťah k Jozefovi je podložený spoločnou matkou v zázname; otec a úmrtie zatiaľ nezistené. S048: cintorín Zvolen, Zlatý potok, A18/74, hrob59002057, uvádza Jána Kulicha nar.24.5.1924, zomr.10.12.2016. Meno a celý dátum narodenia sa zhodujú so synom Márie zo sčítania1930 (S029); regionálna zhoda podporuje stotožnenie ako podložený záver. Rodný ani úmrtný matričný doklad zatiaľ nebol prečítaný. Jindriška Kulichová v rovnakom hrobe je zatiaľ nepriradená osoba; manželstvo nie je doložené.",
+      "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný. S048 — verejný cintorínsky index Zvolen, Zlatý potok, A18/74; https://www.cintoriny.sk/src/index.php?cintorinId=59&hrobId=59002057; prečítané14.10.2026. Dátumy pochádzajú z indexu, nie z fotografie.",
       "status": "PODLOŽENÝ ZÁVER"
     },
     {
@@ -1188,6 +1188,12 @@
       "title": "Pustô · rodičia Márie Medveďovej a meno jej manžela",
       "detail": "S046: Mária Medveďová1886, posledný sobáš17.1.1920, ovdovenie10.4.1926. Rodné priezvisko a meno manžela zatiaľ neurčené. Matričný zápis Márie Gašparíkovej27.10.1921 má preveriť otcovstvo; jeho meno sa zo samotného priezviska dcér neodvodzuje. Anna Gierth na druhej strane je teta v druhej domácnosti Daxnerovcov, nie doklad o tete našej Márie.",
       "status": "Konkrétne nové matričné dátumy pre ďalšie hľadanie"
+    },
+    {
+      "id": "Q020",
+      "title": "Ján Kulich1924 · rodinné väzby v hrobe A18/74",
+      "detail": "S048: Ján má presne rovnaké narodenie24.5.1924 ako P016 v sčítaní. Jindriška Kulichová1924–1987 je pochovaná v rovnakom hrobe spolu s Tomašuľovcami a Martou Drobnou. Hľadáme doklad, či je Jindriška jeho manželka, jej rodné priezvisko a ich prípadné deti. Zatiaľ žiadna z týchto osôb nepridaná iba podľa hrobu. Používateľ meno Jindrišky nepozná; rodinné potvrdenie tejto väzby zatiaľ nemáme.",
+      "status": "Zhoda Jána podložená · ďalšie vzťahy otvorené"
     }
   ],
   "sources": [
@@ -1414,9 +1420,16 @@
       "url": "https://github.com/pierresk1611/zpoledomu/blob/main/docs/antonia-cierny-balog.md",
       "note": "Používateľ 14.10.2026 uviedol: „antonia dozila v ciernom balogu“. Rodinné podanie k P040; nejde o listinný doklad úmrtia ani o potvrdenie miesta pochovania.",
       "checked": "2026-10-14"
+    },
+    {
+      "id": "S048",
+      "title": "Ján Kulich1924 · Zvolen, Zlatý potok A18/74",
+      "url": "https://www.cintoriny.sk/src/index.php?cintorinId=59&hrobId=59002057",
+      "note": "Index zosnulých uvádza Ján Kulich24.5.1924–10.12.2016 a Jindriška Kulichová26.10.1924–5.3.1987, ďalej Ján Tomašuľa1892–1961, Jindřiška Tomašuľová1896–1967 a MUDr.Marta M.Drobná1900–1969. Zhoda celého dátumu Jána s P016 v S029 a regiónu podporuje stotožnenie, nejde o prečítaný matričný zápis. Fotografia bola otvorená a uvádza staršie mená Tomašuľovcov a Drobnej, nie čitateľné dátumy Kulichovcov. Zo spoločného hrobu sa neodvodzuje manželstvo ani rodičovstvo. Údaje1.1. pri starších osobách sa nepovažujú za presné dátumy.",
+      "checked": "2026-10-14"
     }
   ],
-  "seedRevision": 15,
+  "seedRevision": 16,
   "seedUpdates": [
     {
       "revision": 2,
@@ -2170,6 +2183,36 @@
         {
           "personId": "P040",
           "text": "V rodine ju podľa používateľa volali „tetka Tonka“; Tonka je rodinné oslovenie Antónie (doplnok k S047)."
+        }
+      ]
+    },
+    {
+      "revision": 16,
+      "sources": [
+        "S048"
+      ],
+      "questions": [
+        "Q020"
+      ],
+      "updatePeople": [
+        {
+          "personId": "P016",
+          "ifUnchanged": {
+            "birthDate": "1924",
+            "deathDate": "",
+            "source": "S029 — Slovenský národný archív, sčítanie 1930, Zvolenská Slatina, dom 197, hárok 1141/132, druhá strana, domácnosť 3; https://slovakiana.sk/scitacie-harky/cair-ko28dhx. Originál vizuálne prečítala AI 13. 10. 2026. Identifikácia cez meno a presný dátum narodenia Jozefa (18. 10. 1919); rodný ani sobášny zápis zatiaľ nebol prečítaný."
+          },
+          "fields": [
+            "birthDate",
+            "deathDate",
+            "source"
+          ]
+        }
+      ],
+      "appendNotes": [
+        {
+          "personId": "P016",
+          "text": "S048: cintorín Zvolen, Zlatý potok, A18/74, hrob59002057, uvádza Jána Kulicha nar.24.5.1924, zomr.10.12.2016. Meno a celý dátum narodenia sa zhodujú so synom Márie zo sčítania1930 (S029); regionálna zhoda podporuje stotožnenie ako podložený záver. Rodný ani úmrtný matričný doklad zatiaľ nebol prečítaný. Jindriška Kulichová v rovnakom hrobe je zatiaľ nepriradená osoba; manželstvo nie je doložené."
         }
       ]
     }
