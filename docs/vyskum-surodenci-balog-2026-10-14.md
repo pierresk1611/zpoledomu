@@ -2,6 +2,8 @@
 
 Ďalšie pokračovanie: [nájdené archívne fondy pre poručenské, notárske a matričné zápisy](vyskum-balog-archivne-fondy.md). Konkrétny rodinný spis zatiaľ nebol získaný.
 
+**Aktualizácia po obnovení prístupu:** Rudolf z Pohorelej bol vylúčený podľa veku, rovnako štyria z piatich Jozefov v blízkych obciach. Jozef z Hronca a Antónia z Bánoviec zostávajú bez overeného narodenia. Podrobnosti sú v poslednej časti tejto správy; pôvodná tabuľka nižšie zachováva stav pred otvorením týchto stránok.
+
 Východisko je [originál85/200](https://www.slovakiana.sk/scitacie-harky/cair-ko1u47h): Anna Kupec1909, Rudolf Kupec1911, Jozef Kupec1914 a Antónia Gašperík1924, deti Márie Medveďovej. Hľadajú sa ich manželia a deti, nie ďalší menovci.
 
 ## Konkrétne nové stopy
@@ -44,3 +46,25 @@ Pracovné odpovede a výsledky sú zachované mimo checkoutu v súkromnom výsku
 - Priamy verejný pokus vo FamilySearch vrátil403. Oficiálna stránka Čierneho Balogu zobrazila hCaptcha. Ani jedna odpoveď nie je genealogickým nulovým výsledkom; ochrany sa neobchádzali.
 
 Výsledkom tohto pokračovania sú ďalšie vylúčené menovité zhody, nie nová doložená rodinná väzba. Údaje osôb ani vzťahov sa nemenili.
+
+## Podrobné zoznamy sa následne otvorili — konkrétne overenie kandidátov
+
+Po neskoršom opakovanom pokuse stránky dočasne vracali200 a bolo možné prečítať údaje. Neboli použité alternatívne identity, prihlasovacie údaje ani obchádzanie ochrany.
+
+| Kandidát | Údaj v otvorenom zozname | Výsledok |
+| --- | --- | --- |
+| Rudolf Kupec, Pohorelá, C/286 | Úmrtie2.9.2008, vek75 | Nie je Rudolf1911. |
+| Jozef Kupec, Michalová, hrob117 | Úmrtie13.3.1996, vek49 | Nie je Jozef1914. |
+| Jozef Kupec, Pohronská Polhora, A/59 | Úmrtie7.5.1953, vek30 | Nie je Jozef1914. |
+| Jozef Kupec, Predajná, hrob527 | Úmrtie26.9.2014, vek79 | Nie je Jozef1914. |
+| Jozef Kupec, Valaská, E/117 | Úmrtie11.6.1977, vek70 | Nie je Jozef1914. |
+| Jozef Kupec, Hronec, hrob626 | Dátum ani vek neuvedené | Neurčená totožnosť. |
+| Antónia Gašparíková rod.Krchnílová, Bošany, B/69 | Úmrtie12.3.1983, vek83 | Nie je Antónia1924. |
+| Antónia Gašparíková rod.Šúbiková, Dolná Mariková, E/1 | Úmrtie3.4.1990, vek52 | Nie je Antónia1924. |
+| Antónia Gašpariková, Bánovce nad Bebravou, B/169 | Dátum ani vek neuvedené | Neurčená totožnosť. |
+
+Pri Hronci sa podarilo otvoriť aj [hrob181662](https://www.virtualnycintorin.sk/hrob/181662) a jeho fotografiu. Pomník nesie iba **RODINA KUPCOVÁ A MATOŠOVÁ**, bez osobných dátumov. Index v tomto hrobe uvádza Jozefa Kupca bez dátumu, Antóniu Kupcovú zosnulú11.8.1977 a rodinu Matošovú bez osobných údajov. Samostatný zoznam pre Antóniu doplnil vek77, takže táto Antónia nie je sestrou1924. Neznamená to automaticky vylúčenie Jozefa: vzťah medzi spolupochovanými nie je určený a jeho vlastné dátumy chýbajú. Z pomníka sa neodvodzuje manželstvo, otcovstvo ani príbuznosť Matošovcov s našou rodinou.
+
+Druhý otvorený smer je [Antónia v Bánovciach, hrob578785](https://www.virtualnycintorin.sk/hrob/578785). Zoznam sa podarilo prečítať, detail a fotografia tohto hrobu zatiaľ neboli získané. Neskoršie požiadavky na iné detaily opäť vracali403. Žiadny rodinný vzťah ani presný nový dátum sa tým nepotvrdil.
+
+Preverené boli aj zahraničné varianty Josef Kupec, Rudolph Kupec, Rudolf Kupetz a Anna Kupetz + Čierny Balog na Geneanete. Verejne prečítané české a rakúske položky nemajú doloženú totožnosť našich súrodencov; balocké záznamy Anny Kupetz sa týkajú skorších generácií. Neboli priradené.
