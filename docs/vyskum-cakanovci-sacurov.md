@@ -26,7 +26,7 @@ Rodisko všetkých je Sačurov. Druhá strana neobsahuje ďalšie osoby ani nepr
 
 ## Rozsah skutočnej kontroly
 
-V katalógu získaných257 položiek:252 domácnostných hárkov a5 prehľadov. Prečítané menné stĺpce všetkých252 prvých strán v32 obrazových prehľadoch; pri oboch nájdených domácnostiach Čakanovcov otvorené celé obe strany. Prečítaných aj8 strán miestnych prehľadov1255/54–57. Druhé strany ostatných domácností sa zatiaľ systematicky neprešli; nejde o úplný negatívny výsledok celého sčítania obce.
+V katalógu získaných257 položiek:252 domácnostných hárkov a5 prehľadov. Prečítané menné stĺpce všetkých252 prvých strán v32 obrazových prehľadoch; pri oboch nájdených domácnostiach Čakanovcov otvorené celé obe strany. Prečítaných aj8 strán miestnych prehľadov1255/54–57. V nasledujúcom kole boli získané aj všetky252 druhé strany; rozsah doplnenej kontroly je uvedený nižšie.
 
 Cintoriny.sk pri vyhľadaní samotnej obce Sačurov neposkytlo žiadnu obec ani cintorín. Prázdny výsledok preto nie je dôkazom, že tam rodina nežila či nebola pochovaná.
 
@@ -57,3 +57,14 @@ Používateľ navrhol sesterskú väzbu. Zatiaľ **nepotvrdená**, nie definití
 Nové verejné dotazy Cintoriny.sk: rodné priezviskoČakanová + Alžbeta s narodením1924, rodné priezviskoČakanová + Anna s narodením1918 a samostatné rodné priezviskoČakanová vrátili0. Širší prefix rodného priezviskaČakan vrátil2 menovkyne s rodnými priezviskamiČakanková/Čakánková a rokmi1941/1932; nijaká neidentifikuje hľadané sestry. Prefix aktuálneho priezviskaČakan vrátil7 položiek vrátaneČakaný/Čakánek/Čakanková. ElenaČakanová v Prešove narodená1931 nezodpovedá Elene1922 z domu168. Funkčnosť dátumového dotazu overená na už známom JánoviKulichovi24.5.1924, ktorý sa vrátil správne. Tieto výsledky nepokrývajú všetky cintoríny a nie sú dôkazom neprítomnosti rodiny.
 
 K rozhodnutiu chýba rodný alebo sobášny záznam **našej P008**, ktorý by určil jej rodičov. Až ich porovnanie s Michalom1897 a Annou1895 alebo s rodičmi inej kandidátky môže sesterskú väzbu podložiť. Do rodokmeňa sa hypotéza nepridáva ako skutočnosť.
+
+
+## Dokončená kontrola mien na druhých stranách
+
+Doplnené14.10.2026. Zo zachovaných verejných metadát stiahnutých všetkých252 druhých strán bez chyby; vizuálne prečítané ich menné stĺpce v32 obrazových prehľadoch vrátane mien v oddiele dočasne neprítomných. **Ďalší výskyt priezviskaČakan nebol zistený.** Spolu s predchádzajúcou kontrolou252 prvých strán sú teraz menné stĺpce prezreté na oboch stranách všetkých získaných domácnostných hárkov. Nejde o úplný prepis každého údaja, kontrolu všetkých matrík ani dôkaz, že v obci nikdy nežila ďalšia rodinaČakanovcov. Dve už opísané domácnosti ostávajú jedinými nájdenými domácnosťami s týmto priezviskom v prezretých skenoch.
+
+Geneanet, verejný filter bez prémiových položiek: MichalCakan, MichaelCakan a AnnaCakan nevrátili verejné osoby. Rozšírený výber bez krstného mena ukázal14 položiekCakan,1Cakanova a8Csakan. PoložkyCsakan nie sú automaticky rovnaké priezvisko alebo tá istá rodina; žiadna prečítaná položka nedokladá rodičovstvo P008.
+
+Konkrétne otvorený [lodný prepis JosefCakan](https://en.geneanet.org/cercles/view/colgnecmbremen/67134): loďStuttgart, odchod28.3.1907, Brémy–Baltimore,37-ročný ženatý muž, bydliskoKruzec, provincia**Croatien**, cieľMt.KeesRocks vPennsylvánii. IdentifikátorSTAB-28.03.1907_4,57/5-15_K, cestujúci122. Je to verejný prepis, originál nebol otvorený. Záznam neuvádzaSačurov ani našich príbuzných; nie je potvrdenou rodinnou vysťahovaleckou stopou. NázovMt.KeesRocks v zozname výsledkov nesprávne pôsobil ako lokalita vNemecku; až detail rozlišuje prístavy, bydlisko a cieľ. Všeobecný opis zbierky sa sústreďuje na1920–1939, preto treba dátum1907 pri prípadnom ďalšom využití preveriť na origináli.
+
+Pri varianteRudolphDuris sa vrátil jeden verejný úmrtný index zNorwalku,Connecticut s úmrtím4.4.2001. Nezodpovedá doloženému úmrtiu starého otca30.5.1986 a neposkytuje spojenie k jeho rodičom. Nový príbuzný ani sesterská väzba P008 týmto kolom nepotvrdené.
